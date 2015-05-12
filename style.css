@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'pf_beausans_probold';
+    src: url('./fonts/pfbeausanspro-bold-webfont.eot');
+    src: url('./fonts/pfbeausanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/pfbeausanspro-bold-webfont.woff2') format('woff2'),
+         url('./fonts/pfbeausanspro-bold-webfont.woff') format('woff'),
+         url('./fonts/pfbeausanspro-bold-webfont.ttf') format('truetype'),
+         url('./fonts/pfbeausanspro-bold-webfont.svg#pf_beausans_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pf_beausans_problack';
+    src: url('./fonts/pfbeausanspro-black-webfont.eot');
+    src: url('./fonts/pfbeausanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/pfbeausanspro-black-webfont.woff2') format('woff2'),
+         url('./fonts/pfbeausanspro-black-webfont.woff') format('woff'),
+         url('./fonts/pfbeausanspro-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+}
 body {
 	font-family: 'PT Sans Caption', Arial,  sans-serif;
 	color: #444;
@@ -7,15 +35,18 @@ body {
 h1 {
 	color: #000;
 	font-size: 36px;
+	font-family: 'pf_beausans_problack', Arial,  sans-serif;
 }
 h2 {
 	color: #000;
 	font-size: 24px;
+	font-family: 'pf_beausans_probold', Arial,  sans-serif;
 }
 h3 {
 	color: #000;
 	font-weight: bold;
 	font-size: 18px;
+	font-family: 'pf_beausans_probold', Arial,  sans-serif;
 }
 ul li {
 	list-style-type: none;
@@ -34,4 +65,78 @@ a {
 }
 a:hover {
 	text-decoration: underline;
+}
+label {
+	font-family: 'PT Sans Caption', Arial,  sans-serif;
+	color: #bbb;
+	font-size: 14px;
+	line-height: 37px;
+}
+input {
+	width: 398px;
+	height: 40px;
+	border: 1px solid #000;
+	font-family: 'PT Sans Caption', Arial,  sans-serif;
+	color: #bbb;
+	font-size: 14px;
+	line-height: 37px;
+	padding-left: 13px;
+}
+.button-black {
+	width: 170px;
+	height: 40px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	line-height: 40px;
+}
+.button-black:hover {
+	background: #777;
+}
+.button-black:active {
+	background: #444;
+}
+.button-white {
+	width: 168px;
+	height: 38px;
+	border: 1px solid #000;
+	color: #000;
+	background: #fff;
+	text-align: center;
+	line-height: 39px;
+}
+.button-white:hover {
+	border: 1px solid #777;
+}
+.button-white:active {
+	border: 1px solid #777;
+	background: #eee;
+}
+.button-red {
+	width: 170px;
+	height: 40px;
+	color: #fff;
+	background: #f50057;
+	text-align: center;
+	line-height: 40px;
+}
+.button-red:hover {
+	background: #ff4081
+}
+.button-red:active {
+	background: #c50046;
+}
+.button-green {
+	width: 170px;
+	height: 40px;
+	color: #fff;
+	background: #00bfa5;
+	text-align: center;
+	line-height: 40px;
+}
+.button-green:hover {
+	background: #00e6c7
+}
+.button-green:active {
+	background: #00695c;
 }
