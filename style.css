@@ -113,6 +113,24 @@ textarea:focus {
 .validation-failed:focus {
 	border: 1px solid #f50057;
 }
+.alert-box-success{
+	line-height: 50px;
+	padding-left: 43px;
+	color: #fff;
+	background: url('./box-success.png')no-repeat;
+}
+.alert-box-error{
+	line-height: 50px;
+	padding-left: 43px;
+	color: #fff;
+	background: url('./box-error.png')no-repeat;
+}
+.alert-box-notice{
+	line-height: 50px;
+	padding-left: 43px;
+	background: url('./box-notice.png')no-repeat;
+}
+
 .button-black {
 	width: 170px;
 	height: 40px;
