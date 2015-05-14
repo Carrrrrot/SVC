@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @font-face {
     font-family: 'pf_beausans_probold';
     src: url('./fonts/pfbeausanspro-bold-webfont.eot');
@@ -9,6 +10,9 @@
     font-weight: normal;
     font-style: normal;
 }
+=======
+
+>>>>>>> Stashed changes
 @font-face {
     font-family: 'pf_beausans_problack';
     src: url('./fonts/pfbeausanspro-black-webfont.eot');
@@ -20,12 +24,31 @@
     font-style: normal;
 
 }
+<<<<<<< Updated upstream
 *, *:before, *:after {
 	box-sizing: inherit;
 }
 html {
 	box-sizing: border-box;
 }
+=======
+
+
+
+
+@font-face {
+    font-family: 'pf_beausans_probold';
+    src: url('./fonts/pfbeausanspro-bold-webfont.eot');
+    src: url('./fonts/pfbeausanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/pfbeausanspro-bold-webfont.woff2') format('woff2'),
+         url('./fonts/pfbeausanspro-bold-webfont.woff') format('woff'),
+         url('./fonts/pfbeausanspro-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+>>>>>>> Stashed changes
 body {
 	font-family: 'PT Sans Caption', Arial,  sans-serif;
 	color: #444;
@@ -35,18 +58,31 @@ body {
 h1 {
 	color: #000;
 	font-size: 36px;
+<<<<<<< Updated upstream
 	font-family: 'pf_beausans_problack', Arial,  sans-serif;
+=======
+    font-family: 'pf_beausans_problack';
+>>>>>>> Stashed changes
 }
 h2 {
 	color: #000;
 	font-size: 24px;
+<<<<<<< Updated upstream
 	font-family: 'pf_beausans_probold', Arial,  sans-serif;
+=======
+    font-family: 'pf_beausans_probold';
+        
+>>>>>>> Stashed changes
 }
 h3 {
 	color: #000;
 	font-weight: bold;
 	font-size: 18px;
+<<<<<<< Updated upstream
 	font-family: 'pf_beausans_probold', Arial,  sans-serif;
+=======
+    font-family: 'pf_beausans_probold';
+>>>>>>> Stashed changes
 }
 ul li {
 	list-style-type: none;
@@ -92,6 +128,31 @@ input::-webkit-input-placeholder {
 input:-moz-placeholder {
 	color: #bbb;
 }
+
+select{
+  width: 398px;
+	height: 40px;
+	border: 1px solid #000;
+	outline: none;
+	font-family: 'PT Sans Caption', Arial,  sans-serif;
+	color: #000;
+	font-size: 14px;
+	line-height: 37px;
+	padding-left: 13px;
+
+     
+}
+/*.droplist option:hover{
+    padding:5px 12px 4px 34px;
+ margin:1px;
+ background-color:#484A47;
+ display:block;
+ color:#FFF;
+ text-decoration:none;
+ font-size:12px;
+ background-repeat:no-repeat;
+ background-position: 10px 3px
+}*/
 textarea {
 	width: 398px;
 	height: 100px;
