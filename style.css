@@ -26,16 +26,6 @@
 html {
 	box-sizing: border-box;
 }
-@font-face {
-    font-family: 'pf_beausans_probold';
-    src: url('./fonts/pfbeausanspro-bold-webfont.eot');
-    src: url('./fonts/pfbeausanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/pfbeausanspro-bold-webfont.woff2') format('woff2'),
-         url('./fonts/pfbeausanspro-bold-webfont.woff') format('woff'),
-         url('./fonts/pfbeausanspro-bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 body {
 	font-family: 'PT Sans Caption', Arial,  sans-serif;
 	color: #444;
@@ -46,20 +36,16 @@ h1 {
 	color: #000;
 	font-size: 36px;
 	font-family: 'pf_beausans_problack', Arial,  sans-serif;
-    font-family: 'pf_beausans_problack';
 }
 h2 {
 	color: #000;
 	font-size: 24px;
 	font-family: 'pf_beausans_probold', Arial,  sans-serif;
-    font-family: 'pf_beausans_probold';
 }
 h3 {
 	color: #000;
 	font-weight: bold;
 	font-size: 18px;
-	font-family: 'pf_beausans_probold', Arial,  sans-serif;
-    font-family: 'pf_beausans_probold';
 }
 ul li {
 	list-style-type: none;
