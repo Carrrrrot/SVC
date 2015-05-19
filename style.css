@@ -91,7 +91,6 @@ input::-webkit-input-placeholder {
 input:-moz-placeholder {
 	color: #bbb;
 }
-
 select{
   width: 398px;
 	height: 40px;
@@ -102,10 +101,7 @@ select{
 	font-size: 14px;
 	line-height: 37px;
 	padding-left: 13px;
-
-     
 }
-/* ZAIKIN: Custom grid BEGIN */
 .row {
 	margin-right: -10px;
   	margin-left: -10px;
@@ -153,19 +149,6 @@ select{
 .col-1 {
   	width: 60px;
 }
-/* ZAIKIN: Custom grid END */
-
-/*.droplist option:hover{
-    padding:5px 12px 4px 34px;
- margin:1px;
- background-color:#484A47;
- display:block;
- color:#FFF;
- text-decoration:none;
- font-size:12px;
- background-repeat:no-repeat;
- background-position: 10px 3px
-}*/
 textarea {
 	width: 398px;
 	height: 100px;
