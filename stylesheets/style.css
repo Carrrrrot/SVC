@@ -165,6 +165,11 @@ select{
 	font-size: 14px;
 	line-height: 37px;
 	padding-left: 13px;
+<<<<<<< HEAD:stylesheets/style.css
+=======
+
+     
+>>>>>>> 265c16fba38827a9f05aee70ffb256bf56024163:style.css
 }
 textarea {
 	width: 398px;
@@ -290,6 +295,41 @@ textarea:focus {
 	transition-duration: 0.4s;
 	transition-timing-function: ease;
 }
+<<<<<<< HEAD:stylesheets/style.css
+=======
+li:before { 
+	content: counters(item, ".") ". "; 
+	counter-increment: item; 
+}
+/* TEACHER INFO BEGIN */
+.teacher-info__block {
+	display: inline-block;
+	margin-right: 100px;
+	width: 250px;
+	height: auto;
+}
+.teacher-info__link {
+	display: block;
+	border-bottom: 3px solid #000;
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.teacher-info__link:hover,
+.teacher-info__link:focus,
+.teacher-info__link:active,
+.teacher-info__link:visited {
+	text-decoration: none;
+}
+.teacher-info__link:hover,
+.teacher-info__link:focus,
+.teacher-info__link:active {
+	border-bottom: 3px solid #00bfa5;
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+>>>>>>> 265c16fba38827a9f05aee70ffb256bf56024163:style.css
 .teacher-info__title {
 	font-size: 18px;
 	color: #000;
@@ -305,4 +345,8 @@ textarea:focus {
 .teacher-info__desc {
 	margin-top: 12px; 
 }
+<<<<<<< HEAD:stylesheets/style.css
 /* TEACHER INFO END */
+=======
+/* TEACHER INFO END */
+>>>>>>> 265c16fba38827a9f05aee70ffb256bf56024163:style.css
