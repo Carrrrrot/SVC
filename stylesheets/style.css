@@ -262,3 +262,47 @@ textarea:focus {
 .button-green:active {
 	background: #00695c;
 }
+/* TEACHER INFO BEGIN */
+.teacher-info__block {
+	display: inline-block;
+	margin-right: 100px;
+	width: 250px;
+	height: auto;
+}
+.teacher-info__link {
+	display: block;
+	border-bottom: 3px solid #000;
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.teacher-info__link:hover,
+.teacher-info__link:focus,
+.teacher-info__link:active,
+.teacher-info__link:visited {
+	text-decoration: none;
+}
+.teacher-info__link:hover,
+.teacher-info__link:focus,
+.teacher-info__link:active {
+	border-bottom: 3px solid #00bfa5;
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.teacher-info__title {
+	font-size: 18px;
+	color: #000;
+	margin: 102px 0 34px 0;
+}
+.teacher-info__name {
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	color: #000;
+	margin: 14px 0 5px 0;
+}
+.teacher-info__desc {
+	margin-top: 12px; 
+}
+/* TEACHER INFO END */
