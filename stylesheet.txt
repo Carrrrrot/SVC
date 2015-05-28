@@ -1,0 +1,281 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-behance-active {
+    width: 26px;
+    height: 16px;
+    background-position: -4px -4px;
+}
+
+.sprite-behance-normal {
+    width: 26px;
+    height: 16px;
+    background-position: -38px -4px;
+}
+
+.sprite-check-box {
+    width: 10px;
+    height: 8px;
+    background-position: -72px -4px;
+}
+
+.sprite-check-box-ok {
+    width: 16px;
+    height: 16px;
+    background-position: -90px -4px;
+}
+
+.sprite-check-radio {
+    width: 8px;
+    height: 8px;
+    background-position: -114px -4px;
+}
+
+.sprite-checkbox-checked {
+    width: 18px;
+    height: 18px;
+    background-position: -130px -4px;
+}
+
+.sprite-checkbox-unchecked {
+    width: 18px;
+    height: 18px;
+    background-position: -156px -4px;
+}
+
+.sprite-facebook-active {
+    width: 8px;
+    height: 22px;
+    background-position: -182px -4px;
+}
+
+.sprite-facebook-normal {
+    width: 8px;
+    height: 18px;
+    background-position: -198px -4px;
+}
+
+.sprite-footer-behance {
+    width: 26px;
+    height: 16px;
+    background-position: -214px -4px;
+}
+
+.sprite-footer-facebook {
+    width: 11px;
+    height: 20px;
+    background-position: -248px -4px;
+}
+
+.sprite-footer-logo {
+    width: 143px;
+    height: 54px;
+    background-position: -4px -30px;
+}
+
+.sprite-footer-vimeo {
+    width: 15px;
+    height: 12px;
+    background-position: -267px -4px;
+}
+
+.sprite-h1-underline {
+    width: 150px;
+    height: 5px;
+    background-position: -4px -92px;
+}
+
+.sprite-h2-underline {
+    width: 150px;
+    height: 3px;
+    background-position: -4px -105px;
+}
+
+.sprite-hint-icon {
+    width: 20px;
+    height: 20px;
+    background-position: -267px -24px;
+}
+
+.sprite-hint-icon-hover {
+    width: 20px;
+    height: 20px;
+    background-position: -155px -52px;
+}
+
+.sprite-input-error {
+    width: 10px;
+    height: 10px;
+    background-position: -183px -52px;
+}
+
+.sprite-input-ok {
+    width: 15px;
+    height: 11px;
+    background-position: -201px -52px;
+}
+
+.sprite-list-marker {
+    width: 6px;
+    height: 6px;
+    background-position: -224px -52px;
+}
+
+.sprite-logo-active {
+    width: 140px;
+    height: 54px;
+    background-position: -4px -116px;
+}
+
+.sprite-logo-normal {
+    width: 140px;
+    height: 53px;
+    background-position: -152px -116px;
+}
+
+.sprite-main-slider-next-arrw {
+    width: 44px;
+    height: 95px;
+    background-position: -152px -177px;
+}
+
+.sprite-main-slider-next-arrw-active {
+    width: 44px;
+    height: 95px;
+    background-position: -204px -177px;
+}
+
+.sprite-main-slider-prew-arrw {
+    width: 44px;
+    height: 95px;
+    background-position: -295px -4px;
+}
+
+.sprite-main-slider-prew-arrw-active {
+    width: 44px;
+    height: 95px;
+    background-position: -300px -107px;
+}
+
+.sprite-modal-bag-ico {
+    width: 16px;
+    height: 13px;
+    background-position: -4px -210px;
+}
+
+.sprite-modal-clock-ico {
+    width: 15px;
+    height: 14px;
+    background-position: -28px -210px;
+}
+
+.sprite-modal-close {
+    width: 36px;
+    height: 36px;
+    background-position: -51px -210px;
+}
+
+.sprite-modal-close-active {
+    width: 36px;
+    height: 36px;
+    background-position: -95px -210px;
+}
+
+.sprite-modal-close-hover {
+    width: 36px;
+    height: 36px;
+    background-position: -256px -210px;
+}
+
+.sprite-modal-hat-ico {
+    width: 20px;
+    height: 12px;
+    background-position: -300px -210px;
+}
+
+.sprite-notification-close-black {
+    width: 10px;
+    height: 10px;
+    background-position: -328px -210px;
+}
+
+.sprite-notification-close-white {
+    width: 10px;
+    height: 10px;
+    background-position: -328px -228px;
+}
+
+.sprite-notification-error {
+    width: 16px;
+    height: 16px;
+    background-position: -4px -246px;
+}
+
+.sprite-notification-info {
+    width: 16px;
+    height: 16px;
+    background-position: -300px -246px;
+}
+
+.sprite-notification-success {
+    width: 16px;
+    height: 16px;
+    background-position: -324px -246px;
+}
+
+.sprite-portfolio-slider-next-arrw {
+    width: 36px;
+    height: 70px;
+    background-position: -4px -270px;
+}
+
+.sprite-portfolio-slider-next-arrw-active {
+    width: 36px;
+    height: 70px;
+    background-position: -48px -270px;
+}
+
+.sprite-portfolio-slider-prew-arrw {
+    width: 36px;
+    height: 70px;
+    background-position: -92px -270px;
+}
+
+.sprite-portfolio-slider-prew-arrw-active {
+    width: 36px;
+    height: 70px;
+    background-position: -256px -270px;
+}
+
+.sprite-radio-off {
+    width: 18px;
+    height: 18px;
+    background-position: -300px -270px;
+}
+
+.sprite-radio-on {
+    width: 18px;
+    height: 18px;
+    background-position: -326px -270px;
+}
+
+.sprite-vimeo {
+    width: 14px;
+    height: 12px;
+    background-position: -28px -246px;
+}
+
+.sprite-vimeo-active {
+    width: 14px;
+    height: 12px;
+    background-position: -136px -296px;
+}
+
+.sprite-vimeo-normal {
+    width: 14px;
+    height: 12px;
+    background-position: -158px -296px;
+}
