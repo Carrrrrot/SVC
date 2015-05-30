@@ -47,36 +47,42 @@
 		                <div class="button-white">Button</div><br>
 		                <div class="button-red">Button</div><br>
 		                <div class="button-green">Button</div><br>  
-                        <form action="#">
+                      <form action="#">
                         	<h3>Чекбоксы и радио кнопки //</h3>
+                        <div class="field-checkbox">
                            <p>
+                           <input type="checkbox" class="check1" checked>
                            <label class="check-label">
-                           <input type="checkbox">
-                           <span></span>Я согласен с условиями
+                           Я согласен с условиями
                            </label>
                            </p>
+                        </div>
+                        <div class="field-checkbox">
                            <p>
+                           <input type="checkbox" class="check1">
                            <label class="check-label">
-                           <input type="checkbox">
-                           <span></span>Я не согласен с условиями, потому что они не справедливы
+                           Я не согласен с условиями, потому что они не справедливы
+                           </label>
+                           </p>
+                        </div>
+                        <div class="field-radio">
+                           <p>
+                           <input type="radio" name="group" checked>
+                           <label class="radio-label">
+                           Я согласен
+                           </label>
+                           </p>
+                        </div>
+                           <p>
+                           <input  type="radio" name="group">
+                           <label class="radio-label">
+                           Нет
                            </label>
                            </p>
                            <p>
+                           <input type="radio" name="group">
                            <label class="radio-label">
-                           <input type="radio">
-                           <span></span>Я согласен
-                           </label>
-                           </p>
-                           <p>
-                           <label class="radio-label">
-                           <input  type="radio">
-                            <span></span>Нет
-                           </label>
-                           </p>
-                           <p>
-                           <label class="radio-label">
-                           <input type="radio">
-                           <span></span>Не знаю
+                           Не знаю
                            </label>
                            </p>
                        </form>
@@ -102,7 +108,7 @@
                     </div> 
                </div>
                <div class='row'>
-               	   	<div class='col-12'>
+               	   <div class='col-6'>
 		               <form>
 			                <h3>Уведомления//</h3>
 			                <div class="notification alert-box-success">
@@ -122,23 +128,17 @@
 		                </form>
                     </div> 
                </div>
-               <div class='row'>
-               	 <div class='col-3'>
-               	<h3>Работы выпускников //</h3>
-
-               	    </div>
                </div>
-            </div>
-        </div>    	
-    		<div class="container">
+            </div>   	
+    	    <div class="container">
     			<div class='row clearfix'>
     	    </div>
 			   <div class="row">
 			    	<div class="col-12">
 			    		<div class="teacher-info__title"><h3>Кратко о преподавателе //</h3></div>   	
 			    	</div>
-			    </div>
-			    <div class="row">
+			   </div>
+			   <div class="row">
 			    	<div class="col-12">
 			    		<div class="teacher-info__block">
 				    		<a href="#" class="teacher-info__link">
@@ -159,8 +159,98 @@
 				    		</div>
 				    	</div>	    		
 			    	</div>
-			    </div>
-			</div>
+			   </div>
+			 <div class="row">
+			    	<div class="col-12">
+			    		<div class="teacher-info__title"><h3>Работы выпускников //</h3></div>   	
+			      </div>
+			 </div>
+			<div class='row'>
+               <div class='col-12'>
+               	 	   <div class="image-container">
+               	 			<a href="#">
+               	 				<img src="1.jpg" alt="Editorial design" width="296" height="230">
+               	 			</a>
+               	 			<a href="https://www.behance.net/gallery/19981873/Editorial-design-By-Olya-Karaseva" class="behance.icon"></a>
+               	 	   
+               	 	     <a href="http://svc.com.ua/long-courses/graficheskij-dizajn-masterskij/">Графический дизайн: мастерский</a><BR>
+               	 	     <span> Автор: Ольга Карасева</span>
+               	 	   </div>
+               	 	   <div class="image-container">
+               	 			<a href="#">
+               	 				<img src="2.jpg" alt="Illustration" width="296" height="230">
+               	 			</a>
+               	 			<a href="https://www.behance.net/gallery/18100173/Illustration-By-Lina-Iakobchuk" class="behance.icon"></a>
+               	 	   
+               	 	      <a href="http://svc.com.ua/long-courses/graficheskij-dizajn-bazovyj/">Графический дизайн: базовый</a><BR>
+               	 	      <span> Автор: Лина Якобчук</span>
+               	 	   </div>
+               	 	  <div class="image-container" id="last">
+               	 	    <div>
+               	 			<a href="#">
+               	 				<img src="3.png" alt="Editorial design" width="296" height="230">
+               	 			</a>
+               	 			<a href="https://www.behance.net/gallery/17751075/Bespoke-Lettering-Students-practices-" class="behance.icon"></a></div>
+               	 	     <a href="http://svc.com.ua/long-courses/graficheskij-dizajn-bazovyj/">Графический дизайн: базовый</a><BR>
+               	 	     <span> Автор: студенты курса</span>
+               	 	  </div>
+               </div>
+            </div>
+		</div>
+	<div class="pageWrapper">
+      <footer>
+      	<div class="container">
+      		<div class="row">
+            <div class="footer-nav">
+              <div class="col-3">
+      				<img class="footer-logo" src="png/footer-logo.png">
+      				<p>© SVC 2015 <BR>Все права защищены</p>
+      			  </div>
+              <nav>
+                <div class="col-2">
+                <ul class="footer-ul">
+                  <li><a href="#">О школе</a></li>
+                  <li><a href="#">Проекты</a></li>
+                  <li><a href="#">Выпускники</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="#">Преподаватели</a></li>
+                  <li><a href="#">Афиша</a></li>
+                </ul>
+               </div>
+               <div class="col-3">
+               <ul class="footer-ul" >
+                  <li><a href="#">Курсы</a></li>
+                  <li><a href="#">Интенсивы</a></li>
+                  <li><a href="#">Воркшопы</a></li>
+                  <li><a href="#">Образование за рубежом</a></li>
+                  <li><a href="#">Дизайн-путешествия</a></li>
+               </ul>
+               </div>
+               <div class="col-3">
+                <ul class="footer-ul" >
+                  <li><a href="#">Контакты</a></li>
+                  <li><h3>E-mail</h3><li>
+                  <li><p>info@svc.com.ua<br>
+                  (для обращений по всем<br>
+                  вопросам)</p></li>
+                  <li><h3>Телефоны</h3></li>
+                  <li><p>+380  44  360 45 40<br>
+                  +380  44  272 27 29</p></li>
+                </ul>
+              </div>
+              <div class="col-1" id="foooticons">
+                <div class="breaking-web">
+                <div class="socicons">
+                <a href="https://www.behance.net/svcportfolio" title="Behance" class="footer-behance"></a>
+                <a href="https://www.facebook.com/SVCKiev" title="Facebook" class="footer-facebook"></a>
+                <a href="https://vimeo.com/svcvideo/" title="Vimeo" class="footer-vimeo"></a></div>
+              </div>
+              </nav>
+           </div>	
+         </div>
+      	</div>
+      </footer>
+    </div>
 	<script type="text/javascript" src="script.js"></script>
    </body>
 </html>
