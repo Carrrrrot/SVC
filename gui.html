@@ -5,7 +5,7 @@
 		<title>GUI SVC</title>
 		<link rel="stylesheet" href="./normalize.css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+		<link href="//fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet" type="text/css">
 	</head>
     <body>
     	<div class="pageWrapper">
@@ -55,74 +55,63 @@
 				</nav>
 			</div>
 		    <div class="container">		
-				<div class="row clearfix">
+			   <div class="row clearfix">
 					<div class="col-9">
 		               <h1>Заголовок первого уровня //</h1>
-		           </div> 
-		           <div class="col-3" style="text-align: right;">
+		            </div> 
+		            <div class="col-3" style="text-align: right;">
 						<a href="#" class="button-black" style="margin: 10px 0;">Button</a><br>
 		                <a href="#" class="button-white" style="margin: 10px 0;">Button</a><br>
 		                <a href="#" class="button-red" style="margin: 10px 0;">Button</a><br>
 		                <a href="#" class="button-green" style="margin: 10px 0;">Button</a><br>
-		           </div>
-		        </div>     
-		        <div class='row clearfix'>
-		            <div class='col-5'> 	
+		            </div>
+		       </div>     
+		       <div class="row clearfix">
+		            <div class="col-5"> 	
 		                <h2>Заголовок второго уровня и маркированные списки//</h2>
 		                <ul>
 			                <li>Идентификация и популяризация<br> украинского дизайна и современного искусства через призму актуальных образовательных процессов;</li>
 			                <li>Влияние на развитие профессиональных областей, интеграция украинского дизайна и современного искусства в международную креативную среду.</li>
 		                </ul>
 		            </div>
-	                <div class='col-5'>
-		             <h2>Заголовок второго уровня и нумерованные списки//</h2>
-		             <ol>
+                    <div class="col-5">
+		              <h2>Заголовок второго уровня и нумерованные списки//</h2>
+		              <ol>
 			             <li><a href="#">Образовательные концепции</a> разработаны под актуальные запросы украинской креативной индустрии.</li>
 			             <li>В школе действует <a href="#">Программа преподавательской подготовки</a>, помогающая практикам эффективно передавать свой опыт студентам.</li>
 			             <ol>
 			         	 <li>Образовательная, проектная и исследовательская деятельность школы синхронизирована с профильными программами ведущих зарубежных институций.</li>
 			             </ol>
-		             </ol>
+		              </ol>
 	               </div>
-	               <div class="col-2">
-	               </div>
-                </div>
-                <div class='row clearfix'>
-                    <div class='col-9'>
+               </div>
+               <div class="row clearfix">
+                    <div class="col-9">
 		                <h3>Третий уровень PT Sans Caption Bold 18 px //</h3>
 				        <p>School of Visual Communication предлагает лучшим студентам подать заявку и принять участие в серии международных воркшопов в рамках Фестиваля плаката и графического дизайна в Шомоне, во Франции (Chaumont Graphic Design Festival).</p>
 				        <p>С 24 по 30 мая в Шомоне пройдут воркшопы от практиков графического дизайна со всего мира. Каждый воркшоп будет посвящен работе над различными дизайн-проектами (шрифты, плакаты, журналы, навигация, и т.п.), результаты которых будут выставлены на финальной экспозиции фестиваля, а также – получат оценку от известных практиков дизайн-индустрии.</p>
 				    </div>
-				    <div class="col-3">
-				    </div>
-				</div>
-               <div class='row clearfix'>
-                    <div class='col-5'>
-                        	<h3>Чекбоксы и радио кнопки //</h3>
-                        <div class="field-checkbox">
-                           <p>
-                           <input type="checkbox" class="check1" checked>
-                           <label class="check-label">
-                           Я согласен с условиями
-                           </label>
-                           </p>
-                        </div>
-                        <div class="field-checkbox">
-                           <p>
-                           <input type="checkbox" class="check1">
+		       </div>
+               <div class="row clearfix">
+                    <div class="col-5">
+                       <h3>Чекбоксы и радио кнопки //</h3>
+                       <div class="checkbox">
+                           <input type="checkbox">
+                           <label class="check-label">Я согласен с условиями</label>
+                       </div>
+                        <div class="checkbox">
+                           <input type="checkbox">
                            <label class="check-label">
                            Я не согласен с условиями, потому что они не справедливы
                            </label>
-                           </p>
                         </div>
                         <div class="field-radio">
                            <p>
-                           <input type="radio" name="group" checked>
+                           <input type="radio" name="group" >
                            <label class="radio-label">
                            Я согласен
                            </label>
                            </p>
-                        </div>
                            <p>
                            <input  type="radio" name="group">
                            <label class="radio-label">
@@ -135,29 +124,30 @@
                            Не знаю
                            </label>
                            </p>
+	                   </div>
 	                </div>
-                    <div class='col-7'>
+                    <div class="col-7">
                     	<h3>Поля ввода //</h3>
 		                <form>
-			                 <label>Введите адрес электронной почты</label><br>
-			                 <input type="email" placeholder="E-mail:"><br><br>
-			                 <label>Введите текст без ошибок</label><br>
-			                 <input class="disabled-input" type="text" placeholder="Поле не доступно" disabled><br><br>
-			                 <label>Введите текст без ошибок</label><br>
-			                 <input class="validation-failed" type="text" value="С кем не бывает..."><br><br>
-			                 <label>Введите текст без ошибок</label><br>
-			                 <textarea>Привет!</textarea>
+			                <label>Введите адрес электронной почты</label><br>
+			                <input type="email" placeholder="E-mail:"><br><br>
+			                <label>Введите текст без ошибок</label><br>
+			                <input class="disabled-input" type="text" placeholder="Поле не доступно" disabled><br><br>
+			                <label>Введите текст без ошибок</label><br>
+			                <input class="validation-failed" type="text" value="С кем не бывает..."><br><br>
+			                <label>Введите текст без ошибок</label><br>
+			                <textarea>Привет!</textarea>
 		                </form>
 		                <select class="droplist">
-		                     <option class="choice">Выбери меня</option>
-		                     <option class="choice2">Выбери меня</option>
-		                     <option class="choice3">Выбери меня</option>
-		                     <option class="choice4">Выбери меня</option>  
+		                   <option class="choice">Выбери меня</option>
+		                   <option class="choice2">Выбери меня</option>
+		                   <option class="choice3">Выбери меня</option>
+		                   <option class="choice4">Выбери меня</option>  
 		                </select>
                     </div> 
                </div>
-               <div class='row clearfix'>
-               	   	<div class='col-6'>
+               <div class="row clearfix">
+               	   	<div class="col-6">
 		               <form>
 			                <h3>Уведомления//</h3>
 			                <div class="notification alert-box-success">
@@ -170,24 +160,18 @@
 			                <a href="#" class="close">
 			                <span></span></a>Ошибка
 			                </div><BR>
-                      <div class="notification alert-box-info">
-                      <i class="notification-info"></i>
-                      <a href="#" class="close-b"><span></span></a>Предупреждение
-                      </div><BR>
-		                </form>
+                            <div class="notification alert-box-info">
+                            <i class="notification-info"></i>
+                            <a href="#" class="close-b"><span></span></a>Предупреждение</div><BR>
+		               </form>
                     </div> 
-               	</div>	
-    	    <div class="container">
-    			<div class='row clearfix'>
-    	    </div>
+               </div>	
 			   <div class="row clearfix">
 			    	<div class="col-12">
 			    		<div class="block-title"><h3>Кратко о преподавателе //</h3></div>   	
 			    	</div>
 			   </div>
-			   <div class="row">
-			    </div>
-			    <div class="row clearfix">
+			   <div class="row clearfix">
 			    	<div class="col-12">
 			    		<div class="teacher-info__block">
 				    		<a href="#" class="teacher-info__link">
@@ -209,12 +193,12 @@
 				    	</div>	    		
 			    	</div>
 			   </div>
-			    <div class="row clearfix">
+			   <div class="row clearfix">
 			    	<div class="col-12">
 			    		<div class="block-title"><h3>Событие //</h3></div>   	
 			    	</div>
-			    </div>
-			    <div class="row clearfix" style="margin-top: ">
+			   </div>
+			   <div class="row clearfix" style="margin-top: ">
 			    	<div class="col-5">
 			    		<img src="./images/event-img.jpg" width="320" height="320" alt="Кристина Соломуха" class="event-img">
 			    	</div>
@@ -228,13 +212,13 @@
 							<a href="#" class="button-green">Подробнее</a>
 			    		</div>
 			    	</div>
-			    </div>
-			    <div class="row clearfix">
+			   </div>
+			   <div class="row clearfix">
 			    	<div class="col-12">
 			    		<div class="block-title"><h3>Список курсов //</h3></div>   	
 			    	</div>
-			    </div>
-			    <div class="row clearfix">
+			   </div>
+			   <div class="row clearfix">
 			    	<div class="col-12">
 			    		<div class="courses-list__block">
 				    		<a href="#" class="courses-list__link">
@@ -282,101 +266,90 @@
 				    		</div>
 				    	</div>		    		
 			    	</div>
-			    </div>
-			</div>
-		    <div class='row'>
-               <div class='col-12'>
-			    		<h3>Работы выпускников //</h3>   	
-			      </div>
-			 </div>
-			<div class='row'>
-               <div class='col-12'>
-               	 	   <div class="image-container">
-               	 			<a href="#">
-               	 				<img src="1.jpg" alt="Editorial design" width="296" height="230">
-               	 			</a>
-               	 			<a href="https://www.behance.net/gallery/19981873/Editorial-design-By-Olya-Karaseva" class="behance.icon"></a>
-               	 	   
-               	 	     <a href="http://svc.com.ua/long-courses/graficheskij-dizajn-masterskij/">Графический дизайн: мастерский</a><BR>
-               	 	     <span> Автор: Ольга Карасева</span>
-               	 	   </div>
-               	 	   <div class="image-container">
-               	 			<a href="#">
-               	 				<img src="2.jpg" alt="Illustration" width="296" height="230">
-               	 			</a>
-               	 			<a href="https://www.behance.net/gallery/18100173/Illustration-By-Lina-Iakobchuk" class="behance.icon"></a>
-               	 	   
-               	 	      <a href="http://svc.com.ua/long-courses/graficheskij-dizajn-bazovyj/">Графический дизайн: базовый</a><BR>
-               	 	      <span> Автор: Лина Якобчук</span>
-               	 	   </div>
-               	 	  <div class="image-container" id="last">
-               	 	    <div>
-               	 			<a href="#">
-               	 				<img src="3.png" alt="Editorial design" width="296" height="230">
-               	 			</a>
-               	 			<a href="https://www.behance.net/gallery/17751075/Bespoke-Lettering-Students-practices-" class="behance.icon"></a></div>
-               	 	     <a href="http://svc.com.ua/long-courses/graficheskij-dizajn-bazovyj/">Графический дизайн: базовый</a><BR>
-               	 	     <span> Автор: студенты курса</span>
-               	 	  </div>
-               </div>
-            </div>
+			   </div>
+			   <div class="row clearfix">
+                  <div class="col-12">
+                  		<h3>Работы выпускников //</h3>   
+               	 	   		<div class="image-container">
+               	 				<a href="#">
+               	 					<img src="./images/1.jpg" alt="Editorial design" width="296" height="230">
+               	 				</a>
+               	 				<a href="https://www.behance.net/gallery/19981873/Editorial-design-By-Olya-Karaseva" class="behance-icon"></a>
+               	 	     		<a href="http://svc.com.ua/long-courses/graficheskij-dizajn-masterskij/">Графический дизайн: мастерский</a><br>
+               	 	    	    <span> Автор: Ольга Карасева</span>
+               	 	   		</div>
+               	 	   		<div class="image-container">
+               	 				<a href="#">
+               	 					<img src="./images/2.jpg" alt="Illustration" width="296" height="230">
+               	 				</a>
+               	 				<a href="https://www.behance.net/gallery/18100173/Illustration-By-Lina-Iakobchuk" class="behance-icon"></a>
+               	 	      		<a href="http://svc.com.ua/long-courses/graficheskij-dizajn-bazovyj/">Графический дизайн: базовый</a><br>
+               	 	     		<span> Автор: Лина Якобчук</span>
+               	 	  		</div>
+               	 	        <div class="image-container" id="last">
+               	 				<a href="#">
+               	 					<img src="./images/3.png" alt="Editorial design" width="296" height="230">
+               	 				</a>
+               	 				<a href="https://www.behance.net/gallery/17751075/Bespoke-Lettering-Students-practices-" class="behance-icon"></a>
+               	 	     		<a href="http://svc.com.ua/long-courses/graficheskij-dizajn-bazovyj/">Графический дизайн: базовый</a><br>
+               	 	     		<span> Автор: студенты курса</span>
+                   		   </div>
+               	  </div>
+		       </div>
+		   </div>
 		</div>
-	<div class="pageWrapper">
-      <footer>
-      	<div class="container">
-      		<div class="row">
-            <div class="footer-nav">
-              <div class="col-3">
-      				<img class="footer-logo" src="png/footer-logo.png">
-      				<p>© SVC 2015 <BR>Все права защищены</p>
-      			  </div>
-              <nav>
-                <div class="col-2">
-                <ul class="footer-ul">
-                  <li><a href="#">О школе</a></li>
-                  <li><a href="#">Проекты</a></li>
-                  <li><a href="#">Выпускники</a></li>
-                  <li><a href="#">Вакансии</a></li>
-                  <li><a href="#">Преподаватели</a></li>
-                  <li><a href="#">Афиша</a></li>
-                </ul>
-               </div>
-               <div class="col-3">
-               <ul class="footer-ul" >
-                  <li><a href="#">Курсы</a></li>
-                  <li><a href="#">Интенсивы</a></li>
-                  <li><a href="#">Воркшопы</a></li>
-                  <li><a href="#">Образование за рубежом</a></li>
-                  <li><a href="#">Дизайн-путешествия</a></li>
-               </ul>
-               </div>
-               <div class="col-3">
-                <ul class="footer-ul" >
-                  <li><a href="#">Контакты</a></li>
-                  <li><h3>E-mail</h3><li>
-                  <li><p>info@svc.com.ua<br>
-                  (для обращений по всем<br>
-                  вопросам)</p></li>
-                  <li><h3>Телефоны</h3></li>
-                  <li><p>+380  44  360 45 40<br>
-                  +380  44  272 27 29</p></li>
-                </ul>
-              </div>
-              <div class="col-1" id="foooticons">
-                <div class="breaking-web"></div>
-                <div class="socicons">
-                <a href="https://www.behance.net/svcportfolio" title="Behance" class="footer-behance"></a>
-                <a href="https://www.facebook.com/SVCKiev" title="Facebook" class="footer-facebook"></a>
-                <a href="https://vimeo.com/svcvideo/" title="Vimeo" class="footer-vimeo"></a></div>
-              </div>
-          </div>
-              </nav>
-           </div>	
-         </div>
-      	</div>
-      </footer>
-    </div>
-</div>
+	    <div class="pageWrapper">
+           	<footer>
+      	       	<div class="container">
+      		       	<div class="row clearfix">
+                       	<div class="col-3">
+      				      <img class="footer-logo" src="png/footer-logo.png" alt="SVC">
+      				      <p>© SVC 2015 <BR>Все права защищены</p>
+      			       	</div>
+                    	<div class="col-2">
+							<ul class="footer-ul">
+                            <li><a href="#">О школе</a></li>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Выпускники</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Преподаватели</a></li>
+                            <li><a href="#">Афиша</a></li>
+                            </ul>
+                       	</div>
+                       	<div class="col-3">
+                           	<ul class="footer-ul" >
+                               	<li><a href="#">Курсы</a></li>
+                                <li><a href="#">Интенсивы</a></li>
+                                <li><a href="#">Воркшопы</a></li>
+                                <li><a href="#">Образование за рубежом</a></li>
+                                <li><a href="#">Дизайн-путешествия</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul class="footer-ul" >
+                            <li><a href="#">Контакты</a></li>
+                            <li><h3>E-mail</h3><li>
+                            <li><p>info@svc.com.ua<br>
+                            (для обращений по всем<br>
+                            вопросам)</p></li>
+                            <li><h3>Телефоны</h3></li>
+                            <li><p>+380  44  360 45 40<br>
+                            +380  44  272 27 29</p></li>
+                            </ul>
+                        </div>
+                        <div class="col-1" id="footicons">
+                            <div class="breaking-web"></div>
+                            <div class="socicons">
+                                <a href="https://www.behance.net/svcportfolio" title="Behance" class="footer-behance"></a>
+                                <a href="https://www.facebook.com/SVCKiev" title="Facebook" class="footer-facebook"></a>
+                                <a href="https://vimeo.com/svcvideo/" title="Vimeo" class="footer-vimeo"></a>
+                            </div>
+                        </div>
+                    </div>	
+                </div>
+            </footer>
+        </div>
+      </div> 
 	<script type="text/javascript" src="script.js"></script>
    </body>
 </html>
