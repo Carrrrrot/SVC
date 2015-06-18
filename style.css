@@ -794,10 +794,11 @@ footer h3{
 	display: block;
 	border-bottom: 3px solid #000;
 	margin-bottom: 5px;
-	transition-property: border-bottom;
-	transition-duration: 0.4s;
-	transition-timing-function: ease;
 }
+
+/*Info_desk*/
+
+
 .courses-list__link:hover,
 .courses-list__link:focus,
 .courses-list__link:active,
@@ -835,5 +836,159 @@ footer h3{
 	font-weight: bold;
 	color: #212121;
 	line-height: 28px;
+}
+
+/*Info_desk*/
+
+.events_info_title{
+	font-size: 18px;
+	color: #000;
+	margin: 102px 0 34px 0;
+
+}
+
+
+.events_info_block {
+	display: inline-block;
+	margin-right: 100px;
+	width: 250px;
+	height: auto;
+
+
+
+
+
+}
+.inside_info {
+	display: block;
+	border-bottom: 3px solid #232323;
+
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+
+table{
+	width:250px;
+	padding:0px;
+	color:#444;
+	margin-left: -3px;
+
+}
+tr{
+	text-align: right;
+
+}
+th{
+	text-align: left;
+}
+
+.inside_info:hover,
+.inside_info:focus,
+.inside_info:active,
+.inside_info:visited {
+	text-decoration: none;
+}
+
+.events_info_block :hover,
+.events_info_block :focus,
+.events_info_block :active{
+	background-color:  #d9f3f0;
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+	text-decoration: none;
+
+}
+
+.events_info_block a:hover,
+.events_info_block a:focus,
+.events_info_block a:active{
+	
+	text-decoration: none;
+
+
+}
+.inside_info span{
+	color: #000;
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 14px 0 5px 0;
+
+}
+.events_info_img{
+	display: block;
+}
+
+
+/*End of infodesk*/
+
+
+.afisha_menu a{
+	
+  color:black;
+  
+}
+.afisha_element img{
+	margin-bottom: 21px;
+}
+
+
+.afisha_element_description{
+	border-bottom: 3px solid black;
+
+}
+.afisha_element_description span{
+	font-weight: bold;
+
+	
+}
+
+
+.afisha_element{
+	margin: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+	height: auto;
+	width: 252px;
+	height: 418px;
+}
+.span_name{
+	margin-bottom: 11px;
+}
+
+.afisha_element_hover{
+	width:276px;
+	height:452px;
+	padding-top:17px;
+	padding-bottom: 17px; 
+
+}
+
+.header_afisha{
+
+	
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.afisha_element_hover:hover,
+.afisha_element_hover:focus,
+.afisha_element_hover:active {
+
+	background-color:  #d9f3f0;
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+	text-decoration: none;
+
+}
+td{
+	font-weight: bold;
+}
+th{
+	font-weight: normal;
 }
 
