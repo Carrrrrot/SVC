@@ -615,11 +615,6 @@ li:before {
 	background: none;
 	padding: 0;
 }
-.sub-menu li.current {
-	font-size: 18px;
-	color: #00bfa5;
-	font-weight: bold;
-}
 .sub-menu li a {
 	font-size: 18px;
 	color: #fff;
