@@ -157,6 +157,10 @@ h1:after {
     background-position: -158px -35px;
     margin-top: 22px;
 }
+.afisha h1:after{
+	display: none;
+
+}
 h2 {
 	color: #000;
 	font-size: 24px;
@@ -396,9 +400,6 @@ input[type="checkbox"] {
     position: absolute;
     background-repeat: no-repeat;
     opacity: 0;
-   	transition-property: opacity
-	transition-duration: 0.4s;
-	transition-timing-function: linear;
 }
 .radio-label:before {
 	content: "";
@@ -1010,7 +1011,9 @@ th{
 
 
 /*End of infodesk*/
-
+.afisha_menu{
+	float: right;
+}
 
 .afisha_menu a{
 	
