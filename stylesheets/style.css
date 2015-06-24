@@ -20,14 +20,6 @@
     font-style: normal;
 }
 
-/**/
-.collapse {
-	display: none;
-}
-.collapse.in {
-  display: block;
-}
-/**/
 *, 
 *:before, 
 *:after {
@@ -55,6 +47,7 @@ body {
 .container {
 	width: 940px;
 	margin: 0 auto;
+	outline: 1px solid red;
 }
 .sprite {
     background-image: url("../images/sprite.png");
@@ -1065,3 +1058,136 @@ th{
 	font-weight: normal;
 }
 
+/*========== ABOUT SCHOOL BEGIN ==========*/
+.top-section {
+	height: 100%;
+	position: relative;
+	background: url(../images/about-school/about-school-background.jpg) no-repeat center top;
+}
+.top-section h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 67px; 
+}
+.top-section .slogan {
+	font-family: "pf_beausans_pro", Arial,  sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	color: #000;
+	text-transform: uppercase;
+  	line-height: 63px;
+  	margin-top: 81px;
+}
+.top-section .title {
+	display: inline-block;
+	margin-bottom: 31px;
+	font-family: "pf_beausans_pro", Arial,  sans-serif;
+	font-weight: 600;
+	font-size: 48px;
+	color: #000;
+	letter-spacing: -1px;
+}
+.top-section .bold-txt {
+	font-size: 36px;
+}
+.top-section .scroll-btn {
+	margin-top: 63px;
+	padding-bottom: 20px;
+}
+.top-section .scroll-btn a {
+	display: block;
+	margin: 0 auto;
+	background: url(../images/scroll-down-btn.png) no-repeat center;
+	height: 44px;
+	width: 95px;
+	transition-property: background;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.top-section .scroll-btn a:hover,
+.top-section .scroll-btn a:focus {
+	background: url(../images/scroll-down-btn-hover.png) no-repeat center;
+	transition-property: background;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.top-section .scroll-btn a:active {
+	background: url(../images/scroll-down-btn-active.png) no-repeat center;
+}
+.main-section .info-block {
+	margin-top: 48px; 
+}
+.main-section .info-block li {
+	list-style: none;
+	padding: 0;
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 46px;
+}
+.main-section .info-block li:before {
+	content: none;
+}
+.main-section .info-block li a {
+	color: #000;
+	position: relative;
+}
+.main-section .info-block li a:hover,
+.main-section .info-block li a:focus {
+	text-decoration: none;
+}
+.main-section .info-block .active {
+	font-weight: bold;
+}
+.main-section .info-block .active a:after {
+	content: ' ';
+	background: url(../images/active-tab-after.png) no-repeat center;
+	width: 10px;
+	height: 13px;
+	position: absolute;
+	top: 5px;
+  	right: -20px;
+}
+.main-section .tab-content {
+	margin-top: 60px;
+}
+.main-section .tab-pane {
+	color: #000;
+}
+.main-section h1 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 85px;
+}
+.main-section .study-directions span {
+	font-size: 18px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 13px;
+  	display: inline-block;	
+}
+.main-section .study-directions .info {
+	max-width: 230px;
+	line-height: 19px;
+}
+.main-section .study-directions .button-white {
+	margin-top: 35px;
+}
+.main-section .carousel {
+	width: 1300px;
+	margin: 0 auto;
+}
+.main-section .carousel-inner .item {
+	text-align: center;
+}
+.main-section .left.carousel-control {
+	width: 64px;
+  	height: 600px;
+    background: url(../images/school-prew-slide.png) no-repeat center;
+}
+.main-section .right.carousel-control {
+	width: 64px;
+  	height: 600px;
+    background: url(../images/school-next-slide.png) no-repeat center;
+}
+/*========== ABOUT SCHOOL END ==========*/
