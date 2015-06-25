@@ -818,6 +818,9 @@ footer h3 {
 .event-info {
 	margin-left: -12px;
 }
+.events-date{
+	margin-top: 25px;
+}
 .event-info .date {
 	margin-top: -7px;
 	font-family: "Open Sans", Arial,  sans-serif;
@@ -832,7 +835,8 @@ footer h3 {
 	float: right;
 	margin-top: 17px;
 }
-p.event-date{
+.events-date p{
+	margin-right: -11px;
 	float: right;
 }
 .event-block{

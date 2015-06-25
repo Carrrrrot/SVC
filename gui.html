@@ -132,13 +132,13 @@
 		                <form>
 			                <label>Введите адрес электронной почты</label><br>
 			                <input type="email" placeholder="E-mail:">
-			                 <a class="tooltips" href="#" data-toggle="tooltip" title="Введите ваш e-mail" data-placement="right"></a><br><br>
+			                 <a class="tooltips" href="#" rel="tooltip" data-toggle="tooltip" title="Введите ваш e-mail" data-placement="right"></a><br><br>
 			                <label>Введите текст без ошибок</label><br>
 			                <input class="disabled-input" type="text" placeholder="Поле не доступно" disabled>
-			                <a class="tooltips" href="#" data-toggle="tooltip" title="Tooltip on right" data-placement="right"></a><br><br>
+			                <a class="tooltips" href="#" rel="tooltip" data-toggle="tooltip" title="Введите текст" data-placement="right"></a><br><br>
 			                <label>Введите текст без ошибок</label><br>
 			                <input class="validation-failed" type="text" value="С кем не бывает...">
-			                <a class="tooltips" href="#" data-toggle="tooltip"  title="Tooltip on right" data-placement="right"></a><br><br>
+			                <a class="tooltips" href="#" rel="tooltip" data-toggle="tooltip"  title="Введите текст" data-placement="right"></a><br><br>
 			                <label>Введите текст без ошибок</label><br>
 			                <textarea>Привет!</textarea>
 		                </form>
@@ -156,15 +156,15 @@
 			                <h3>Уведомления//</h3>
 			                <div class="notification alert-box-success">
 				                <i class="notification-success"></i>
-				                <a href="#" class="close"><span></span></a>Уведомление
+				                <a href="#" data-dismiss="alert" class="close"><span></span></a>Уведомление
 			                </div>
 			                <div class="notification alert-box-error">
 				                <i class="notification-error"></i>
-				                <a href="#" class="close"><span></span></a>Ошибка
+				                <a href="#" data-dismiss="alert" class="close"><span></span></a>Ошибка
 			                </div>
                             <div class="notification alert-box-info">
 	                            <i class="notification-info"></i>
-	                            <a href="#" class="close-b"><span></span></a>Предупреждение
+	                            <a href="#" data-dismiss="alert" class="close-b"><span></span></a>Предупреждение
                         	</div>
 		               </form>
                     </div> 
@@ -356,6 +356,7 @@
 	<script type="text/javascript" src="./js/bootstrap-transition.js"></script>
 	<script type="text/javascript" src="./js/bootstrap-collapse.js"></script>
     <script type="text/javascript" src="./js/bootstrap-tooltips.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-alert.js"></script>
 	<script type="text/javascript" src="./js/main.js"></script>
    </body>
 </html>
