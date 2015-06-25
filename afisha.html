@@ -9,17 +9,18 @@
 	</head>
 
 	<body>
-		<div class="row clearfix">
+		  	<div class="container">
+	    		<div class="row">
 	    			<div class="header">
 		    			<a href="#" class="logotype sprite"><span class="logotype-txt">svc.com.ua</span></a>
 			    		<div class="col-12">
 			    			<nav class="header-menu">
 			    				<ul>
-			    					<li class="header-menu__item"><a href="#"><span class="italic-txt">о</span> школе ▾</a></li>
-			    					<li class="header-menu__item"><a href="#">обучение ▾</a></li>
-			    					<li class="header-menu__item"><a href="#">преподаватели</a></li>
-			    					<li class="header-menu__item"><a href="#">афиша</a></li>
-			    					<li class="header-menu__item"><a href="#">контакты</a></li>
+			    					<li><a href="#collapseSchool" class="dropdown" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSchool"><span class="italic-txt">о</span> школе</a></li>
+			    					<li><a href="#collapseCourses" class="dropdown" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCourses">обучение</a></li>
+			    					<li><a href="#">преподаватели</a></li>
+			    					<li><a href="#">афиша</a></li>
+			    					<li><a href="#">контакты</a></li>
 			    				</ul>
 			    			</nav>		
 			    		</div>
@@ -34,30 +35,24 @@
 
 		<div class='container'>
 
-		<div class='header_afisha' style='margin-left:12px'>
-			<div class='row clearfix' >
-				<div class='col-4'>
-					<h1>АФИША//</h1>
-				</div>	
-
-				<div class='col-4'>
-				</div>
-				<div class='col-4'>
+		<div class='row clearfix' >
+				<div class="col-3" style="margin-bottom:60px">
+     				<h1 class="afisha">АФИША //</h1>
+     		    </div>
+     		    <div class="col-9" style="margin-top:30px">
 					<div class='afisha_menu'>
-					<a href="">все/</a>
-					<a href="">дизайн/</a>
-					<a href="">медиа/</a>
-					<a href="">арт</a>
-				</div>
+					   <a href="">все/</a>
+					   <a href="">дизайн/</a>
+					   <a href="">медиа/</a>
+					   <a href="">арт</a>
+				    </div>
 				</div>
 			</div>
-		
-		</div>
 		<div class='afisha_content'>
 			<div class='row clearfix' style='padding-bottom:50px'>
 				<div class='col-4'>
 					<div class='afisha_element_hover'>
-						<a href="#">
+						<a href="#" class = "afisha_link">
 					<div class='afisha_element'>
 						<img src="./images/extreme.png" class="events_info_img" width="250" height="250" alt="Extreme teritories">
 						<div class='afisha_element_description'>
@@ -75,6 +70,7 @@
 				</div>
 				<div class='col-4'>
 					<div class='afisha_element_hover'>
+						<a href="#" class = "afisha_link">
 					<div class='afisha_element'>
 						<img src="./images/event-img.jpg" class="events_info_img" width="250" height="250" alt="Открытая встреча с художницей Соломухиной">
 						<div class='afisha_element_description'>
@@ -86,11 +82,13 @@
    									<tr><th>Цена:</th><td>Вход свободный</td></tr>
 			    						</table>
 					</div>
+				</a>
 				</div>
 					
 				</div>
 				<div class='col-4'>
 					<div class='afisha_element_hover'>
+						<a href="#" class = "afisha_link">
 					<div class='afisha_element'>
 						<img src="./images/dnk.png" class="events_info_img" width="250" height="250" alt="Днк веб-дизайна">
 						<div class='afisha_element_description'>
@@ -102,6 +100,7 @@
    									<tr><th>Цена:</th><td>Вход свободный</td></tr>
 			    						</table>
 					</div>
+				</a>
 				</div>
 					
 				</div>
@@ -109,6 +108,7 @@
 			<div class='row clearfix' style='padding-bottom:50px'>
 				<div class='col-4'>
 					<div class='afisha_element_hover'>
+						<a href="#" class = "afisha_link">
 					<div class='afisha_element'>
 						<img src="./images/webdesign.png" class="events_info_img" width="250" height="250" alt="Extreme teritories">
 						<div class='afisha_element_description'>
@@ -120,11 +120,13 @@
    									<tr><th>Цена:</th><td>Вход свободный</td></tr>
 			    						</table>
 					</div>
+				</a>
 				</div>
 
 				</div>
 				<div class='col-4'>
 					<div class='afisha_element_hover'>
+						<a href="#" class = "afisha_link">
 					<div class='afisha_element'>
 						<img src="./images/videoinstalation.png" class="events_info_img" width="250" height="250" alt="Видеоинсталяция">
 						<div class='afisha_element_description'>
@@ -136,11 +138,13 @@
    									<tr><th>Цена:</th><td>Вход свободный</td></tr>
 			    						</table>
 					</div>
+				</a>
 				</div>
 					
 				</div>
 				<div class='col-4'>
 					<div class='afisha_element_hover'>
+						<a href="#" class = "afisha_link">
 					<div class='afisha_element'>
 						<img src="./images/horse.png" class="events_info_img" width="250" height="250" alt="Gif-анимация">
 						<div class='afisha_element_description'>
@@ -152,6 +156,7 @@
    									<tr><th>Цена:</th><td>Вход свободный</td></tr>
 			    						</table>
 					</div>
+				</a>
 				</div>
 					
 				</div>
@@ -159,6 +164,7 @@
 			<div class='row clearfix'>
 				<div class='col-4'>
 					<div class='afisha_element_hover'>
+						<a href="#" class = "afisha_link">
 					<div class='afisha_element'>
 						<img src="./images/superhero.png" class="events_info_img" width="250" height="250" alt="Extreme teritories">
 						<div class='afisha_element_description'>
@@ -170,11 +176,13 @@
    									<tr><th>Цена:</th><td>Вход свободный</td></tr>
 			    						</table>
 					</div>
+				</a>
 				</div>
 
 				</div>
 				<div class='col-4'>
 					<div class='afisha_element_hover'>
+						<a href="#" class = "afisha_link">
 					<div class='afisha_element'>
 						<img src="./images/scetch.png" class="events_info_img" width="250" height="250" alt="Открытая встреча с художницей Соломухиной">
 						<div class='afisha_element_description'>
@@ -186,11 +194,13 @@
    									<tr><th>Цена:</th><td>Вход свободный</td></tr>
 			    						</table>
 					</div>
+				</a>
 				</div>
 					
 				</div>
 				<div class='col-4'>
 					<div class='afisha_element_hover'>
+						<a href="#" class = "afisha_link">
 					<div class='afisha_element'>
 						<img src="./images/fastdrawing.png" class="events_info_img" width="250" height="250" alt="Днк веб-дизайна">
 						<div class='afisha_element_description'>
@@ -202,11 +212,63 @@
    									<tr><th>Цена:</th><td>Вход свободный</td></tr>
 			    						</table>
 					</div>
+				</a>
 				</div>
 					
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="page-wrapper">
+           	<footer>
+      	       	<div class="container">
+      		       	<div class="row">
+                       	<div class="col-3">
+      				      <img class="footer-logo" src="./images/png/footer-logo.png" alt="SVC">
+      				      <p>© SVC 2015 <BR>Все права защищены</p>
+      			       	</div>
+                    	<div class="col-2">
+							<ul class="footer-ul">
+                            <li><a href="#">О школе</a></li>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Выпускники</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Преподаватели</a></li>
+                            <li><a href="#">Афиша</a></li>
+                            </ul>
+                       	</div>
+                       	<div class="col-3">
+                           	<ul class="footer-ul" >
+                               	<li><a href="#">Курсы</a></li>
+                                <li><a href="#">Интенсивы</a></li>
+                                <li><a href="#">Воркшопы</a></li>
+                                <li><a href="#">Образование за рубежом</a></li>
+                                <li><a href="#">Дизайн-путешествия</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul class="footer-ul" >
+                            <li><a href="#">Контакты</a></li>
+                            <li><h3>E-mail</h3><li>
+                            <li><p>info@svc.com.ua<br>
+                            (для обращений по всем<br>
+                            вопросам)</p></li>
+                            <li><h3>Телефоны</h3></li>
+                            <li><p>+380  44  360 45 40<br>
+                            +380  44  272 27 29</p></li>
+                            </ul>
+                        </div>
+                        <div class="col-1" id="footicons">
+                            <div class="breaking-web"></div>
+                            <div class="socicons">
+                                <a href="https://www.behance.net/svcportfolio" title="Behance" class="footer-behance"></a>
+                                <a href="https://www.facebook.com/SVCKiev" title="Facebook" class="footer-facebook"></a>
+                                <a href="https://vimeo.com/svcvideo/" title="Vimeo" class="footer-vimeo"></a>
+                            </div>
+                        </div>
+                    </div>	
+                </div>
+            </footer>
+        </div>
 	</body>
 	</html>

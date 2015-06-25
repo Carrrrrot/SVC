@@ -929,6 +929,17 @@ footer h3 {
 	border-bottom: 3px solid #000;
 	margin-bottom: 5px;
 }
+/*Events*/
+
+  .afisha_link{
+    color: black; 
+    text-decoration: none;
+   }
+   .afisha_link:visited {
+    color: black; /* Цвет посещенных ссылок */
+    text-decoration: none;
+   }
+   
 
 /*Info_desk*/
 
@@ -1129,6 +1140,16 @@ td{
 }
 th{
 	font-weight: normal;
+}
+
+/*Вакансии*/
+
+.rabota_date{
+	color:#d6d6d6;
+	font-weight: lighter;
+}
+.rabota_title{
+	margin-top: 48px;
 }
 
 /*========== ABOUT SCHOOL BEGIN ==========*/
