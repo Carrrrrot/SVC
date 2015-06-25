@@ -9,6 +9,9 @@
 		<link rel="stylesheet" type="text/css" href="./stylesheets/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="./stylesheets/gui.css">
 		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" media="all" href="/stylesheets/selectize.css">
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/selectize.js"></script>
 	</head>
     <body>
     	<div class="page-wrapper">
@@ -142,12 +145,14 @@
 			                <label>Введите текст без ошибок</label><br>
 			                <textarea>Привет!</textarea>
 		                </form>
-		                <select class="droplist">
-		                   <option class="choice">Выбери меня</option>
-		                   <option class="choice2">Выбери меня</option>
-		                   <option class="choice3">Выбери меня</option>
-		                   <option class="choice4">Выбери меня</option>  
-		                </select>
+		                <label for="subject">Выпадающий список</label>
+     					 <select class="subject">
+       					 <option value="1">Выбери меня</option>
+        				 <option value="2">Выбери меня</option>
+        				<option value="3">Выбери меня</option>
+       					 <option value="5">Меня!</option>
+       					 <option value="4">Меня</option>
+     					 </select>
                     </div> 
                </div>
                <div class="row">
@@ -429,6 +434,12 @@
                 </div>
             </footer>
         </div>
+        <script>
+        $('.subject').selectize({
+    	create: true,
+    	sortField: 'text'
+		});
+        </script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap-transition.js"></script>
 	<script type="text/javascript" src="./js/bootstrap-collapse.js"></script>
