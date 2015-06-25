@@ -265,6 +265,117 @@ textarea:focus {
 	border: 1px solid #f50057;
 	color: #f50057;
 }
+
+/*Tooltips begin*/
+a.tooltips {
+    content: "";
+	width: 20px;
+    height: 20px;
+    background-position: -251px -5px;
+    background-image: url("../images/sprite.png");
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+a.tooltips:hover{
+    width: 20px;
+    height: 20px;
+    background-position: -281px -5px;
+    background-image: url("../images/sprite.png");
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 12px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: transparent;
+  border-style: solid;
+}
+.tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #777;
+}
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #777;
+}
+.tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #777;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
+}
+/*Tooltips end*/
+
+
 .validation-failed:focus {
 	border: 1px solid #f50057;
 }
@@ -396,20 +507,14 @@ input[type="checkbox"] {
 	content: "";
     border: solid 1px #000;
     border-radius: 50%;
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
     display: inline-block;
     line-height: 18px;
     margin: -15px 10px -3px 0;
     cursor: pointer;
 }
 .field-radio input:checked+label:before{
-	border: solid 1px #000;
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    line-height: 18px;
     margin: -15px 10px -3px 0;
     cursor: pointer;
 	background-image: url("../images/png/check-radio.png");
@@ -431,6 +536,10 @@ li:before {
 	content: counters(item, ".") ". "; 
 	counter-increment: item; 
 }
+
+
+/*NOTIFICATION BEGIN*/
+
 .notification {
 	position: relative;
 	display: block;
@@ -508,6 +617,8 @@ li:before {
     bottom: 20px;
     cursor: pointer;
 }
+
+/*NOTIFICATION END*/
 
 /*HEADER BEGIN*/
 .italic-txt {
