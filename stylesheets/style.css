@@ -22,23 +22,12 @@
 .notification {
 	margin: 10px 0;
 }
-/*TEMPORARY CSS END*/
-/**/
 .selectize-input.items{
-	  border: 1px solid black;
-  border-radius: 0px;
-  width: 320px;
-  height: 41px;
-  
+	border: 1px solid black;
+    border-radius: 0px;
+    width: 320px;
+    height: 41px;
 }
-
-.collapse {
-	display: none;
-}
-.collapse.in {
-  display: block;
-}
-/**/
 *,
 *:before,
 *:after {
@@ -148,7 +137,6 @@ h1:after {
 }
 .afisha h1:after{
 	display: none;
-
 }
 h2 {
 	color: #000;
@@ -1001,52 +989,38 @@ footer h3 {
 	font-size: 18px;
 	color: #000;
 	margin: 102px 0 34px 0;
-
 }
-
-
 .events_info_block {
 	display: inline-block;
 	margin-right: 100px;
 	width: 250px;
 	height: auto;
-
-
-
-
-
 }
 .inside_info {
 	display: block;
 	border-bottom: 3px solid #232323;
-
 	transition-property: border-bottom;
 	transition-duration: 0.4s;
 	transition-timing-function: ease;
 }
-
 table{
 	width:250px;
 	padding:0px;
 	color:#444;
 	margin-left: -3px;
-
 }
 tr{
 	text-align: right;
-
 }
 th{
 	text-align: left;
 }
-
 .inside_info:hover,
 .inside_info:focus,
 .inside_info:active,
 .inside_info:visited {
 	text-decoration: none;
 }
-
 .events_info_block :hover,
 .events_info_block :focus,
 .events_info_block :active{
@@ -1055,16 +1029,11 @@ th{
 	transition-duration: 0.4s;
 	transition-timing-function: ease;
 	text-decoration: none;
-
 }
-
 .events_info_block a:hover,
 .events_info_block a:focus,
 .events_info_block a:active{
-
 	text-decoration: none;
-
-
 }
 .inside_info span{
 	color: #000;
@@ -1072,48 +1041,30 @@ th{
 	font-weight: bold;
 	font-size: 18px;
 	margin: 14px 0 5px 0;
-
 }
-
-
-
-
 .events_info_img{
 	display: block;
 }
-
 .container_afisha_strings{
 	margin-top: 81px;
 	margin-left: 14px;
 }
-
-
 /*End of infodesk*/
 .afisha_menu{
 	float: right;
 }
-
 .afisha_menu a{
-
   color:black;
-
 }
 .afisha_element img{
 	margin-bottom: 21px;
 }
-
-
 .afisha_element_description{
 	border-bottom: 3px solid black;
-
 }
 .afisha_element_description span{
 	font-weight: bold;
-
-
 }
-
-
 .afisha_element{
 	margin: auto;
 	margin-bottom: auto;
@@ -1122,40 +1073,29 @@ th{
 	width: 252px;
 	height: 418px;
 }
-
 .afisha_name{
 	font-size:18px;
 	margin-bottom: 11px;
 	text-decoration: none;
 }
-
 .afisha_element_hover{
 	width:276px;
 	height:452px;
 	padding-top:17px;
 	padding-bottom: 17px;
-
 }
-
 .header_afisha{
-
-
 	margin-left: auto;
 	margin-right: auto;
-
 }
-
-
 .afisha_element_hover:hover,
 .afisha_element_hover:focus,
 .afisha_element_hover:active {
-
 	background-color:  #d9f3f0;
 	transition-property: border-bottom;
 	transition-duration: 0.4s;
 	transition-timing-function: ease;
 	text-decoration: none;
-
 }
 td{
 	font-weight: bold;
@@ -1163,11 +1103,7 @@ td{
 th{
 	font-weight: normal;
 }
-
-<<<<<<< HEAD
-=======
 /*Вакансии*/
-
 .rabota_date{
 	color:#d6d6d6;
 	font-weight: lighter;
