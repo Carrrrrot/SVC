@@ -266,6 +266,7 @@ a.tooltips:hover{
 }
 
 .tooltip {
+	
   position: absolute;
   z-index: 1070;
   display: block;
@@ -313,46 +314,7 @@ a.tooltips:hover{
   border-width: 0 5px 5px;
   border-bottom-color: #777;
 }
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.pull-right {
-  float: right !important;
-}
-.pull-left {
-  float: left !important;
-}
-.hide {
-  display: none !important;
-}
-.show {
-  display: block !important;
-}
-.invisible {
-  visibility: hidden;
-}
-.text-hide {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-.hidden {
-  display: none !important;
-}
-.affix {
-  position: fixed;
+
 }
 /*Tooltips end*/
 
