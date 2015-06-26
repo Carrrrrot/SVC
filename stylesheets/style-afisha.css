@@ -173,7 +173,7 @@ li:after {
 	margin-right: 10px;
 }
 a {
-	color: #05c0a7;
+	color: #427e74;
 	text-decoration: none;
 }
 a:hover,
@@ -845,128 +845,6 @@ footer h3 {
 .events_info_img{
 	margin-top: 20px;
 	margin-bottom: 20px;
-}
-/*EVENT BLOCK END*/
-
-/*COURSES LIST BEGIN*/
-.courses-list {
-	display: inline-block;
-	margin-right: 90px;
-	width: 250px;
-	height: auto;
-	vertical-align: top;
-	margin-bottom: 80px;
-}
-.courses-list:last-child {
-	margin: 0;
-}
-.courses-list a {
-	display: block;
-	border-bottom: 3px solid #000;
-	margin-bottom: 5px;
-}
-
-/*Info_desk*/
-
-.courses-list a:visited,
-.courses-list a:hover,
-.courses-list a:focus,
-.courses-list a:active {
-	text-decoration: none;
-}
-.courses-list a:hover,
-.courses-list a:focus,
-.courses-list a:active {
-	border-bottom: 3px solid #00bfa5;
-	transition-property: border-bottom;
-	transition-duration: 0.4s;
-	transition-timing-function: ease;
-}
-.courses-list .name {
-	display: block;
-	font-weight: bold;
-	font-size: 18px;
-	color: #000;
-	margin: 14px 0 5px 0;
-}
-.courses-list .start {
-	display: inline-block;
-	width: 75px;
-}
-.courses-list .length {
-	display: inline-block;
-	width: 105px;
-}
-.courses-list .price {
-	display: inline-block;
-}
-.courses-info .description {
-	font-family: "PT Sans Caption", Arial,  sans-serif;
-	font-weight: bold;
-	color: #212121;
-	line-height: 28px;
-}
-
-/*Info_desk*/
-
-.events_info_title{
-	font-size: 18px;
-	color: #000;
-	margin: 102px 0 34px 0;
-
-}
-
-
-.events_info_block {
-	display: inline-block;
-	margin-right: 100px;
-	width: 250px;
-	height: auto;
-
-
-
-
-
-}
-.inside_info {
-	display: block;
-	border-bottom: 3px solid #232323;
-
-	transition-property: border-bottom;
-	transition-duration: 0.4s;
-	transition-timing-function: ease;
-}
-
-table{
-	width:250px;
-	padding:0px;
-	color:#444;
-	margin-left: -3px;
-
-}
-tr{
-	text-align: right;
-
-}
-th{
-	text-align: left;
-}
-
-.inside_info:hover,
-.inside_info:focus,
-.inside_info:active,
-.inside_info:visited {
-	text-decoration: none;
-}
-
-.events_info_block :hover,
-.events_info_block :focus,
-.events_info_block :active{
-	background-color:  #d9f3f0;
-	transition-property: border-bottom;
-	transition-duration: 0.4s;
-	transition-timing-function: ease;
-	text-decoration: none;
 
 }
 
@@ -976,14 +854,6 @@ th{
 
 	text-decoration: none;
 
-
-}
-.inside_info span{
-	color: #000;
-	display: block;
-	font-weight: bold;
-	font-size: 18px;
-	margin: 14px 0 5px 0;
 
 }
 .events_info_img{
@@ -1002,6 +872,7 @@ th{
 }
 .afisha_element_hover p:hover{
     text-decoration: none;
+    cursor: none;
 
 }
 
