@@ -430,6 +430,18 @@
     	sortField: 'text'
 		});
         </script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+             $("#lightGallery").lightGallery();
+          });
+       </script>
+       <script type="text/javascript">
+          $(document).ready(function() {
+                var gallery = $("#lightGallery").lightGallery();
+                gallery.isActive(); //check active state of lightGallery;
+                gallery.destroy();  //to destroy the plugin on the given element.
+            });
+    </script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap-transition.js"></script>
 	<script type="text/javascript" src="./js/bootstrap-collapse.js"></script>
