@@ -29,7 +29,7 @@
 	display: block;
 }
 .notification {
-	margin: 10px 0;	
+	margin: 10px 0;
 }
 /*TEMPORARY CSS END*/
 /**/
@@ -40,8 +40,8 @@
   display: block;
 }
 /**/
-*, 
-*:before, 
+*,
+*:before,
 *:after {
 	box-sizing: inherit;
 }
@@ -77,17 +77,17 @@ body {
 	margin-right: -10px;
   	margin-left: -10px;
 }
-.col-1, 
-.col-2, 
-.col-3, 
-.col-4, 
-.col-5, 
-.col-6, 
-.col-7, 
-.col-8, 
-.col-9, 
-.col-10, 
-.col-11, 
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
 .col-12 {
 	position: relative;
   	margin-right: 10px;
@@ -173,7 +173,7 @@ li:after {
 	margin-right: 10px;
 }
 a {
-	color: #05c0a7;
+	color: #427e74;
 	text-decoration: none;
 }
 a:hover,
@@ -397,15 +397,15 @@ input[type="checkbox"] {
 	background-color: #ddd;
 }
 
-ol { 
-	counter-reset: item; 
+ol {
+	counter-reset: item;
 }
-li { 
-	display: block; 
+li {
+	display: block;
 }
-li:before { 
-	content: counters(item, ".") ". "; 
-	counter-increment: item; 
+li:before {
+	content: counters(item, ".") ". ";
+	counter-increment: item;
 }
 .notification {
 	position: relative;
@@ -699,7 +699,7 @@ li:before {
 	margin: 14px 0 5px 0;
 }
 .teacher-info .description {
-	margin-top: 12px; 
+	margin-top: 12px;
 }
 /* TEACHER INFO END */
 
@@ -748,7 +748,7 @@ footer {
 footer ul li:before {
 	display: none;
     content: none;
-    line-height: 20px; 
+    line-height: 20px;
     float: left;
     padding-left: 0;
 }
@@ -793,7 +793,7 @@ footer h3 {
     width: 13px;
     height: 22px;
     background-position: -205px -5px;
-    display: inline-block;	
+    display: inline-block;
     margin-right: 8px;
 }
 .footer-vimeo {
@@ -818,6 +818,9 @@ footer h3 {
 .event-info {
 	margin-left: -12px;
 }
+.events-date{
+	margin-top: 25px;
+}
 .event-info .date {
 	margin-top: -7px;
 	font-family: "Open Sans", Arial,  sans-serif;
@@ -832,7 +835,8 @@ footer h3 {
 	float: right;
 	margin-top: 17px;
 }
-p.event-date{
+.events-date p{
+	margin-right: -11px;
 	float: right;
 }
 .event-block{
@@ -841,214 +845,19 @@ p.event-date{
 .events_info_img{
 	margin-top: 20px;
 	margin-bottom: 20px;
-}
-/*EVENT BLOCK END*/
-
-/*COURSES LIST BEGIN*/
-.courses-list {
-	display: inline-block;
-	margin-right: 90px;
-	width: 250px;
-	height: auto;
-	vertical-align: top;
-	margin-bottom: 80px;
-}
-.courses-list:last-child {
-	margin: 0;
-}
-.courses-list a {
-	display: block;
-	border-bottom: 3px solid #000;
-	margin-bottom: 5px;
-}
-
-/*Info_desk*/
-
-.courses-list a:visited,
-.courses-list a:hover,
-.courses-list a:focus,
-.courses-list a:active {
-	text-decoration: none;
-}
-.courses-list a:hover,
-.courses-list a:focus,
-.courses-list a:active {
-	border-bottom: 3px solid #00bfa5;
-	transition-property: border-bottom;
-	transition-duration: 0.4s;
-	transition-timing-function: ease;
-}
-.courses-list .name {
-	display: block;
-	font-weight: bold;
-	font-size: 18px;
-	color: #000;
-	margin: 14px 0 5px 0;
-}
-.courses-list .start {
-	display: inline-block;
-	width: 75px;
-}
-.courses-list .length {
-	display: inline-block;
-	width: 105px;
-}
-.courses-list .price {
-	display: inline-block;
-}
-.courses-info .description {
-	font-family: "PT Sans Caption", Arial,  sans-serif;
-	font-weight: bold;
-	color: #212121;
-	line-height: 28px;
-}
-
-/*Info_desk*/
-
-.events_info_title{
-	font-size: 18px;
-	color: #000;
-	margin: 102px 0 34px 0;
-
-}
-
-
-.events_info_block {
-	display: inline-block;
-	margin-right: 100px;
-	width: 250px;
-	height: auto;
-
-
-
-
-
-}
-.inside_info {
-	display: block;
-	border-bottom: 3px solid #232323;
-
-	transition-property: border-bottom;
-	transition-duration: 0.4s;
-	transition-timing-function: ease;
-}
-
-table{
-	width:250px;
-	padding:0px;
-	color:#444;
-	margin-left: -3px;
-
-}
-tr{
-	text-align: right;
-
-}
-th{
-	text-align: left;
-}
-
-.inside_info:hover,
-.inside_info:focus,
-.inside_info:active,
-.inside_info:visited {
-	text-decoration: none;
-}
-
-.events_info_block :hover,
-.events_info_block :focus,
-.events_info_block :active{
-	background-color:  #d9f3f0;
-	transition-property: border-bottom;
-	transition-duration: 0.4s;
-	transition-timing-function: ease;
-	text-decoration: none;
 
 }
 
 .events_info_block a:hover,
 .events_info_block a:focus,
 .events_info_block a:active{
-	
+
 	text-decoration: none;
 
-
-}
-.inside_info span{
-	color: #000;
-	display: block;
-	font-weight: bold;
-	font-size: 18px;
-	margin: 14px 0 5px 0;
 
 }
 .events_info_img{
 	display: block;
-}
-
-/*End of infodesk*/
-.afisha_menu{
-	float: right;
-}
-
-.afisha_menu a{
-  	font-size: 18px;
-    color:black;
-  
-}
-.afisha_element img{
-	margin-bottom: 21px;
-}
-
-
-.afisha_element_description{
-	border-bottom: 3px solid black;
-
-}
-.afisha_element_description span{
-	font-weight: bold;
-
-	
-}
-
-
-.afisha_element{
-	margin: auto;
-	margin-bottom: auto;
-	margin-top: auto;
-	height: auto;
-	width: 252px;
-	height: 418px;
-}
-.span_name{
-	margin-bottom: 11px;
-}
-
-.afisha_element_hover{
-	width:276px;
-	height:452px;
-	padding-top:17px;
-	padding-bottom: 17px; 
-
-}
-
-.header_afisha{
-
-	
-	margin-left: auto;
-	margin-right: auto;
-
-}
-
-.afisha_element_hover:hover,
-.afisha_element_hover:focus,
-.afisha_element_hover:active {
-
-	background-color:  #d9f3f0;
-	transition-property: border-bottom;
-	transition-duration: 0.4s;
-	transition-timing-function: ease;
-	text-decoration: none;
 
 }
 td{
@@ -1057,6 +866,37 @@ td{
 th{
 	font-weight: normal;
 }
-.list.row:nth-child(odd){
-	background: #ebebeb;
+.afisha_element_hover{
+    width:100%;
+    height:100px;
+}
+.afisha_element_hover p:hover{
+    text-decoration: none;
+    cursor: none;
+
+}
+
+.afisha_element_hover:hover,
+.afisha_element_hover:focus,
+.afisha_element_hover:active {
+
+    background-color:  #daf6f2;
+    transition-property: border-bottom;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    text-decoration: none;
+}
+.afisha_link{
+    color: black;
+    text-decoration: none;
+}
+.afisha_link:visited {
+    color: black; /* Цвет посещенных ссылок */
+    text-decoration: none;
+}
+.afisha_menu a {
+    color: black;
+}
+.afisha_menu{
+    float: right;
 }

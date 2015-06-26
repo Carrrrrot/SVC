@@ -19,17 +19,8 @@
     font-weight: 600;
     font-style: normal;
 }
-
-/*TEMPORARY CSS BEGIN*/
-.button-black,
-.button-white,
-.button-red,
-.button-green {
-	margin: 10px 0;
-	display: block;
-}
 .notification {
-	margin: 10px 0;	
+	margin: 10px 0;
 }
 /*TEMPORARY CSS END*/
 /**/
@@ -40,8 +31,8 @@
   display: block;
 }
 /**/
-*, 
-*:before, 
+*,
+*:before,
 *:after {
 	box-sizing: inherit;
 }
@@ -77,17 +68,17 @@ body {
 	margin-right: -10px;
   	margin-left: -10px;
 }
-.col-1, 
-.col-2, 
-.col-3, 
-.col-4, 
-.col-5, 
-.col-6, 
-.col-7, 
-.col-8, 
-.col-9, 
-.col-10, 
-.col-11, 
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
 .col-12 {
 	position: relative;
   	margin-right: 10px;
@@ -265,6 +256,8 @@ textarea:focus {
 	border: 1px solid #f50057;
 	color: #f50057;
 }
+
+/*Tooltips begin*/
 a.tooltips {
     content: "";
 	width: 20px;
@@ -281,36 +274,55 @@ a.tooltips:hover{
     background-position: -281px -5px;
     background-image: url("../images/sprite.png");
 }
-a.tooltips span {
+
+.tooltip.right {
+  margin-left: 20px;
+  padding: 0 5px;
+  border: 1px solid #777;
+  margin-top: -8px;
+
+}
+.tooltip {
   position: absolute;
-  width:140px;
-  color: #FFFFFF;
-  background: #000000;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  visibility: hidden;
-  border-radius: 6px;
+  z-index: 1070;
+  display: block;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 12px;
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
-a.tooltips span:after {
-  content: '';
+.tooltip-arrow {
   position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -8px;
-  width: 0; height: 0;
-  border-top: 8px solid #000000;
-  border-right: 8px solid transparent;
-  border-left: 8px solid transparent;
+  width: 10px;
+  height: 10px;
+  border-color: transparent;
+  border-style: solid;
 }
-a:hover.tooltips span {
-  visibility: visible;
-  opacity: 0.8;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -76px;
-  z-index: 999;
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
+.tooltip.right .tooltip-arrow {
+  left: 0;
+  margin-top: 3px;
+  margin-left: -10px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #777;
+
+}
+/*Tooltips end*/
+
 .validation-failed:focus {
 	border: 1px solid #f50057;
 }
@@ -461,16 +473,21 @@ input[type="checkbox"] {
 	background-color: #ddd;
 }
 
-ol { 
-	counter-reset: item; 
+ol {
+	counter-reset: item;
 }
-li { 
-	display: block; 
+li {
+	display: block;
 }
-li:before { 
-	content: counters(item, ".") ". "; 
-	counter-increment: item; 
+li:before {
+	content: counters(item, ".") ". ";
+	counter-increment: item;
 }
+
+
+
+/*NOTIFICATION BEGIN*/
+
 .notification {
 	position: relative;
 	display: block;
@@ -548,6 +565,8 @@ li:before {
     bottom: 20px;
     cursor: pointer;
 }
+
+/*NOTIFICATION END*/
 
 /*HEADER BEGIN*/
 .italic-txt {
@@ -763,7 +782,7 @@ li:before {
 	margin: 14px 0 5px 0;
 }
 .teacher-info .description {
-	margin-top: 12px; 
+	margin-top: 12px;
 }
 /* TEACHER INFO END */
 
@@ -812,7 +831,7 @@ footer {
 footer ul li:before {
 	display: none;
     content: none;
-    line-height: 20px; 
+    line-height: 20px;
     float: left;
     padding-left: 0;
 }
@@ -857,7 +876,7 @@ footer h3 {
     width: 13px;
     height: 22px;
     background-position: -205px -5px;
-    display: inline-block;	
+    display: inline-block;
     margin-right: 8px;
 }
 .footer-vimeo {
@@ -915,6 +934,17 @@ footer h3 {
 	border-bottom: 3px solid #000;
 	margin-bottom: 5px;
 }
+/*Events*/
+
+  .afisha_link{
+    color: black;
+    text-decoration: none;
+   }
+   .afisha_link:visited {
+    color: black; /* Цвет посещенных ссылок */
+    text-decoration: none;
+   }
+
 
 /*Info_desk*/
 
@@ -1023,7 +1053,7 @@ th{
 .events_info_block a:hover,
 .events_info_block a:focus,
 .events_info_block a:active{
-	
+
 	text-decoration: none;
 
 
@@ -1047,9 +1077,9 @@ th{
 }
 
 .afisha_menu a{
-	
+
   color:black;
-  
+
 }
 .afisha_element img{
 	margin-bottom: 21px;
@@ -1063,7 +1093,7 @@ th{
 .afisha_element_description span{
 	font-weight: bold;
 
-	
+
 }
 
 
@@ -1086,13 +1116,13 @@ th{
 	width:276px;
 	height:452px;
 	padding-top:17px;
-	padding-bottom: 17px; 
+	padding-bottom: 17px;
 
 }
 
 .header_afisha{
 
-	
+
 	margin-left: auto;
 	margin-right: auto;
 
@@ -1117,3 +1147,154 @@ th{
 	font-weight: normal;
 }
 
+<<<<<<< HEAD
+=======
+/*Вакансии*/
+
+.rabota_date{
+	color:#d6d6d6;
+	font-weight: lighter;
+}
+.rabota_title{
+	margin-top: 48px;
+}
+
+/*========== ABOUT SCHOOL BEGIN ==========*/
+.top-section {
+	height: 100%;
+	position: relative;
+	background: url(../images/about-school/about-school-background.jpg) no-repeat center top;
+}
+.top-section h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 67px;
+}
+.top-section .slogan {
+	font-family: "pf_beausans_pro", Arial,  sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	color: #000;
+	text-transform: uppercase;
+  	line-height: 63px;
+  	margin-top: 81px;
+}
+.top-section .title {
+	display: inline-block;
+	margin-bottom: 31px;
+	font-family: "pf_beausans_pro", Arial,  sans-serif;
+	font-weight: 600;
+	font-size: 48px;
+	color: #000;
+	letter-spacing: -1px;
+}
+.top-section .bold-txt {
+	font-size: 36px;
+}
+.top-section .scroll-btn {
+	margin-top: 63px;
+	padding-bottom: 20px;
+}
+.top-section .scroll-btn a {
+	display: block;
+	margin: 0 auto;
+	background: url(../images/scroll-down-btn.png) no-repeat center;
+	height: 44px;
+	width: 95px;
+	transition-property: background;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.top-section .scroll-btn a:hover,
+.top-section .scroll-btn a:focus {
+	background: url(../images/scroll-down-btn-hover.png) no-repeat center;
+	transition-property: background;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.top-section .scroll-btn a:active {
+	background: url(../images/scroll-down-btn-active.png) no-repeat center;
+}
+.main-section .info-block {
+	margin-top: 48px;
+}
+.main-section .info-block li {
+	list-style: none;
+	padding: 0;
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 46px;
+}
+.main-section .info-block li:before {
+	content: none;
+}
+.main-section .info-block li a {
+	color: #000;
+	position: relative;
+}
+.main-section .info-block li a:hover,
+.main-section .info-block li a:focus {
+	text-decoration: none;
+}
+.main-section .info-block .active {
+	font-weight: bold;
+}
+.main-section .info-block .active a:after {
+	content: ' ';
+	background: url(../images/active-tab-after.png) no-repeat center;
+	width: 10px;
+	height: 13px;
+	position: absolute;
+	top: 5px;
+  	right: -20px;
+}
+.main-section .tab-content {
+	margin-top: 60px;
+}
+.main-section .tab-pane {
+	color: #000;
+}
+.main-section h1 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 85px;
+}
+.main-section .study-directions span {
+	font-size: 18px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 13px;
+  	display: inline-block;
+}
+.main-section .study-directions .info {
+	max-width: 230px;
+	line-height: 19px;
+}
+.main-section .study-directions .button-white {
+	margin-top: 35px;
+}
+.main-section .carousel {
+	width: 1300px;
+	margin: 0 auto;
+}
+.main-section .carousel-inner .item {
+	text-align: center;
+}
+.main-section .left.carousel-control {
+	width: 64px;
+  	height: 600px;
+    background: url(../images/school-prew-slide.png) no-repeat center;
+}
+.main-section .right.carousel-control {
+	width: 64px;
+  	height: 600px;
+    background: url(../images/school-next-slide.png) no-repeat center;
+}
+/*========== ABOUT SCHOOL END ==========*/
+
+/* LIGHTBOX BEGIN*/
+
+.lightbox ul li {
+    list-style-type: none;
+}

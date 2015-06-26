@@ -1,0 +1,10 @@
+.button-black,
+.button-white,
+.button-red,
+.button-green {
+	margin: 10px 0;
+	display: block;
+}
+.notification {
+	margin: 10px 0;	
+}
