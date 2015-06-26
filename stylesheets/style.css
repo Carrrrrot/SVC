@@ -19,9 +19,20 @@
     font-weight: 600;
     font-style: normal;
 }
-
-*, 
-*:before, 
+.notification {
+	margin: 10px 0;
+}
+/*TEMPORARY CSS END*/
+/**/
+.collapse {
+	display: none;
+}
+.collapse.in {
+  display: block;
+}
+/**/
+*,
+*:before,
 *:after {
 	box-sizing: inherit;
 }
@@ -47,7 +58,6 @@ body {
 .container {
 	width: 940px;
 	margin: 0 auto;
-	outline: 1px solid red;
 }
 .sprite {
     background-image: url("../images/sprite.png");
@@ -58,17 +68,17 @@ body {
 	margin-right: -10px;
   	margin-left: -10px;
 }
-.col-1, 
-.col-2, 
-.col-3, 
-.col-4, 
-.col-5, 
-.col-6, 
-.col-7, 
-.col-8, 
-.col-9, 
-.col-10, 
-.col-11, 
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
 .col-12 {
 	position: relative;
   	margin-right: 10px;
@@ -265,8 +275,14 @@ a.tooltips:hover{
     background-image: url("../images/sprite.png");
 }
 
+.tooltip.right {
+  margin-left: 20px;
+  padding: 0 5px;
+  border: 1px solid #777;
+  margin-top: -8px;
+
+}
 .tooltip {
-	
   position: absolute;
   z-index: 1070;
   display: block;
@@ -293,31 +309,19 @@ a.tooltips:hover{
   border-color: transparent;
   border-style: solid;
 }
-.tooltip.top-right .tooltip-arrow {
-  bottom: 0;
-  left: 5px;
-  margin-bottom: -5px;
-  border-width: 5px 5px 0;
-  border-top-color: #777;
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 .tooltip.right .tooltip-arrow {
-  top: 50%;
   left: 0;
-  margin-top: -5px;
+  margin-top: 3px;
+  margin-left: -10px;
   border-width: 5px 5px 5px 0;
   border-right-color: #777;
-}
-.tooltip.bottom-right .tooltip-arrow {
-  top: 0;
-  left: 5px;
-  margin-top: -5px;
-  border-width: 0 5px 5px;
-  border-bottom-color: #777;
-}
 
 }
 /*Tooltips end*/
-
 
 .validation-failed:focus {
 	border: 1px solid #f50057;
@@ -469,16 +473,17 @@ input[type="checkbox"] {
 	background-color: #ddd;
 }
 
-ol { 
-	counter-reset: item; 
+ol {
+	counter-reset: item;
 }
-li { 
-	display: block; 
+li {
+	display: block;
 }
-li:before { 
-	content: counters(item, ".") ". "; 
-	counter-increment: item; 
+li:before {
+	content: counters(item, ".") ". ";
+	counter-increment: item;
 }
+
 
 
 /*NOTIFICATION BEGIN*/
@@ -777,7 +782,7 @@ li:before {
 	margin: 14px 0 5px 0;
 }
 .teacher-info .description {
-	margin-top: 12px; 
+	margin-top: 12px;
 }
 /* TEACHER INFO END */
 
@@ -826,7 +831,7 @@ footer {
 footer ul li:before {
 	display: none;
     content: none;
-    line-height: 20px; 
+    line-height: 20px;
     float: left;
     padding-left: 0;
 }
@@ -871,7 +876,7 @@ footer h3 {
     width: 13px;
     height: 22px;
     background-position: -205px -5px;
-    display: inline-block;	
+    display: inline-block;
     margin-right: 8px;
 }
 .footer-vimeo {
@@ -932,14 +937,14 @@ footer h3 {
 /*Events*/
 
   .afisha_link{
-    color: black; 
+    color: black;
     text-decoration: none;
    }
    .afisha_link:visited {
     color: black; /* Цвет посещенных ссылок */
     text-decoration: none;
    }
-   
+
 
 /*Info_desk*/
 
@@ -1048,7 +1053,7 @@ th{
 .events_info_block a:hover,
 .events_info_block a:focus,
 .events_info_block a:active{
-	
+
 	text-decoration: none;
 
 
@@ -1072,9 +1077,9 @@ th{
 }
 
 .afisha_menu a{
-	
+
   color:black;
-  
+
 }
 .afisha_element img{
 	margin-bottom: 21px;
@@ -1088,7 +1093,7 @@ th{
 .afisha_element_description span{
 	font-weight: bold;
 
-	
+
 }
 
 
@@ -1111,13 +1116,13 @@ th{
 	width:276px;
 	height:452px;
 	padding-top:17px;
-	padding-bottom: 17px; 
+	padding-bottom: 17px;
 
 }
 
 .header_afisha{
 
-	
+
 	margin-left: auto;
 	margin-right: auto;
 
@@ -1142,6 +1147,8 @@ th{
 	font-weight: normal;
 }
 
+<<<<<<< HEAD
+=======
 /*Вакансии*/
 
 .rabota_date{
@@ -1161,7 +1168,7 @@ th{
 .top-section h1 {
 	text-transform: uppercase;
 	font-weight: bold;
-	margin-top: 67px; 
+	margin-top: 67px;
 }
 .top-section .slogan {
 	font-family: "pf_beausans_pro", Arial,  sans-serif;
@@ -1209,7 +1216,7 @@ th{
 	background: url(../images/scroll-down-btn-active.png) no-repeat center;
 }
 .main-section .info-block {
-	margin-top: 48px; 
+	margin-top: 48px;
 }
 .main-section .info-block li {
 	list-style: none;
@@ -1258,7 +1265,7 @@ th{
 	text-transform: uppercase;
 	font-weight: bold;
 	padding-bottom: 13px;
-  	display: inline-block;	
+  	display: inline-block;
 }
 .main-section .study-directions .info {
 	max-width: 230px;
@@ -1285,3 +1292,4 @@ th{
     background: url(../images/school-next-slide.png) no-repeat center;
 }
 /*========== ABOUT SCHOOL END ==========*/
+
