@@ -56,7 +56,7 @@ if (typeof jQuery === 'undefined') {
   Carousel.TRANSITION_DURATION = 600
 
   Carousel.DEFAULTS = {
-    interval: 5000,
+    interval: 7000,
     pause: 'hover',
     wrap: true,
     keyboard: true
@@ -74,7 +74,7 @@ if (typeof jQuery === 'undefined') {
   }
 
   Carousel.prototype.cycle = function (e) {
-    e || (this.paused = true)
+    e || (this.paused = false)
 
     this.interval && clearInterval(this.interval)
 
@@ -113,7 +113,7 @@ if (typeof jQuery === 'undefined') {
   }
 
   Carousel.prototype.pause = function (e) {
-    e || (this.paused = true)
+    e || (this.paused = false)
 
     if (this.$element.find('.next, .prev').length && $.support.transition) {
       this.$element.trigger($.support.transition.end)
