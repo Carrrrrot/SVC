@@ -19,10 +19,19 @@
     font-weight: 600;
     font-style: normal;
 }
+@font-face {
+    font-family: 'pf_beausans_pro';
+    src: url('../fonts/pfbeausanspro-regular-webfont.eot');
+    src: url('../fonts/pfbeausanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfbeausanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pfbeausanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/pfbeausanspro-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 .notification {
 	margin: 10px 0;
 }
-<<<<<<< HEAD
 /*TEMPORARY CSS END*/
 /**/
 .collapse {
@@ -32,14 +41,13 @@
   display: block;
 }
 /**/
-=======
+
 .selectize-input.items{
 	border: 1px solid black;
     border-radius: 0px;
     width: 320px;
     height: 41px;
 }
->>>>>>> c3116905a6fdc26dc97d8cb02671763e438f0bcd
 *,
 *:before,
 *:after {
@@ -47,6 +55,7 @@
 }
 html {
 	box-sizing: border-box;
+    height: 100%;
 }
 body {
 	font-family: "PT Sans Caption", Arial,  sans-serif;
@@ -54,6 +63,7 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 	margin: 0 auto;
+    height: 100%;
 }
 .clearfix:after,
 .row:after {
@@ -1045,10 +1055,6 @@ th{
 .events_info_block a:hover,
 .events_info_block a:focus,
 .events_info_block a:active{
-<<<<<<< HEAD
-
-=======
->>>>>>> c3116905a6fdc26dc97d8cb02671763e438f0bcd
 	text-decoration: none;
 }
 .inside_info span{
@@ -1070,13 +1076,7 @@ th{
 	float: right;
 }
 .afisha_menu a{
-<<<<<<< HEAD
-
   color:black;
-
-=======
-  color:black;
->>>>>>> c3116905a6fdc26dc97d8cb02671763e438f0bcd
 }
 .afisha_element img{
 	margin-bottom: 21px;
@@ -1086,11 +1086,6 @@ th{
 }
 .afisha_element_description span{
 	font-weight: bold;
-<<<<<<< HEAD
-
-
-=======
->>>>>>> c3116905a6fdc26dc97d8cb02671763e438f0bcd
 }
 .afisha_element{
 	margin: auto;
@@ -1110,17 +1105,8 @@ th{
 	height:452px;
 	padding-top:17px;
 	padding-bottom: 17px;
-<<<<<<< HEAD
-
-=======
->>>>>>> c3116905a6fdc26dc97d8cb02671763e438f0bcd
 }
 .header_afisha{
-<<<<<<< HEAD
-
-
-=======
->>>>>>> c3116905a6fdc26dc97d8cb02671763e438f0bcd
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1139,12 +1125,6 @@ td{
 th{
 	font-weight: normal;
 }
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> c3116905a6fdc26dc97d8cb02671763e438f0bcd
 /*Вакансии*/
 .rabota_date{
 	color:#d6d6d6;
@@ -1187,7 +1167,8 @@ th{
 	font-size: 36px;
 }
 .top-section .scroll-btn {
-	margin-top: 63px;
+	position: absolute;
+    bottom: 0;
 	padding-bottom: 20px;
 }
 .top-section .scroll-btn a {
@@ -1220,7 +1201,7 @@ th{
 	text-transform: uppercase;
 	line-height: 46px;
 }
-.main-section .info-block li:before {
+.main-section li:before {
 	content: none;
 }
 .main-section .info-block li a {
@@ -1272,27 +1253,70 @@ th{
 .main-section .carousel {
 	width: 1300px;
 	margin: 0 auto;
+    margin-top: 110px;
 }
 .main-section .carousel-inner .item {
 	text-align: center;
 }
 .main-section .left.carousel-control {
-	width: 64px;
+	width: 128px;
   	height: 600px;
     background: url(../images/school-prew-slide.png) no-repeat center;
 }
 .main-section .right.carousel-control {
-	width: 64px;
+	width: 128px;
   	height: 600px;
     background: url(../images/school-next-slide.png) no-repeat center;
 }
+.main-section .carousel-caption h1 {
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 45px;
+}
+.main-section .carousel-caption h1:after {
+    background-repeat: inherit;
+    background-image: url(../images/h1-underline-white.png);
+}
+.main-section .carousel-caption .info {
+    font-family: "pf_beausans_pro", Arial,  sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    height: 600px;
+}
+.main-section .carousel-caption span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.main-section .carousel-indicators li {
+    margin: 1px 8px;
+    width: 14px;
+    height: 14px;
+}
+.main-section .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+    background: none;
+}
+.main-section .carousel-indicators .active:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 1px 0 0 1px;
+}
+
 /*========== ABOUT SCHOOL END ==========*/
 
-<<<<<<< HEAD
 /* LIGHTBOX BEGIN*/
 
 .lightbox ul li {
     list-style-type: none;
 }
-=======
->>>>>>> c3116905a6fdc26dc97d8cb02671763e438f0bcd
+
