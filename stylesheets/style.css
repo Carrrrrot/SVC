@@ -67,7 +67,6 @@ body {
 .container {
 	width: 940px;
 	margin: 0 auto;
-    outline: 1px solid red;
 }
 .sprite {
     background-image: url("../images/sprite.png");
@@ -654,6 +653,11 @@ li:before {
 	height: 60px;
 	background-color: #000;
 	line-height: 60px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 100px;
+    z-index: 9;
 }
 .sub-menu {
 	text-align: center;
@@ -673,7 +677,7 @@ li:before {
 }
 .sub-menu .active {
     font-size: 18px;
-    color: #fff;
+    color: #00bfa5;
 }
 .sub-menu li:before {
 	background: none;

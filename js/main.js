@@ -5,6 +5,11 @@ jQuery(document).ready(function($) {
     });
 });
 
+$(document).click(function() {
+    $(".collapse").removeClass("in");
+});
+
+
         $('.subject').selectize({
     	create: true,
     	sortField: 'text'
