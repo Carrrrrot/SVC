@@ -714,7 +714,7 @@ li:before {
     background-position: -365px -88px;
     margin-right: 21px;
     opacity: 1;
-
+}
 .header-facebook {
 	display: inline-block;
 	width: 10px;
@@ -1168,8 +1168,7 @@ th{
 	font-weight: normal;
 }
 
-<<<<<<< HEAD
-=======
+
 /*Вакансии*/
 
 .rabota_date{
@@ -1315,5 +1314,28 @@ th{
 /*========== ABOUT SCHOOL END ==========*/
 
 
+
+
+#carousel-example-generic{
+	width: 1280px;
+	height: 752px;
+	border: 1px solid grey;
+}
+
+.carousel_image{
+	width: 940px;
+	height: 496px;
+	margin: 50px 172px 180px;
+  	position: relative;
+}
+.course_name{
+	margin: 50px 160px 0px 170px;
+}
+
+.controller{
+	background: url('imgs/sprite.png') no-repeat -155px -126px;
+	width: 44px;
+	height: 95px;
+}
 
 
