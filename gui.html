@@ -10,7 +10,6 @@
 		<link rel="stylesheet" type="text/css" href="./stylesheets/gui.css">
 		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" media="all" href="./stylesheets/selectize.css">
-        <link type="text/css" rel="stylesheet" href="./stylesheets/lightGallery.css" />
 	</head>
     <body>
     	<div class="page-wrapper">
@@ -60,7 +59,7 @@
 				</nav>
 			</div>
 		    <div class="container">
-			   <div class="row">
+			    <div class="row">
 					<div class="col-9">
 		               <h1>Заголовок первого уровня //</h1>
 		            </div>
@@ -70,7 +69,7 @@
 		                <a href="#" class="button-red">Button</a>
 		                <a href="#" class="button-green">Button</a>
 		            </div>
-		       </div>
+		        </div>
 		       <div class="row">
 		            <div class="col-5">
 		                <h2>Заголовок второго уровня и маркированные списки//</h2>
@@ -83,12 +82,10 @@
 		              <h2>Заголовок второго уровня и нумерованные списки//</h2>
 		              <ol>
 			             <li><a href="#">Образовательные концепции</a> разработаны под актуальные запросы украинской креативной индустрии.</li>
-			             <li>В школе действует <a href="#">Программа преподавательской подготовки</a>, помогающая практикам эффективно передавать свой опыт студентам.
-                            <ol>
-                         <li>Образовательная, проектная и исследовательская деятельность школы синхронизирована с профильными программами ведущих зарубежных институций.</li>
-                         </ol>
-                         </li>
-
+			             <li>В школе действует <a href="#">Программа преподавательской подготовки</a>, помогающая практикам эффективно передавать свой опыт студентам.</li>
+			             <ol>
+			         	 <li>Образовательная, проектная и исследовательская деятельность школы синхронизирована с профильными программами ведущих зарубежных институций.</li>
+			             </ol>
 		              </ol>
 	               </div>
                </div>
@@ -111,24 +108,24 @@
                            <label for="check-2" class="check-label">Я не согласен с условиями, потому что они не справедливы</label>
                         </div>
                         <form>
-                        <div class="field-radio">
-                           <input id="radio-1" type="radio" name="radio-group">
-                           <label for="radio-1" class="radio-label">
-                           Я согласен
-                           </label>
-                        </div>
-                        <div class="field-radio">
-                           <input id="radio-2" type="radio" name="radio-group" checked>
-                           <label for="radio-2" class="radio-label">
-                           Нет
-                           </label>
-                        </div>
-                        <div class="field-radio">
-                           <input id="radio-3" type="radio" name="radio-group" disabled>
-                           <label for="radio-3" class="radio-label">
-                           Не знаю
-                           </label>
-	                   </div>
+                            <div class="field-radio">
+                               <input id="radio-1" type="radio" name="radio-group">
+                               <label for="radio-1" class="radio-label">
+                               Я согласен
+                               </label>
+                            </div>
+                            <div class="field-radio">
+                               <input id="radio-2" type="radio" name="radio-group" checked>
+                               <label for="radio-2" class="radio-label">
+                               Нет
+                               </label>
+                            </div>
+                            <div class="field-radio">
+                               <input id="radio-3" type="radio" name="radio-group" disabled>
+                               <label for="radio-3" class="radio-label">
+                               Не знаю
+                               </label>
+    	                   </div>
 	                   </form>
 	                </div>
                     <div class="col-7">
@@ -136,13 +133,13 @@
 		                <form>
 			                <label>Введите адрес электронной почты</label><br>
 			                <input type="email" placeholder="E-mail:">
-			                 <a class="tooltips" href="#" rel="tooltip" data-toggle="tooltip" title="Введите ваш e-mail" data-placement="right"></a><br><br>
+			                 <a class="tooltips" href="#" data-toggle="tooltip" title="Введите ваш e-mail" data-placement="right"></a><br><br>
 			                <label>Введите текст без ошибок</label><br>
 			                <input class="disabled-input" type="text" placeholder="Поле не доступно" disabled>
-			                <a class="tooltips" href="#" rel="tooltip" data-toggle="tooltip" title="Введите текст" data-placement="right"></a><br><br>
+			                <a class="tooltips" href="#" data-toggle="tooltip" title="Tooltip on right" data-placement="right"></a><br><br>
 			                <label>Введите текст без ошибок</label><br>
 			                <input class="validation-failed" type="text" value="С кем не бывает...">
-			                <a class="tooltips" href="#" rel="tooltip" data-toggle="tooltip"  title="Введите текст" data-placement="right"></a><br><br>
+			                <a class="tooltips" href="#" data-toggle="tooltip"  title="Tooltip on right" data-placement="right"></a><br><br>
 			                <label>Введите текст без ошибок</label><br>
 			                <textarea>Привет!</textarea>
 		                </form>
@@ -160,21 +157,92 @@
                	   	<div class="col-6">
 		               <form>
 			                <h3>Уведомления//</h3>
-			                <div class="notification alert-box-success alert">
+			                <div class="notification alert-box-success">
 				                <i class="notification-success"></i>
-				                <a href="#" class="close" data-dismiss="alert"><span></span></a>Уведомление
+				                <a href="#" class="close"><span></span></a>Уведомление
 			                </div>
-			                <div class="notification alert-box-error alert">
+			                <div class="notification alert-box-error">
 				                <i class="notification-error"></i>
-				                <a href="#" class="close" data-dismiss="alert"><span></span></a>Ошибка
+				                <a href="#" class="close"><span></span></a>Ошибка
 			                </div>
-                            <div class="notification alert-box-info alert">
+                            <div class="notification alert-box-info">
 	                            <i class="notification-info"></i>
-	                            <a href="#" class="close-b" data-dismiss="alert"><span></span></a>Предупреждение
+	                            <a href="#" class="close-b"><span></span></a>Предупреждение
                         	</div>
 		               </form>
                     </div>
                </div>
+               <div class='row'>
+                   	<div class="col-12">
+                   		<h3 class="block-title">Слайдеры//</h3>
+                   	</div>
+                </div>
+            </div>
+            <div class="main-section">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="./images/about-school/school-slide-1.jpg" width="1280" height="600" alt="Образовательные концепции">
+                            <div class="carousel-caption">
+                                <div class="info">
+                                    <h1>Наши преимущества //</h1>
+                                    <span>Образовательные концепции</span><br>разработаны под актуальные запросы<br>украинской креативной индустрии
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./images/about-school/school-slide-2.jpg" width="1280" height="600" alt="...">
+                            <div class="carousel-caption">
+                                <div class="info">
+                                    <h1>Наши преимущества //</h1>
+                                    Обучение ведётся через <span>действие, практику<br>и в сжатые сроки.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./images/about-school/school-slide-3.jpg" width="1280" height="600" alt="...">
+                            <div class="carousel-caption">
+                                <div class="info">
+                                    <h1>Наши преимущества //</h1>
+                                    <span>Программа преподавательской подготовки</span><br>помогает практикам эффективно передавать<br>свой опыт студентам.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./images/about-school/school-slide-4.jpg" width="1280" height="600" alt="...">
+                            <div class="carousel-caption">
+                                <div class="info">
+                                    <h1>Наши преимущества //</h1>
+                                    деятельность школы<br>синхронизирована с профильными программами<br><span>ведущих зарубежных институций.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./images/about-school/school-slide-5.jpg" width="1280" height="600" alt="...">
+                            <div class="carousel-caption">
+                                <div class="info">
+                                    <h1>Наши преимущества //</h1>
+                                    <span>Преподаватели и студенты SVC -</span><br>единомышленники, объединившие свои усилия<br>для изменений современной украинской визуальной<br>среды.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon" aria-hidden="true"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
 			   <div class="row">
 			    	<div class="col-12">
 			    		<h3 class="block-title">Кратко о преподавателе //</h3>
@@ -275,58 +343,63 @@
 				    		</div>
 				    	</div>
 			    	</div>
-			   </div>
-			   <div class='row'>
-			   	<div class='col-12'>
-			   		<h3>Вакансии//</h3>
-			   		<h2 class='rabota_title'>Преподователь Adobe Photoshop и Adobe Illustrator</h2>
-			   		<h6 class='rabota_date'>01 апреля//</h6>
-			   		<p>Если вы - хороший профессионал, если вас не устраивает качество дизайна и рекламы вокург вас и если вы понимаете, что за этим всем стоят дизайнеры, которых есть чему научить - мы ждем вас в School of visual communication в качестве преподавателя курсов Adobe Illustrator и Adobe Photoshop.</p>
-			   	</div>
+			    </div>
+			    <div class='row'>
+    			   	<div class='col-12'>
+    					<h3>Вакансии//</h3>
+    			   	</div>
+			    </div>
+			   	<div class='row'>
+			   		<div class='col-12'>
+    			   		<h2 class='rabota_title'>Преподователь Adobe Photoshop и Adobe Illustrator</h2>
+    			   		<h6 class='rabota_date'>01 апреля//</h6>
+    			   		<p>Если вы - хороший профессионал, если вас не устраивает качество дизайна и рекламы вокург вас и если вы понимаете, что за этим всем стоят дизайнеры, которых есть чему научить - мы ждем вас в School of visual communication в качестве преподавателя курсов Adobe Illustrator и Adobe Photoshop.</p>
+			   	    </div>
+			    </div>
 			   	<div class="row" style='margin-left:4px'>
 			   		<div class="col-12">
 			   			<h3>События//</h3>
 			   		</div>
-			   		<div class='row' style='margin-left:3px' >
-			   			<div class='col-4'>
-					        <div class='afisha_element_hover'>
-						        <a href="#" class = "afisha_link">
-					            <div class='afisha_element'>
-						            <img src="./images/extreme.png" class="events_info_img" width="250" height="250" alt="Extreme teritories">
-						<div class='afisha_element_description'>
-						<span class='afisha_name'>Открытие выставки "Экстремальные территории"</span>
-					</div>
-						<table style='margin-top:11px'>
-			    					<tr><th>Дата и время:</th><td>19.00 17.04.2015</td></tr>
-   									<tr><th>Место:</th><td>Closer</td></tr>
-   									<tr><th>Цена:</th><td>Вход свободный</td></tr>
-			    						</table>
-					</div>
-				</a>
-				</div>
-				</div>
-				<div class='col-4'>
-					<div class='afisha_element_hover'>
-					<div class='afisha_element'>
-						<a href="#" class = "afisha_link">
-						<img src="./images/event-img.jpg" class="events_info_img" width="250" height="250" alt="Открытая встреча с художницей Соломухиной">
-						<div class='afisha_element_description'>
-						<span class='afisha_name'>Открытая встреча с художницей Кристиной Соломухиной</span>
-					</div>
-						<table style='margin-top:11px'>
-			    					<tr><th>Дата и время:</th><td>19.00 17.04.2015</td></tr>
-   									<tr><th>Место:</th><td>Closer</td></tr>
-   									<tr><th>Цена:</th><td>Вход свободный</td></tr>
-			    						</table>
-			    					</a>
-					</div>
-				</div>
-				</div>
-				<div class='col-4'></div>
-			   			</div>
 			   	</div>
+			   	<div class='row'style='margin-left:3px' >
+			   		<div class='col-4'>
+					    <div class='afisha_element_hover'>
+						    <a href="#" class = "afisha_link">
+					        <div class='afisha_element'>
+						        <img src="./images/extreme.png" class="events_info_img" width="250" height="250" alt="Extreme teritories">
+						        <div class='afisha_element_description'>
+						           <span class='afisha_name'>Открытие выставки "Экстремальные территории"</span>
+					            </div>
+						        <table style='margin-top:11px'>
+			    					<tr><th>Дата и время:</th><td>19.00 17.04.2015</td></tr>
+   									<tr><th>Место:</th><td>Closer</td></tr>
+   									<tr><th>Цена:</th><td>Вход свободный</td></tr>
+			    				</table>
+					       </div>
+				            </a>
+				        </div>
+				    </div>
+				    <div class='col-4'>
+					    <div class='afisha_element_hover'>
+					        <div class='afisha_element'>
+        						<a href="#" class = "afisha_link">
+        						<img src="./images/event-img.jpg" class="events_info_img" width="250" height="250" alt="Открытая встреча с художницей Соломухиной">
+						        <div class='afisha_element_description'>
+						            <span class='afisha_name'>Открытая встреча с художницей Кристиной Соломухиной</span>
+					            </div>
+						        <table style='margin-top:11px'>
+			    					<tr><th>Дата и время:</th><td>19.00 17.04.2015</td></tr>
+   									<tr><th>Место:</th><td>Closer</td></tr>
+   									<tr><th>Цена:</th><td>Вход свободный</td></tr>
+			    				</table>
+			    				</a>
+					        </div>
+				        </div>
+				    </div>
+				    <div class='col-4'></div>
+			    </div>
 			   <div class="row">
-                  <div class="col-12">
+                    <div class="col-12">
                   		<h3>Работы выпускников //</h3>
                	 	   	<div class="image-container">
                	 			<a href="#">
@@ -344,7 +417,7 @@
                	 	      	<a href="http://svc.com.ua/long-courses/graficheskij-dizajn-bazovyj/">Графический дизайн: базовый</a><br>
                	 	     	<span> Автор: Лина Якобчук</span>
                	 	  	</div>
-               	 	       <div class="image-container" id="last">
+               	 	    <div class="image-container" id="last">
                	 			<a href="#">
                	 				<img src="./images/3.png" alt="Editorial design" width="296" height="230">
                	 			</a>
@@ -353,10 +426,9 @@
                	 	     	<span> Автор: студенты курса</span>
                    		</div>
                	  	</div>
-		       </div>
-		   	</div>
-		</div>
-    </div>
+		       	</div>
+		    </div>
+        </div>
 	    <div class="page-wrapper">
            	<footer>
       	       	<div class="container">
@@ -409,11 +481,11 @@
             </footer>
         </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/selectize.js"></script>
 	<script type="text/javascript" src="./js/bootstrap-transition.js"></script>
 	<script type="text/javascript" src="./js/bootstrap-collapse.js"></script>
     <script type="text/javascript" src="./js/bootstrap-tooltips.js"></script>
-    <script type="text/javascript" src="./js/bootstrap-alert.js"></script>
-    <script type="text/javascript" src="./js/selectize.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-carousel.js"></script>
 	<script type="text/javascript" src="./js/main.js"></script>
    </body>
 </html>
