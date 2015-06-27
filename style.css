@@ -1,0 +1,1368 @@
+@font-face {
+    font-family: "pf_beausans_pro";
+    src: url("../fonts/pfbeausanspro-bold-webfont.eot");
+    src: url("../fonts/pfbeausanspro-bold-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/pfbeausanspro-bold-webfont.woff2") format("woff2"),
+         url("../fonts/pfbeausanspro-bold-webfont.woff") format("woff"),
+         url("../fonts/pfbeausanspro-bold-webfont.ttf") format("truetype"),
+         url("../fonts/pfbeausanspro-bold-webfont.svg#pf_beausans_probold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pf_beausans_pro";
+    src: url("../fonts/pfbeausanspro-black-webfont.eot");
+    src: url("../fonts/pfbeausanspro-black-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/pfbeausanspro-black-webfont.woff2") format("woff2"),
+         url("../fonts/pfbeausanspro-black-webfont.woff") format("woff"),
+         url("../fonts/pfbeausanspro-black-webfont.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pf_beausans_pro';
+    src: url('../fonts/pfbeausanspro-regular-webfont.eot');
+    src: url('../fonts/pfbeausanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfbeausanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pfbeausanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/pfbeausanspro-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.notification {
+	margin: 10px 0;
+}
+.selectize-input.items{
+<<<<<<< HEAD
+	  border: 1px solid black;
+  border-radius: 0px;
+  width: 320px;
+  height: 41px;
+
+}
+.option.active:hover{
+	background-color: none;
+
+}
+
+.collapse {
+	display: none;
+=======
+	border: 1px solid black;
+    border-radius: 0px;
+    width: 320px;
+    height: 41px;
+>>>>>>> origin/master
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+    height: 100%;
+}
+body {
+	font-family: "PT Sans Caption", Arial,  sans-serif;
+	color: #444;
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0 auto;
+    height: 100%;
+}
+.clearfix:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.page-wrapper {
+	width: 100%;
+}
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+.sprite {
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+.row {
+	margin-right: -10px;
+  	margin-left: -10px;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+	position: relative;
+  	margin-right: 10px;
+  	margin-left: 10px;
+	float: left;
+	min-height: 1px;
+}
+.col-12 {
+  	width: 940px;
+}
+.col-11 {
+  	width: 860px;
+}
+.col-10 {
+  	width: 780px;
+}
+.col-9 {
+  	width: 700px;
+}
+.col-8 {
+  	width: 620px;
+}
+.col-7 {
+  	width: 540px;
+}
+.col-6 {
+  	width: 460px;
+}
+.col-5 {
+  	width: 380px;
+}
+.col-4 {
+  	width: 300px;
+}
+.col-3 {
+  	width: 220px;
+}
+.col-2 {
+  	width: 140px;
+}
+.col-1 {
+  	width: 60px;
+}
+h1 {
+	color: #000;
+	font-size: 36px;
+	font-family: "pf_beausans_pro", Arial,  sans-serif;
+	font-weight: 600;
+}
+h1:after {
+	content: "";
+	background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 5px;
+    background-position: -158px -35px;
+    margin-top: 22px;
+}
+.afisha h1:after{
+	display: none;
+}
+h2 {
+	color: #000;
+	font-size: 24px;
+	font-family: "pf_beausans_pro", Arial,  sans-serif;
+	font-weight: bold;
+}
+h2:after {
+	content: "";
+	background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-position: -158px -50px;
+    margin-top: 20px;
+}
+h3 {
+	color: #000;
+	font-weight: bold;
+	font-size: 18px;
+}
+ul,
+ol {
+	padding: 0;
+}
+ul li {
+	list-style-type: none;
+	position: relative;
+	padding-left: 19px;
+}
+ul li:before {
+	content: "";
+	background: url("../images/square-marker.png") center center no-repeat;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	top: 7px;
+	left: 0;
+}
+li {
+	line-height: 20px;
+}
+li:after {
+	margin-right: 10px;
+}
+a {
+	color: #00695c;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: underline;
+}
+a:visited {
+	text-decoration: none;
+}
+label {
+	font-family: "PT Sans Caption", Arial,  sans-serif;
+	color: #bbb;
+	font-size: 14px;
+	line-height: 37px;
+}
+input {
+	width: 398px;
+	height: 40px;
+	border: 1px solid #000;
+	outline: none;
+	font-family: "PT Sans Caption", Arial,  sans-serif;
+	color: #000;
+	font-size: 14px;
+	line-height: 37px;
+	padding-left: 10px;
+}
+input:focus {
+	border: 1px solid #00bfa5;
+}
+input::-webkit-input-placeholder {
+	color: #bbb;
+}
+input:-moz-placeholder {
+	color: #bbb;
+}
+select {
+   width: 398px;
+	height: 40px;
+	border: 1px solid #000;
+	outline: none;
+	font-family: "PT Sans Caption", Arial,  sans-serif;
+	color: #000;
+	font-size: 14px;
+	line-height: 37px;
+	padding-left: 9px;
+}
+textarea {
+	width: 398px;
+	height: 100px;
+	resize: none;
+	border: 1px solid #000;
+	outline: none;
+	padding: 10px;
+}
+textarea:focus {
+	border: 1px solid #00bfa5;
+}
+.disabled-input {
+	border: 1px solid #bbb;
+}
+.validation-failed {
+	border: 1px solid #f50057;
+	color: #f50057;
+}
+
+/*Tooltips begin*/
+a.tooltips {
+    content: "";
+	width: 20px;
+    height: 20px;
+    background-position: -251px -5px;
+    background-image: url("../images/sprite.png");
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+a.tooltips:hover{
+    width: 20px;
+    height: 20px;
+    background-position: -281px -5px;
+    background-image: url("../images/sprite.png");
+}
+
+.tooltip.right {
+  margin-left: 20px;
+  padding: 0 5px;
+  border: 1px solid #777;
+  margin-top: -8px;
+
+}
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 12px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: transparent;
+  border-style: solid;
+}
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.tooltip.right .tooltip-arrow {
+  left: 0;
+  margin-top: 3px;
+  margin-left: -10px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #777;
+
+}
+/*Tooltips end*/
+
+.validation-failed:focus {
+	border: 1px solid #f50057;
+}
+.button-black {
+	display: inline-block;
+	min-width: 170px;
+	height: 40px;
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	line-height: 40px;
+	transition-property: background-color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.button-black:hover,
+.button-black:focus {
+	background-color: #777;
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.button-black:active {
+	background-color: #444;
+}
+.button-white {
+	display: inline-block;
+	min-width: 168px;
+	height: 38px;
+	border: 1px solid #000;
+	color: #000;
+	background-color: #fff;
+	text-align: center;
+	line-height: 39px;
+	transition-property: border;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.button-white:hover,
+.button-white:focus {
+	border: 1px solid #777;
+	text-decoration: none;
+	transition-property: border;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.button-white:active {
+	border: 1px solid #777;
+	background-color: #eee;
+}
+.button-red {
+	display: inline-block;
+	min-width: 170px;
+	height: 40px;
+	color: #fff;
+	background-color: #f50057;
+	text-align: center;
+	line-height: 40px;
+	transition-property: background-color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.button-red:hover,
+.button-red:focus {
+	background-color: #ff4081;
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.button-red:active {
+	background-color: #c50046;
+}
+.button-green {
+	display: inline-block;
+	min-width: 170px;
+	height: 40px;
+	color: #fff;
+	background-color: #00bfa5;
+	text-align: center;
+	line-height: 40px;
+	transition-property: background-color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.button-green:hover,
+.button-green:focus {
+	background-color: #00e6c7;
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.button-green:active {
+	background-color: #00695c;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	display: none;
+	margin-bottom: 10px;
+}
+.radio-label,
+.check-label {
+	color: #000;
+}
+.check-label:before {
+	content: "";
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border: solid 1px #000;
+    line-height: 18px;
+    margin: -15px 10px -3px 0;
+    cursor: pointer;
+}
+.check-label:after{
+	content: "";
+	display: inline-block;
+	height: 18px;
+    width: 18px;
+    border: solid 1px #000;
+	background-image: url("../images/png/check-box.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.radio-label:before {
+	content: "";
+    border: solid 1px #000;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    line-height: 18px;
+    margin: -15px 10px -3px 0;
+    cursor: pointer;
+}
+.field-radio input:checked+label:before{
+    margin: -15px 10px -3px 0;
+    cursor: pointer;
+	background-image: url("../images/png/check-radio.png");
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+
+}
+.field-radio input:disabled+label:before{
+	background-color: #ddd;
+}
+
+ol {
+	counter-reset: item;
+}
+li {
+	display: block;
+}
+li:before {
+	content: counters(item, ".") ". ";
+	counter-increment: item;
+}
+
+
+
+/*NOTIFICATION BEGIN*/
+
+.notification {
+	position: relative;
+	display: block;
+	height: 50px;
+	color: #fff;
+	padding-left: 43px;
+	line-height: 50px;
+}
+.alert-box-error {
+	background-color: #f50057;
+}
+.alert-box-success {
+	background-color: #00bfa5;
+}
+.alert-box-info {
+	background-color: #eee;
+	border: 1px solid #000;
+	color: #000;
+	line-height: 50px;
+}
+.notification-success {
+	background-image: url("../images/sprite.png");
+	width: 16px;
+    height: 16px;
+    float: left;
+    position: absolute;
+    background-position: -279px -231px;
+    left: 17px;
+    top: 17px;
+    bottom: 17px;
+}
+.notification-error {
+	background-image: url("../images/sprite.png");
+    width: 16px;
+    height: 16px;
+    background-position: -227px -231px;
+    float: left;
+    position: absolute;
+    left: 17px;
+    top: 17px;
+    bottom: 17px;
+}
+.notification-info {
+	background-image: url("../images/sprite.png");
+    width: 16px;
+    height: 16px;
+    background-position: -253px -231px;
+    float: left;
+    position: absolute;
+    left: 17px;
+    top: 17px;
+    bottom: 17px;
+}
+.close {
+	background-image: url("../images/sprite.png");
+    width: 10px;
+    height: 10px;
+    background-position: -317px -130px;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.close-b {
+	background-image: url("../images/sprite.png");
+    width: 10px;
+    height: 10px;
+    background-position: -317px -110px;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+/*NOTIFICATION END*/
+
+/*HEADER BEGIN*/
+.italic-txt {
+	font-style: italic;
+}
+.logotype {
+	position: absolute;
+	left: 0;
+	margin-left: 32px;
+	width: 140px;
+    height: 54px;
+    background-position: -158px -63px;
+    opacity: 1;
+    transition-property: opacity;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.logotype:visited {
+	background-position: -158px -63px;
+	opacity: 1;
+}
+.logotype:hover,
+.logotype:focus {
+	opacity: .5;
+	transition-property: opacity;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.logotype:active {
+    background-position: -5px -126px;
+}
+.logotype-txt {
+	display: none;
+}
+.header {
+	padding-top: 22px;
+}
+.header-menu {
+	text-align: center;
+}
+.header-menu li {
+	display: inline-block;
+	font-size: 18px;
+	margin: 0 17px;
+}
+.header-menu .dropdown:after {
+	content: "";
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #fff;
+	border-right: 3px solid #fff;
+	border-left: 3px solid #fff;
+	top: 14px;
+  	left: 8px;
+  	position: relative;
+}
+.header-menu li a {
+	color: #000;
+}
+.header-menu li a:visited {
+	text-decoration: none;
+	font-weight: normal;
+}
+.header-menu li a:hover,
+.header-menu li a:focus {
+	text-decoration: none;
+	font-weight: bold;
+}
+.header-menu li a:active {
+	color: #00ac94;
+}
+.header-menu li:before {
+	background: none;
+	padding: 0;
+}
+.sub-menu-wrap {
+	height: 60px;
+	background-color: #000;
+	line-height: 60px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 100px;
+    z-index: 9;
+}
+.sub-menu {
+	text-align: center;
+}
+.sub-menu ul {
+	margin: 0;
+	padding: 0;
+}
+.sub-menu.study li {
+	margin: 0 32px;
+}
+.sub-menu.about-school li {
+	margin: 0 62px;
+}
+.sub-menu li {
+	display: inline-block;
+}
+.sub-menu .active {
+    font-size: 18px;
+    color: #00bfa5;
+}
+.sub-menu li:before {
+	background: none;
+	padding: 0;
+}
+.sub-menu li a {
+	font-size: 18px;
+	color: #fff;
+}
+.sub-menu li a:visited {
+	text-decoration: none;
+	font-weight: normal;
+}
+.sub-menu li a:hover,
+.sub-menu li a:focus {
+	text-decoration: none;
+	font-weight: bold;
+}
+.sub-menu li a:active {
+	color: #00bfa5;
+}
+.header-socials {
+	position: absolute;
+	right: 0;
+	margin: 13px 32px 0 0;
+}
+.header-behance {
+	display: inline-block;
+	width: 28px;
+    height: 16px;
+    background-position: -5px -5px;
+    margin-right: 12px;
+    opacity: 1;
+}
+.header-vimeo {
+	display: inline-block;
+	width: 14px;
+    height: 13px;
+    background-position: -365px -88px;
+    margin-right: 21px;
+    opacity: 1;
+
+.header-facebook {
+	display: inline-block;
+	width: 10px;
+    height: 19px;
+    background-position: -133px -5px;
+    opacity: 1;
+}
+.header-socials a:hover,
+.header-socials a:focus {
+	opacity: .5;
+	transition-property: opacity;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.header-behance:visited {
+	background-position: -5px -5px;
+	opacity: 1;
+}
+.header-behance:active {
+    background-position: -41px -5px;
+}
+.header-vimeo:visited {
+	background-position: -365px -88px;
+	opacity: 1;
+}
+.header-vimeo:active {
+    background-position: -389px -88px;
+}
+.header-facebook:visited {
+	background-position: -133px -5px;
+	opacity: 1;
+}
+.header-facebook:active {
+    background-position: -151px -5px;
+}
+/*HEADER END*/
+
+/* TEACHER INFO BEGIN */
+.teacher-info {
+	display: inline-block;
+	margin-right: 100px;
+	width: 250px;
+	height: auto;
+	vertical-align: top;
+}
+.teacher-info a {
+	display: block;
+	border-bottom: 3px solid #000;
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.teacher-info a:visited,
+.teacher-info a:hover,
+.teacher-info a:focus,
+.teacher-info a:active {
+	text-decoration: none;
+}
+.teacher-info a:hover,
+.teacher-info a:focus,
+.teacher-info a:active {
+	border-bottom: 3px solid #00bfa5;
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-ftiming-function: ease;
+}
+.block-title {
+	font-size: 18px;
+	color: #000;
+	margin: 102px 0 34px 0;
+}
+.teacher-info .name {
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	color: #000;
+	margin: 14px 0 5px 0;
+}
+.teacher-info .description {
+	margin-top: 12px;
+}
+/* TEACHER INFO END */
+
+/*GALLERY BEGIN*/
+.image-container {
+	height: auto;
+	width: 296px;
+	display: inline-block;
+    margin-right: 26px;
+	padding-bottom: 80px;
+	position: relative;
+	float: left;
+}
+#last{
+	margin: 0;
+}
+.behance-icon {
+	position: absolute;
+	display: block;
+	background-image: url("../images/behance.png");
+    width: 50px;
+    height: 50px;
+	background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+}
+.behance-icon:hover {
+	background-image: url("../images/behance-active.png");
+	transition-property: background-image;
+	transition-duration: 0,8s;
+	transition-ftiming-function: linear;
+}
+/*GALLERY END*/
+
+/*FOOTER BEGIN*/
+footer {
+	background-color: #000;
+	display: block;
+	clear: both;
+	color: #fff;
+	top: 30px;
+}
+.footer-logo {
+	margin-top: 36px;
+}
+footer ul li:before {
+	display: none;
+    content: none;
+    line-height: 20px;
+    float: left;
+    padding-left: 0;
+}
+footer a {
+	color: #fff;
+	line-height: 30px;
+}
+footer a:hover {
+	color: #00a58e;
+	text-decoration: none;
+}
+.footer-ul {
+	padding: 0;
+	margin-top: 36px;
+}
+footer h3 {
+	color: #fff;
+}
+.breaking-web {
+	background-image: url("../images/sprite.png");
+    width: 80px;
+    height: 83px;
+    background-position: -365px -110px;
+    border: 0;
+    margin-top: 36px;
+    margin-right: 10px;
+    color:#000;
+    padding: 0;
+    margin-left: -20px;
+}
+.footer-behance {
+	background-image: url("../images/sprite.png");
+	width: 27px;
+    height: 18px;
+    background-position: -169px -5px;
+    display: inline-block;
+    margin-right: 9px;
+    margin-left: -7px;
+}
+.footer-facebook {
+    background-image: url("../images/sprite.png");
+    width: 13px;
+    height: 22px;
+    background-position: -205px -5px;
+    display: inline-block;
+    margin-right: 8px;
+}
+.footer-vimeo {
+	background-image: url("../images/sprite.png");
+	width: 16px;
+    height: 14px;
+    background-position: -226px -5px;
+    display: inline-block;
+}
+#footicons {
+	float: right;
+	display: block;
+}
+.socicons {
+	margin-top: 100px;
+	width: 80px;
+	margin-left: -13px;
+}
+/*FOOTER END*/
+
+/*EVENT BLOCK BEGIN*/
+.event-info {
+	margin-left: -12px;
+}
+.event-info .date {
+	margin-top: -7px;
+	font-family: "Open Sans", Arial,  sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: 777;
+}
+.event-info .title {
+	margin: 16px 0 40px 0;
+}
+.event-info .button-green {
+	float: right;
+	margin-top: 17px;
+}
+/*EVENT BLOCK END*/
+
+/*COURSES LIST BEGIN*/
+.courses-list {
+	display: inline-block;
+	margin-right: 90px;
+	width: 250px;
+	height: auto;
+	vertical-align: top;
+	margin-bottom: 80px;
+}
+.courses-list:last-child {
+	margin: 0;
+}
+.courses-list a {
+	display: block;
+	border-bottom: 3px solid #000;
+	margin-bottom: 5px;
+}
+/*Events*/
+
+  .afisha_link{
+    color: black;
+    text-decoration: none;
+   }
+   .afisha_link:visited {
+    color: black; /* Цвет посещенных ссылок */
+    text-decoration: none;
+   }
+
+
+/*Info_desk*/
+
+.courses-list a:visited,
+.courses-list a:hover,
+.courses-list a:focus,
+.courses-list a:active {
+	text-decoration: none;
+}
+.courses-list a:hover,
+.courses-list a:focus,
+.courses-list a:active {
+	border-bottom: 3px solid #00bfa5;
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.courses-list .name {
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	color: #000;
+	margin: 14px 0 5px 0;
+}
+.courses-list .start {
+	display: inline-block;
+	width: 75px;
+}
+.courses-list .length {
+	display: inline-block;
+	width: 105px;
+}
+.courses-list .price {
+	display: inline-block;
+}
+.courses-info .description {
+	font-family: "PT Sans Caption", Arial,  sans-serif;
+	font-weight: bold;
+	color: #212121;
+	line-height: 28px;
+}
+
+/*Info_desk*/
+
+.events_info_title{
+	font-size: 18px;
+	color: #000;
+	margin: 102px 0 34px 0;
+}
+.events_info_block {
+	display: inline-block;
+	margin-right: 100px;
+	width: 250px;
+	height: auto;
+}
+.inside_info {
+	display: block;
+	border-bottom: 3px solid #232323;
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+table{
+	width:250px;
+	padding:0px;
+	color:#444;
+	margin-left: -3px;
+}
+tr{
+	text-align: right;
+}
+th{
+	text-align: left;
+}
+.inside_info:hover,
+.inside_info:focus,
+.inside_info:active,
+.inside_info:visited {
+	text-decoration: none;
+}
+.events_info_block :hover,
+.events_info_block :focus,
+.events_info_block :active{
+	background-color:  #d9f3f0;
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+	text-decoration: none;
+}
+.events_info_block a:hover,
+.events_info_block a:focus,
+.events_info_block a:active{
+	text-decoration: none;
+}
+.inside_info span{
+	color: #000;
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 14px 0 5px 0;
+}
+.events_info_img{
+	display: block;
+}
+.container_afisha_strings{
+	margin-top: 81px;
+	margin-left: 14px;
+}
+/*End of infodesk*/
+.afisha_menu{
+	float: right;
+}
+.afisha_menu a{
+  color:black;
+}
+.afisha_element img{
+	margin-bottom: 21px;
+}
+.afisha_element_description{
+	border-bottom: 3px solid black;
+}
+.afisha_element_description span{
+	font-weight: bold;
+}
+.afisha_element{
+	margin: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+	height: auto;
+	width: 252px;
+	height: 418px;
+}
+.afisha_name{
+	font-size:18px;
+	margin-bottom: 11px;
+	text-decoration: none;
+}
+.afisha_element_hover{
+	width:276px;
+	height:452px;
+	padding-top:17px;
+	padding-bottom: 17px;
+}
+.header_afisha{
+	margin-left: auto;
+	margin-right: auto;
+}
+.afisha_element_hover:hover,
+.afisha_element_hover:focus,
+.afisha_element_hover:active {
+	background-color:  #d9f3f0;
+	transition-property: border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+	text-decoration: none;
+}
+td{
+	font-weight: bold;
+}
+th{
+	font-weight: normal;
+}
+/*Вакансии*/
+.rabota_date{
+	color:#d6d6d6;
+	font-weight: lighter;
+}
+.rabota_title{
+	margin-top: 48px;
+}
+
+/*========== ABOUT SCHOOL BEGIN ==========*/
+.top-section {
+	height: 100%;
+	position: relative;
+	background: url(../images/about-school/about-school-background.jpg) no-repeat center top;
+}
+.top-section h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 67px;
+}
+.top-section .slogan {
+	font-family: "pf_beausans_pro", Arial,  sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	color: #000;
+	text-transform: uppercase;
+  	line-height: 63px;
+  	margin-top: 81px;
+}
+.top-section .title {
+	display: inline-block;
+	margin-bottom: 31px;
+	font-family: "pf_beausans_pro", Arial,  sans-serif;
+	font-weight: 600;
+	font-size: 48px;
+	color: #000;
+	letter-spacing: -1px;
+}
+.top-section .bold-txt {
+	font-size: 36px;
+}
+.top-section .scroll-btn {
+	position: absolute;
+    bottom: 0;
+	padding-bottom: 20px;
+}
+.top-section .scroll-btn a {
+	display: block;
+	margin: 0 auto;
+	background: url(../images/scroll-down-btn.png) no-repeat center;
+	height: 44px;
+	width: 95px;
+	transition-property: background;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.top-section .scroll-btn a:hover,
+.top-section .scroll-btn a:focus {
+	background: url(../images/scroll-down-btn-hover.png) no-repeat center;
+	transition-property: background;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+.top-section .scroll-btn a:active {
+	background: url(../images/scroll-down-btn-active.png) no-repeat center;
+}
+.main-section .info-block {
+	margin-top: 48px;
+}
+.main-section .info-block li {
+	list-style: none;
+	padding: 0;
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 46px;
+}
+.main-section li:before {
+	content: none;
+}
+.main-section .info-block li a {
+	color: #000;
+	position: relative;
+}
+.main-section .info-block li a:hover,
+.main-section .info-block li a:focus {
+	text-decoration: none;
+}
+.main-section .info-block .active {
+	font-weight: bold;
+}
+.main-section .info-block .active a:after {
+	content: ' ';
+	background: url(../images/active-tab-after.png) no-repeat center;
+	width: 10px;
+	height: 13px;
+	position: absolute;
+	top: 5px;
+  	right: -20px;
+}
+.main-section .tab-content {
+	margin-top: 60px;
+}
+.main-section .tab-pane {
+	color: #000;
+}
+.main-section h1 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 85px;
+}
+.main-section .study-directions span {
+	font-size: 18px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 13px;
+  	display: inline-block;
+}
+.main-section .study-directions .info {
+	max-width: 230px;
+	line-height: 19px;
+}
+.main-section .study-directions .button-white {
+	margin-top: 35px;
+}
+.main-section .carousel {
+	width: 1300px;
+	margin: 0 auto;
+    margin-top: 110px;
+}
+.main-section .carousel-inner .item {
+	text-align: center;
+}
+.main-section .left.carousel-control {
+	width: 128px;
+  	height: 600px;
+    background: url(../images/school-prew-slide.png) no-repeat center;
+}
+.main-section .right.carousel-control {
+	width: 128px;
+  	height: 600px;
+    background: url(../images/school-next-slide.png) no-repeat center;
+}
+.main-section .carousel-caption h1 {
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 45px;
+}
+.main-section .carousel-caption h1:after {
+    background-repeat: inherit;
+    background-image: url(../images/h1-underline-white.png);
+}
+.main-section .carousel-caption .info {
+    font-family: "pf_beausans_pro", Arial,  sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    height: 600px;
+}
+.main-section .carousel-caption span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.main-section .carousel-indicators li {
+    margin: 1px 8px;
+    width: 14px;
+    height: 14px;
+}
+.main-section .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+    background: none;
+}
+.main-section .carousel-indicators .active:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 1px 0 0 1px;
+}
+.education-block {
+    margin-bottom: 180px;
+}
+.education-block h1 {
+    margin: 80px 0;
+}
+.education-block .info {
+    line-height: 20px;
+}
+.education-block span {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    margin: 85px 0 20px 0;
+    display: inline-block;
+}
+.education-block .even {
+    text-align: right;
+}
+.feedback-section {
+    background-color: #ff900c;
+}
+.feedback-section h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 55px 0 70px 0;
+}
+.feedback-section .feedback-form label {
+    color: #000;
+}
+.feedback-section .feedback-form .button-black {
+    width: 170px;
+    border: none;
+    margin: 40px 0 70px 0;
+}
+/*========== ABOUT SCHOOL END ==========*/
+
+
+
+
