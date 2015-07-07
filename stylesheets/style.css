@@ -428,6 +428,7 @@ input[type="checkbox"] {
 .radio-label,
 .check-label {
 	color: #000;
+    cursor: pointer;
 }
 .check-label:before {
 	content: "";
@@ -439,16 +440,10 @@ input[type="checkbox"] {
     margin: -15px 10px -3px 0;
     cursor: pointer;
 }
-.check-label:after{
-	content: "";
-	display: inline-block;
-	height: 18px;
-    width: 18px;
-    border: solid 1px #000;
+.checkbox input:checked+ label:before{
 	background-image: url("../images/png/check-box.png");
-    position: absolute;
     background-repeat: no-repeat;
-    opacity: 0;
+    background-position: 3px 4px;
 }
 .radio-label:before {
 	content: "";
@@ -467,6 +462,7 @@ input[type="checkbox"] {
 	background-image: url("../images/png/check-radio.png");
 	background-repeat: no-repeat;
 	background-position: 5px 5px;
+    cursor: pointer;
 
 }
 .field-radio input:disabled+label:before{
@@ -1292,4 +1288,6 @@ th{
     background: url(../images/school-next-slide.png) no-repeat center;
 }
 /*========== ABOUT SCHOOL END ==========*/
+
+/* LIGHTBOX BEGIN
 
