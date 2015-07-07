@@ -11,6 +11,8 @@
         <link href="http://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/selectize.css">
         <link type="text/css" rel="stylesheet" href="./stylesheets/lightGallery.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="./js/lightGallery.js"></script>
     </head>
     <body>
         <div class="page-wrapper">
@@ -62,7 +64,9 @@
             <div class="container">
                <div class="row">
                   <div class="col-12">
-                        <h1>Работы выпускников //</h1>
+                    <h1 class="gallery">Работы выпускников //</h1>
+                     <ul id="lightGallery">
+                        <li data-src="./images/1.jpg">
                         <div class="image-container">
                             <a href="#">
                                 <img src="./images/1.jpg" alt="Editorial design" width="296" height="230">
@@ -71,6 +75,8 @@
                             <a href="http://svc.com.ua/long-courses/graficheskij-dizajn-masterskij/">Графический дизайн: мастерский</a><br>
                             <span> Автор: Ольга Карасева</span>
                         </div>
+                        </li>
+                        <li data-src="./images/2.jpg">
                         <div class="image-container">
                             <a href="#">
                                 <img src="./images/2.jpg" alt="Illustration" width="296" height="230">
@@ -79,6 +85,8 @@
                             <a href="http://svc.com.ua/long-courses/graficheskij-dizajn-bazovyj/">Графический дизайн: базовый</a><br>
                             <span> Автор: Лина Якобчук</span>
                         </div>
+                        </li>
+                        <li data-src="./images/3.png">
                         <div class="image-container" id="last">
                             <a href="#">
                                 <img src="./images/3.png" alt="Editorial design" width="296" height="230">
@@ -87,6 +95,7 @@
                             <a href="http://svc.com.ua/long-courses/graficheskij-dizajn-bazovyj/">Графический дизайн: базовый</a><br>
                             <span> Автор: студенты курса</span>
                         </div>
+                        </li>
                     </div>
                </div>
                <div class="row">
@@ -171,6 +180,7 @@
                             <a href="http://svc.com.ua/long-courses/graficheskij-dizajn-bazovyj/">Новые медиа</a><br>
                             <span> Автор: Зоя Баш </span>
                         </div>
+                    </ul>
                     </div>
                </div>
                <div class="lightbox">
@@ -233,6 +243,11 @@
         $('.subject').selectize({
         create: true,
         sortField: 'text'
+        });
+        </script>
+        <script>
+        $(document).ready(function() {
+        $("#lightGallery").lightGallery();
         });
         </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

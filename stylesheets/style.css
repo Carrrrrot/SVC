@@ -138,6 +138,7 @@ h1 {
 	font-family: "pf_beausans_pro", Arial,  sans-serif;
 	font-weight: 600;
 }
+
 h1:after {
 	content: "";
 	background-image: url("../images/sprite.png");
@@ -148,7 +149,8 @@ h1:after {
     background-position: -158px -35px;
     margin-top: 22px;
 }
-.afisha h1:after{
+.gallery:after,
+.afisha:after{
 	display: none;
 }
 h2 {
@@ -195,6 +197,17 @@ li {
 }
 li:after {
 	margin-right: 10px;
+}
+ul#lightGallery {
+  width:940px;
+  overflow:hidden;
+}
+ul li#lightGallery {
+    width:33.333%;
+}
+li#lightGallery:before{
+    display: none;
+    content: none;
 }
 a {
 	color: #00695c;
@@ -806,7 +819,7 @@ li:before {
 	width: 296px;
 	display: inline-block;
     margin-right: 26px;
-	padding-bottom: 80px;
+	padding-bottom: 40px;
 	position: relative;
 	float: left;
 }
