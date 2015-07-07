@@ -198,16 +198,17 @@ li {
 li:after {
 	margin-right: 10px;
 }
-ul#lightGallery {
+#lightGallery {
   width:940px;
   overflow:hidden;
 }
-ul li#lightGallery {
-    width:33.333%;
-}
-li#lightGallery:before{
+#lightGallery li:before{
     display: none;
     content: none;
+}
+#lightGallery li{
+    float: left;
+    padding: 0;
 }
 a {
 	color: #00695c;
