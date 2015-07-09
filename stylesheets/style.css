@@ -138,6 +138,7 @@ h1 {
 	font-family: "pf_beausans_pro", Arial,  sans-serif;
 	font-weight: 600;
 }
+
 h1:after {
 	content: "";
 	background-image: url("../images/sprite.png");
@@ -148,7 +149,8 @@ h1:after {
     background-position: -158px -35px;
     margin-top: 22px;
 }
-.afisha h1:after{
+.gallery:after,
+.afisha:after{
 	display: none;
 }
 h2 {
@@ -195,6 +197,18 @@ li {
 }
 li:after {
 	margin-right: 10px;
+}
+#lightGallery {
+  width:940px;
+  overflow:hidden;
+}
+#lightGallery li:before{
+    display: none;
+    content: none;
+}
+#lightGallery li{
+    float: left;
+    padding: 0;
 }
 a {
 	color: #00695c;
@@ -437,6 +451,7 @@ input[type="checkbox"] {
 .radio-label,
 .check-label {
 	color: #000;
+    cursor: pointer;
 }
 .check-label:before {
 	content: "";
@@ -448,16 +463,10 @@ input[type="checkbox"] {
     margin: -15px 10px -3px 0;
     cursor: pointer;
 }
-.check-label:after{
-	content: "";
-	display: inline-block;
-	height: 18px;
-    width: 18px;
-    border: solid 1px #000;
+.checkbox input:checked+ label:before{
 	background-image: url("../images/png/check-box.png");
-    position: absolute;
     background-repeat: no-repeat;
-    opacity: 0;
+    background-position: 3px 4px;
 }
 .radio-label:before {
 	content: "";
@@ -476,6 +485,7 @@ input[type="checkbox"] {
 	background-image: url("../images/png/check-radio.png");
 	background-repeat: no-repeat;
 	background-position: 5px 5px;
+    cursor: pointer;
 
 }
 .field-radio input:disabled+label:before{
@@ -810,7 +820,7 @@ li:before {
 	width: 296px;
 	display: inline-block;
     margin-right: 26px;
-	padding-bottom: 80px;
+	padding-bottom: 40px;
 	position: relative;
 	float: left;
 }
@@ -832,6 +842,22 @@ li:before {
 	transition-property: background-image;
 	transition-duration: 0,8s;
 	transition-ftiming-function: linear;
+}
+.vimeo-icon {
+    position: absolute;
+    display: block;
+    background-image: url("../images/vimeo.png");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+}
+.vimeo-icon:hover {
+    background-image: url("../images/vimeo-active.png");
+    transition-property: background-image;
+    transition-duration: 0,8s;
+    transition-ftiming-function: linear;
 }
 /*GALLERY END*/
 
@@ -1347,10 +1373,4 @@ th{
     margin: 40px 0 70px 0;
 }
 /*========== ABOUT SCHOOL END ==========*/
-
-/* LIGHTBOX BEGIN*/
-
-.lightbox ul li {
-    list-style-type: none;
-}
 
