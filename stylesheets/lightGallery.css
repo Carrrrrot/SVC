@@ -316,76 +316,6 @@ left: 0;
 }
 /*lightGallery core*/
 
-
-/*action*/
-#lg-action {
-	bottom: 20px;
-	position: fixed;
-	left: 50%;
-	margin-left: -30px;
-	z-index: 9;
-	-webkit-backface-visibility: hidden;
-}
-#lg-action.has-thumb {
-	margin-left: -46px;
-}
-
-#lg-action a {
-	margin: 0 3px 0 0 !important;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	position: relative;
-	top: auto;
-	left: auto;
-	bottom: auto;
-	right: auto;
-	display: inline-block !important;
-	display: inline-block;
-	vertical-align: middle;
- *display: inline;
- *zoom: 1;
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 0.65);
-	font-size: 16px;
-	width: 28px;
-	height: 28px;
-	font-family: 'Slide-icons';
-	color: #FFF;
-	cursor: pointer;
-}
-#lg-action a.disabled {
-	opacity: 0.6;
-	filter: alpha(opacity=60);
-	cursor: default;
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 0.65) !important;
-}
-#lg-action a:hover, #lg-action a:focus {
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 0.85);
-}
-#lg-action a#lg-prev:before, #lg-action a#lg-next:after {
-	left: 5px;
-	bottom: 3px;
-	position: absolute;
-}
-#lg-action a#lg-prev:before {
-	content: "\e01d";
-}
-#lg-action a#lg-next:after {
-	content: "\e01b";
-}
-#lg-action a.cl-thumb:after {
-	font-family: 'Slide-icons';
-	content: "\e01c";
-	left: 6px;
-	bottom: 4px;
-	font-size: 16px;
-	position: absolute;
-}
-/*action*/
-
 /*counter*/
 #lg-counter {
 	bottom: 52px;
@@ -404,47 +334,42 @@ left: 0;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: #000000;
-	-webkit-transition: max-height 0.4s ease-in-out;
-	-moz-transition: max-height 0.4s ease-in-out;
-	-o-transition: max-height 0.4s ease-in-out;
-	-ms-transition: max-height 0.4s ease-in-out;
-	transition: max-height 0.4s ease-in-out;
 	z-index: 9;
 	max-height: 0;
-	opacity: 0;
+
 }
 #lg-gallery.open .thumb-cont {
-	max-height: 350px;
+	max-height: 300px;
 }
 #lg-gallery .thumb-cont .thumb-inner {
 	margin-left: -12px;
 	padding: 12px;
-	max-height: 290px;
+	max-height: 270px;
 	overflow-y: auto;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
-#lg-gallery .thumb-cont .thumb-info {
+#lg-gallery .thumb-cont {
 	background-color: #333;
 	padding: 7px 20px;
 }
-#lg-gallery .thumb-cont .thumb-info .count {
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 12px;
+#lg-gallery .thumb-info {
+	display: none;
 }
-#lg-gallery .thumb-cont .thumb-info .close {
-	color: #FFFFFF;
+#lg-gallery .close {
+	content: "";
+	background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-position: -151px -231px;
 	display: block;
 	float: right !important;
-	width: 28px;
-	position: relative;
-	height: 28px;
 	border-radius: 2px;
 	margin-top: -4px;
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 0.65);
+	background-color: transparent;
 	-webkit-transition: background-color 0.3s ease 0s;
 	-moz-transition: background-color 0.3s ease 0s;
 	-o-transition: background-color 0.3s ease 0s;
@@ -453,21 +378,28 @@ left: 0;
 	z-index: 1090;
 	cursor: pointer;
 }
-#lg-gallery .thumb-cont .thumb-info .close i:after {
+#lg-gallery .close i:after {
 	left: 6px;
 	position: absolute;
 	top: 4px;
 }
-#lg-gallery .thumb-cont .thumb-info .close i:after, #lg-close:after {
-	content: "\e01a";
-	font-family: 'Slide-icons';
-	font-style: normal;
-	font-size: 16px;
+#lg-gallery .close:hover {
+	content: "";
+	background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    background-position: -59px -231px;
+    background-color: transparent;
 }
-#lg-gallery .thumb-cont .thumb-info .close:hover {
-	text-decoration: none;
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 1);
+#lg-gallery .close:active {
+	content: "";
+	background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    background-position: -105px -231px;
+    background-color: transparent;
 }
 #lg-gallery .thumb-cont .thumb {
 	display: inline-block !important;
