@@ -36,7 +36,7 @@
 	-o-transition: opacity 0.35s ease;
 	-ms-transition: opacity 0.35s ease;
 	transition: opacity 0.35s ease;
-	background: #0d0d0d;
+	background: rgba(0, 0, 0, 0.7)
 }
 #lg-outer .lg-slide{
 	position: relative;

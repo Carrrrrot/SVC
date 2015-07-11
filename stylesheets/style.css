@@ -138,7 +138,7 @@ h1 {
 	font-family: "pf_beausans_pro", Arial,  sans-serif;
 	font-weight: 600;
 }
-
+/*
 h1:after {
 	content: "";
 	background-image: url("../images/sprite.png");
@@ -149,6 +149,7 @@ h1:after {
     background-position: -158px -35px;
     margin-top: 22px;
 }
+*/
 .gallery:after,
 .afisha:after{
 	display: none;
@@ -1373,4 +1374,14 @@ th{
     margin: 40px 0 70px 0;
 }
 /*========== ABOUT SCHOOL END ==========*/
-
+/*Contacts begin*/
+#map-canvas {
+    height: 534px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.map {
+    min-height: 600px;
+    margin-bottom: 10px;
+    background-image: url(../images/map.jpg);
+}
