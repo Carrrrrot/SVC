@@ -37,7 +37,7 @@
 
                 exThumbImage: false,
                 thumbnail: true,
-                showThumbByethumbDfault: true,
+                showThumbByDefault: true,
                 animateThumb: true,
                 currentPagerPosition: 'middle',
                 thumbWidth: 100,
