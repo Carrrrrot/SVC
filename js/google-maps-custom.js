@@ -20,51 +20,6 @@ function initialize() {
         ]
     },
     {
-        "featureType": "landscape.natural.landcover",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "hue": "#ffcd00"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.natural.landcover",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#c0c1c2"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.natural.landcover",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.natural.terrain",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#7f8182"
-            }
-        ]
-    },
-    {
         "featureType": "poi",
         "elementType": "all",
         "stylers": [
@@ -95,6 +50,15 @@ function initialize() {
         ]
     },
     {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
         "featureType": "road.arterial",
         "elementType": "labels.icon",
         "stylers": [
@@ -117,7 +81,7 @@ function initialize() {
         "elementType": "all",
         "stylers": [
             {
-                "color": "#ffffff"
+                "color": "#dde6e8"
             },
             {
                 "visibility": "on"
