@@ -1,69 +1,206 @@
-//Google maps
-var map;
-var marker;
-var theatre = new google.maps.LatLng(50.4552824,30.5051092);
-
-var MY_MAPTYPE_ID = 'custom_style';
-
 function initialize() {
-
-  var featureOpts = [
-    { "featureType": "road.local",
-    "elementType": "geometry.fill",
-    "stylers": [ { "color": "#ffffff"} ]},
-
-    { "featureType": "road.highway",
-    "stylers": [ { "color": "#b3b3b3" } ] },
-
-    { "featureType": "landscape",
-    "elementType": "geometry.fill",
-    "stylers": [ { "color": "#e2e2e2" } ] },
-
-    { "featureType": "road",
-    "elementType": "geometry.stroke",
-    "stylers": [ { "color": "#d9d9d9" },
-    { "weight": 2.5 } ] },
-
-    { "featureType": "poi.business",
-    "elementType": "labels.icon",
-    "stylers": [ { "visibility": "off" } ] },
-
-    { "featureType": "transit.station.bus",
-    "elementType": "labels.icon",
-    "stylers": [ { "saturation": -100 },
-    { "lightness": 11 } ] },
-
-    { "featureType": "landscape",
-    "elementType": "geometry.stroke",
-    "stylers": [ { "visibility": "off" } ] },
-    { }
-    ]
-
-  var mapOptions = {
-    zoom: 17,
-    center: theatre,
-    mapTypeControlOptions: {
-      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+            // Styles
+            var styles = [
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#444444"
+            }
+        ]
     },
-    mapTypeId: MY_MAPTYPE_ID
-  };
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.landcover",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "hue": "#ffcd00"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.landcover",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#c0c1c2"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.landcover",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.terrain",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#7f8182"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    }
+];
+            var styledMap = new google.maps.StyledMapType(styles,
+                {name: "Styled Map"});
+            // Set map-option
+            var mapOptions = {
+                center: new google.maps.LatLng(50.4552824,30.5051092),
+                zoom: 15,
+                disableDefaultUI: true,
+                zoomControl: true,
+                zoomControlOptions: {
+                    style: google.maps.ZoomControlStyle.SMALL,
+                    position: google.maps.ControlPosition.RIGHT_BOTTOM
+                },
+                streetViewControl:true,
+                scrollwheel: false,
+                mapTypeControlOptions: {
+                    mapTypeIds: ['map-style']
+                }
+            };
+            // Select map-blocks in HTML
+            var mapCanvas = document.getElementById('map-canvas');
+            // Create map
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            // Add Markers
+            setMarkers(map, introPro);
+            //Info window events
+            var myOpenMarker;
 
-  map = new google.maps.Map(document.getElementById('map-canvas'),
-      mapOptions);
+            google.maps.event.addListener(markerArr[0], 'click', function() {
+                artemaInfo.open(map,markerArr[0]);
+                if(myOpenMarker) myOpenMarker.close();
+                myOpenMarker = hryshkaInfo;
+            });
+            google.maps.event.addListener(map, 'click', function() {
+                if(myOpenMarker) myOpenMarker.close();
+            });
+            // Add custom styles to map
+            map.mapTypes.set('map-style', styledMap);
+            map.setMapTypeId('map-style');
+        }
+        //Our Markers - IntroPro Offices
+        var introPro = [
+            ['SVC, Kiev, Artema str.', 50.4552824,30.5051092],
+        ];
+        // Add markers to the map
+        var markerArr = [];
+        function setMarkers(map, locations) {
 
-  var styledMapOptions = {
-    name: 'Custom Style'
-  };
-
-  var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-
-  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-
- marker = new google.maps.Marker({
- position: theatre,
- title: "Новий Театр На Печерську"
- });
-
- marker.setMap(map);
-}
-
+            var image = {
+                url: './images/location.png',
+            };
+            for (var i = 0; i < locations.length; i++) {
+                var introPro = locations[i];
+                var myLatLng = new google.maps.LatLng(introPro[1], introPro[2]);
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: image,
+                    animation: google.maps.Animation.DROP,
+                    title: introPro[0],
+                    zIndex: introPro[3]
+                });
+                markerArr.push(marker);
+            }
+        }
+        // InfoWindow KIEV - artema
+        var artema = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h3 id="firstHeading" class="firstHeading">School of visual communication</h3>'+
+            '<div id="bodyContent">'+
+                '<p>1-5, Artema str., Kiev, 04053</p>'+
+                '<p>+380 44 360 45 40</p>'+
+            '</div>'+
+        '</div>';
+        var artemaInfo = new google.maps.InfoWindow({
+            content: artema
+        });
+        // Initialize Google-Map
+        google.maps.event.addDomListener(window, 'load', initialize);

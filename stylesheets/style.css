@@ -1376,12 +1376,6 @@ th{
 /*========== ABOUT SCHOOL END ==========*/
 /*Contacts begin*/
 #map-canvas {
-    height: 534px;
+    height: 700px;
     margin: 0 auto;
-    margin-bottom: 10px;
-}
-.map {
-    min-height: 600px;
-    margin-bottom: 10px;
-    background-image: url(../images/map.jpg);
 }

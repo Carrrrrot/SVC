@@ -15,5 +15,4 @@ $(document).click(function() {
         sortField: 'text'
         });
 
-
-  $('[data-toggle="tooltip"]').tooltip();
+$('[data-toggle="tooltip"]').tooltip();
