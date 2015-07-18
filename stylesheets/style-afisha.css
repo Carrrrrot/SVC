@@ -136,6 +136,8 @@ h1 {
 	font-size: 36px;
 	font-family: "pf_beausans_pro", Arial,  sans-serif;
 	font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 h2 {
 	color: #000;
@@ -173,7 +175,7 @@ li:after {
 	margin-right: 10px;
 }
 a {
-	color: #427e74;
+	color: #000;
 	text-decoration: none;
 }
 a:hover,
@@ -909,4 +911,5 @@ th{
 }
 .afisha_menu{
     float: right;
+    margin-top: 40px;
 }
