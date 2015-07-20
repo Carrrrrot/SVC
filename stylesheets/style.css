@@ -137,6 +137,8 @@ h1 {
 	font-size: 36px;
 	font-family: "pf_beausans_pro", Arial,  sans-serif;
 	font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 /*
 h1:after {
@@ -772,10 +774,11 @@ li:before {
 /* TEACHER INFO BEGIN */
 .teacher-info {
 	display: inline-block;
-	margin-right: 100px;
+	margin-right: 60px;
 	width: 250px;
 	height: auto;
 	vertical-align: top;
+    margin-bottom: 40px;
 }
 .teacher-info a {
 	display: block;
@@ -1101,6 +1104,7 @@ th{
 /*End of infodesk*/
 .afisha_menu{
 	float: right;
+    margin-top: 40px;
 }
 .afisha_menu a{
   color:black;
@@ -1376,6 +1380,6 @@ th{
 /*========== ABOUT SCHOOL END ==========*/
 /*Contacts begin*/
 #map-canvas {
-    height: 700px;
+    min-height: 400px;
     margin: 0 auto;
 }
