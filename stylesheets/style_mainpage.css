@@ -1,0 +1,506 @@
+@font-face {
+    font-family: "pf_beausans_pro";
+    src: url("../fonts/pfbeausanspro-bold-webfont.eot");
+    src: url("../fonts/pfbeausanspro-bold-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/pfbeausanspro-bold-webfont.woff2") format("woff2"),
+         url("../fonts/pfbeausanspro-bold-webfont.woff") format("woff"),
+         url("../fonts/pfbeausanspro-bold-webfont.ttf") format("truetype"),
+         url("../fonts/pfbeausanspro-bold-webfont.svg#pf_beausans_probold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pf_beausans_pro";
+    src: url("../fonts/pfbeausanspro-black-webfont.eot");
+    src: url("../fonts/pfbeausanspro-black-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/pfbeausanspro-black-webfont.woff2") format("woff2"),
+         url("../fonts/pfbeausanspro-black-webfont.woff") format("woff"),
+         url("../fonts/pfbeausanspro-black-webfont.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pf_beausans_pro';
+    src: url('../fonts/pfbeausanspro-regular-webfont.eot');
+    src: url('../fonts/pfbeausanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfbeausanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pfbeausanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/pfbeausanspro-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.notification {
+    margin: 10px 0;
+}
+
+.selectize-input.items{
+    border: 1px solid black;
+    border-radius: 0px;
+    width: 320px;
+    height: 41px;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+body {
+    font-family: "PT Sans Caption", Arial,  sans-serif;
+    color: #444;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 auto;
+    height: 100%;
+}
+.clearfix:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.page-wrapper {
+    width: 100%;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+.sprite {
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+    left:0;
+    right:0;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: left;
+    min-height: 1px;
+}
+.col-12 {
+    width: 940px;
+}
+.col-11 {
+    width: 860px;
+}
+.col-10 {
+    width: 780px;
+}
+.col-9 {
+    width: 700px;
+}
+.col-8 {
+    width: 620px;
+}
+.col-7 {
+    width: 540px;
+}
+.col-6 {
+    width: 460px;
+}
+.col-5 {
+    width: 380px;
+}
+.col-4 {
+    width: 300px;
+}
+.col-3 {
+    width: 220px;
+}
+.col-2 {
+    width: 140px;
+}
+.col-1 {
+    width: 60px;
+}
+h1 {
+    color: #000;
+    font-size: 36px;
+    font-family: "pf_beausans_pro", Arial,  sans-serif;
+    font-weight: 600;
+}
+/*
+h1:after {
+    content: "";
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 5px;
+    background-position: -158px -35px;
+    margin-top: 22px;
+}
+*/
+.gallery:after,
+.afisha:after{
+    display: none;
+}
+
+/*HEADER BEGIN*/
+.italic-txt {
+    font-style: italic;
+}
+.logotype {
+    position: absolute;
+    left: 0;
+    margin-left: 32px;
+    width: 140px;
+    height: 54px;
+    background-position: -158px -63px;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.logotype:visited {
+    background-position: -158px -63px;
+    opacity: 1;
+}
+.logotype:hover,
+.logotype:focus {
+    opacity: .5;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.logotype:active {
+    background-position: -5px -126px;
+}
+.logotype-txt {
+    display: none;
+}
+.header {
+    padding-top: 22px;
+  position: fixed;
+  z-index: 15;
+  left: 0;
+  right: 0;
+
+
+}
+.header-menu {
+    text-align: center;
+}
+.header-menu li {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 17px;
+      padding-left: 0;
+}
+.header-menu .dropdown:after {
+    content: "";
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-left: 3px solid #fff;
+    top: 14px;
+    left: 8px;
+    position: relative;
+
+    /*background-image: url("../images/Arrow .png")
+    background-repeat: no-repeat;
+    display: block;*/
+}
+.header-menu li a {
+    color: #000;
+}
+.header-menu li a:visited {
+    text-decoration: none;
+    font-weight: normal;
+}
+.header-menu li a:hover,
+.header-menu li a:focus {
+    text-decoration: none;
+    font-weight: bold;
+}
+.header-menu li a:active {
+    color: #00ac94;
+}
+.header-menu li:before {
+    background: none;
+    padding: 0;
+}
+.sub-menu-wrap {
+    height: 60px;
+    background-color: #000;
+    line-height: 60px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 100px;
+    z-index: 9;
+}
+.sub-menu {
+    text-align: center;
+}
+.sub-menu ul {
+    margin: 0;
+    padding: 0;
+}
+.sub-menu.study li {
+    margin: 0 32px;
+}
+.sub-menu.about-school li {
+    margin: 0 62px;
+}
+.sub-menu li {
+    display: inline-block;
+}
+.sub-menu .active {
+    font-size: 18px;
+    color: #00bfa5;
+}
+.sub-menu li:before {
+    background: none;
+    padding: 0;
+}
+.sub-menu li a {
+    font-size: 18px;
+    color: #fff;
+}
+.sub-menu li a:visited {
+    text-decoration: none;
+    font-weight: normal;
+}
+.sub-menu li a:hover,
+.sub-menu li a:focus {
+    text-decoration: none;
+    font-weight: bold;
+}
+.sub-menu li a:active {
+    color: #00bfa5;
+}
+.header-socials {
+    position: absolute;
+    right: 0;
+    margin: 13px 32px 0 0;
+}
+.header-behance {
+    display: inline-block;
+    width: 28px;
+    height: 16px;
+    background-position: -5px -5px;
+    margin-right: 12px;
+    opacity: 1;
+}
+.header-vimeo {
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    background-position: -365px -88px;
+    margin-right: 21px;
+    opacity: 1;
+}
+.header-facebook {
+    display: inline-block;
+    width: 10px;
+    height: 19px;
+    background-position: -133px -5px;
+    opacity: 1;
+}
+.header-socials a:hover,
+.header-socials a:focus {
+    opacity: .5;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.header-behance:visited {
+    background-position: -5px -5px;
+    opacity: 1;
+}
+.header-behance:active {
+    background-position: -41px -5px;
+}
+.header-vimeo:visited {
+    background-position: -365px -88px;
+    opacity: 1;
+}
+.header-vimeo:active {
+    background-position: -389px -88px;
+}
+.header-facebook:visited {
+    background-position: -133px -5px;
+    opacity: 1;
+}
+.header-facebook:active {
+    background-position: -151px -5px;
+}
+/*HEADER END*/
+h2 {
+    color: #000;
+    font-size: 24px;
+    font-family: "pf_beausans_pro", Arial,  sans-serif;
+    font-weight: bold;
+}
+/*h2:after {
+    content: "";
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-position: -158px -50px;
+    margin-top: 20px;
+}*/
+h3 {
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+ul,
+ol {
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 19px;
+}
+ul li:before {
+    content: "";
+    background: url("../images/square-marker.png") center center no-repeat;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 7px;
+    left: 0;
+}
+
+li {
+    line-height: 20px;
+}
+li:after {
+    margin-right: 10px;
+}
+.carousel-example-generic {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 110px;
+}
+.carousel-inner .item {
+    text-align: center;
+
+}
+.carousel-inner  .item img, .carousel-inner > .item > a > img {
+  line-height: 1;
+  height:100%;
+}
+.carousel-inner .img{
+    width:20px;
+}
+
+
+.left.carousel-control {
+    width: 128px;
+    height: 600px;
+    background: url(../images/school-prew-slide.png) no-repeat center;
+}
+.right.carousel-control {
+    width: 128px;
+    height: 600px;
+    background: url(../images/school-next-slide.png) no-repeat center;
+}
+.carousel-caption h1 {
+    color: black;
+    margin: 0;
+    /*position: absolute;*/
+    top: 45px;
+}
+.carousel-caption .red_illustration{
+    
+    margin: 0;
+    position: absolute;
+}
+.carousel-caption h1:after {
+    background-repeat: inherit;
+    background-image: url(../images/h1-underline-white.png);
+}
+.carousel-caption .info {
+    font-family: "pf_beausans_pro", Arial,  sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    /*height: 600px;*/
+    text-transform: uppercase;
+
+}
+
+.carousel-caption .info{
+
+}
+
+
+
+.carousel-caption a{
+    color: #000000;
+    text-decoration: none;
+
+}
+.carousel-caption a:after{
+   border-bottom: 2ox solid black;
+}
+
+.carousel-caption .red_illustration{
+    font-weight: bold;
+    color: #f50057;
+
+}
+
+/*.carousel-caption h2{
+    font-weight: bold;
+    position: absolute;
+    left:650px;
+    top:450px;
+}*/
+
+.carousel-caption span {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.carousel-caption .info{
+    display: absolute;
+}
+.carousel-indicators li {
+    margin: 1px 8px;
+    width: 14px;
+    height: 14px;
+}
+.carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+    background: none;
+}
+.carousel-indicators .active:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 1px 0 0 1px;
+}
