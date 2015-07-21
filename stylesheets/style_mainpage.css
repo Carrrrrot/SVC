@@ -64,6 +64,7 @@ body {
 }
 .page-wrapper {
     width: 100%;
+    height: 100%;
 }
 .container {
     width: 940px;
@@ -394,21 +395,34 @@ li {
 li:after {
     margin-right: 10px;
 }
+.carousel{
+    height: 100%;
+    width: 100%;
+}
 .carousel-example-generic {
     width: 1300px;
     margin: 0 auto;
     margin-top: 110px;
 }
+.carousel-inner{
+    height: 100%;
+}
 .carousel-inner .item {
     text-align: center;
+    height:100%;
 
 }
-.carousel-inner  .item img, .carousel-inner > .item > a > img {
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
   line-height: 1;
   height:100%;
+  width: 100%;
+}
+.img-illustration{
+    background-image: url(../images/illustration_image.png);
 }
 .carousel-inner .img{
     width:20px;
+    height: 100%;
 }
 
 
@@ -421,6 +435,9 @@ li:after {
     width: 128px;
     height: 600px;
     background: url(../images/school-next-slide.png) no-repeat center;
+}
+.carousel-caption{
+    height: 100%;
 }
 .carousel-caption h1 {
     color: black;
@@ -443,9 +460,7 @@ li:after {
     line-height: 42px;
     font-weight: normal;
     text-align: left;
-    display: table-cell;
     vertical-align: middle;
-    /*height: 600px;*/
     text-transform: uppercase;
 
 }
