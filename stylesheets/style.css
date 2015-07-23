@@ -162,7 +162,7 @@ h2 {
 	font-family: "pf_beausans_pro", Arial,  sans-serif;
 	font-weight: bold;
 }
-h2:after {
+.underlined:after {
 	content: "";
 	background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
@@ -637,9 +637,9 @@ li:before {
 .header-menu .dropdown:after {
 	content: "";
 	border-top: 3px solid #000;
-	border-bottom: 3px solid #fff;
-	border-right: 3px solid #fff;
-	border-left: 3px solid #fff;
+	border-bottom: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-left: 3px solid transparent;
 	top: 14px;
   	left: 8px;
   	position: relative;
@@ -1383,3 +1383,345 @@ th{
     min-height: 400px;
     margin: 0 auto;
 }
+/*========== VACANCIES BEGIN ==========*/
+.breadcrumbs,
+.breadcrumbs a:visited {
+    color: #bbb;
+    margin-top: 47px;
+}
+.breadcrumbs a:first-child {
+    font-weight: bold;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+    text-decoration: none;
+}
+.vacancies h3 {
+    font-family: "pf_beausans_pro", Arial,  sans-serif;
+    color: #212121;
+    font-size: 24px;
+}
+.vacancies .title {
+    color: #212121;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.vacancies .title a {
+    color: #212121;
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.vacancies .title a:hover,
+.vacancies .title a:focus {
+    text-decoration: none;
+    color: #bbb;
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.vacancies .title a:active {
+    color: #00695c;
+}
+.vacancies .title:after {
+    content: none;
+}
+.vacancies .date {
+    color: #bbb;
+    font-size: 14px;
+    font-weight: normal;
+}
+.vacancies .date:after {
+    content: "";
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-position: -158px -50px;
+    margin-top: 20px;
+}
+.aside_contacts {
+    margin-top: 15px;
+}
+.aside_contacts span {
+    font-family: "pf_beausans_pro", Arial,  sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  top: 140px;
+  width: 705px;
+  height: 605px;
+  margin: 0 auto;
+}
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  outline: 0;
+  padding: 30px;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.modal-backdrop.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.modal-header .title {
+    margin: 0;
+}
+.modal-header .date {
+    padding-bottom: 13px;
+}
+.modal-header .date:after {
+    margin-top: 15px;
+}
+.modal-header .close {
+    width: 36px;
+    height: 36px;
+    background-position: -59px -231px;
+    right: -65px;
+    top: 0;
+}
+.modal-header .close:hover,
+.modal-header .close:focus {
+    background-position: -151px -231px;
+}
+.modal-header .close:active {
+    background-position: -105px -231px;
+}
+.modal-header .description span {
+    color: #bbb;
+    padding-right: 5px;
+}
+.modal-header .description div {
+    float: left;
+}
+.modal-header .employment,
+.modal-header .experience,
+.modal-header .education {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+.modal-header .experience {
+    margin-left: 70px;
+}
+.modal-header .employment:before {
+    background-image: url("../images/sprite.png");
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: '';
+    width: 15px;
+    height: 14px;
+    background-position: -308px -86px;
+}
+.modal-header .experience:before {
+    background-image: url("../images/sprite.png");
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: '';
+    width: 16px;
+    height: 13px;
+    background-position: -308px -63px;
+}
+.modal-header .education:before {
+    background-image: url("../images/sprite.png");
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: '';
+    width: 20px;
+    height: 12px;
+    background-position: -197px -231px;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body {
+  position: relative;
+}
+.modal-body .heading {
+    font-family: "pf_beausans_pro", Arial,  sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #212121;
+}
+.modal-body .list {
+    color: #2a2a2a;
+    font-weight: bold;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.modal-body ul li {
+    padding: 0 0 7px 25px;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+/*========== VACANCIES END ==========*/
+
+/*========== Parntenrs Begin ========*/
+.logo_link{
+  display: inline-block;
+  
+  width: 33%;
+  float: left;
+  text-align: center;
+  line-height: 8;
+  margin-bottom: 55px;
+}
+.logo_link img{
+	vertical-align: middle;
+}
+/*========== Parntenrs End ========*/
+
+/*========== Course Description ========*/
+.course_path{
+	margin-top: 48px;
+}
+.course_path a{
+	text-decoration: none;
+	color:#bbbbbb;
+
+}
+.go_to{
+	width: 15px;
+    height: 40px;
+    background: url(../images/school-next-slide.png) no-repeat center;
+}
+.course_background{
+	background: url(../images/master_course.png) no-repeat;
+	background-position: 50% 50%; 
+
+}
+.course_name{
+	margin-bottom: 480px;
+}
+.course_about{
+	display: inline-block;
+	float:left;
+	font-weight: normal;
+	width: 54%;
+}
+.short_information{
+	width: 274px;
+	display: inline-block;
+	float:right;
+}
+.tabs .info-block {
+    margin-top: 48px;
+}
+.tabs .info-block li {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 46px;
+}
+.tabs li:before {
+    content: none;
+}
+.tabs .info-block li a {
+    color: #000;
+    position: relative;
+}
+.tabs .info-block li a:hover,
+.tabs .info-block li a:focus {
+    text-decoration: none;
+}
+.tabs .info-block .active {
+    font-weight: bold;
+}
+.tabs .info-block .active a:after {
+    content: ' ';
+    background: url(../images/active-tab-after.png) no-repeat center;
+    width: 10px;
+    height: 13px;
+    position: absolute;
+    top: 5px;
+    right: -20px;
+}
+.tabs .tab-content {
+    margin-top: 60px;
+}
+.tabs .tab-pane {
+    color: #000;
+}
+.bonus{
+	margin-top: 50px;
+}
+.button_oncourse{
+	margin-left: 39%;
+	margin-top: 44px;
+	margin-bottom: 52px;
+}
+
+
+/*========== Course Description End ========*/
+
+
+
+
