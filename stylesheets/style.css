@@ -162,7 +162,7 @@ h2 {
 	font-family: "pf_beausans_pro", Arial,  sans-serif;
 	font-weight: bold;
 }
-h2:after {
+.underlined:after {
 	content: "";
 	background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
@@ -637,9 +637,9 @@ li:before {
 .header-menu .dropdown:after {
 	content: "";
 	border-top: 3px solid #000;
-	border-bottom: 3px solid #fff;
-	border-right: 3px solid #fff;
-	border-left: 3px solid #fff;
+	border-bottom: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-left: 3px solid transparent;
 	top: 14px;
   	left: 8px;
   	position: relative;
@@ -1626,7 +1626,7 @@ th{
 /*========== Parntenrs Begin ========*/
 .logo_link{
   display: inline-block;
-  display: inline-block;
+  
   width: 33%;
   float: left;
   text-align: center;
@@ -1638,7 +1638,89 @@ th{
 }
 /*========== Parntenrs End ========*/
 
+/*========== Course Description ========*/
+.course_path{
+	margin-top: 48px;
+}
+.course_path a{
+	text-decoration: none;
+	color:#bbbbbb;
 
+}
+.go_to{
+	width: 15px;
+    height: 40px;
+    background: url(../images/school-next-slide.png) no-repeat center;
+}
+.course_background{
+	background: url(../images/master_course.png) no-repeat;
+	background-position: 50% 50%; 
+
+}
+.course_name{
+	margin-bottom: 480px;
+}
+.course_about{
+	display: inline-block;
+	float:left;
+	font-weight: normal;
+	width: 54%;
+}
+.short_information{
+	width: 274px;
+	display: inline-block;
+	float:right;
+}
+.tabs .info-block {
+    margin-top: 48px;
+}
+.tabs .info-block li {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 46px;
+}
+.tabs li:before {
+    content: none;
+}
+.tabs .info-block li a {
+    color: #000;
+    position: relative;
+}
+.tabs .info-block li a:hover,
+.tabs .info-block li a:focus {
+    text-decoration: none;
+}
+.tabs .info-block .active {
+    font-weight: bold;
+}
+.tabs .info-block .active a:after {
+    content: ' ';
+    background: url(../images/active-tab-after.png) no-repeat center;
+    width: 10px;
+    height: 13px;
+    position: absolute;
+    top: 5px;
+    right: -20px;
+}
+.tabs .tab-content {
+    margin-top: 60px;
+}
+.tabs .tab-pane {
+    color: #000;
+}
+.bonus{
+	margin-top: 50px;
+}
+.button_oncourse{
+	margin-left: 39%;
+	margin-top: 44px;
+	margin-bottom: 52px;
+}
+
+
+/*========== Course Description End ========*/
 
 
 
