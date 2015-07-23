@@ -1741,7 +1741,7 @@ th{
 	background-position: 50% 50%; 
 	height: 656px;
 }
-.teacher_description{
+#teacher_description{
 	width:632px;
 	margin: 0 auto;
 }
@@ -1796,9 +1796,9 @@ th{
 }
 
 .scroll-btn {
-    position: absolute;
-  	right: -21px;
-  bottom: 0px;
+     position: absolute;
+    bottom: 0;
+    padding-bottom: 20px
 }
 .scroll-btn a {
     display: block;
@@ -1809,6 +1809,16 @@ th{
     transition-property: background;
     transition-duration: 0.4s;
     transition-timing-function: ease;
+}
+.scroll-btn a:hover,
+.scroll-btn a:focus {
+    background: url(../images/scroll-down-btn-hover.png) no-repeat center;
+    transition-property: background;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.scroll-btn a:active {
+    background: url(../images/scroll-down-btn-active.png) no-repeat center;
 }
 /*.top-section .scroll-btn a:hover,
 .top-section .scroll-btn a:focus {
