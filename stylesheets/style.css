@@ -1718,6 +1718,19 @@ th{
 	margin-top: 44px;
 	margin-bottom: 52px;
 }
+.fade{
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition-property: opacity;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  transition-delay: initial;
+}
+
+.fade.in {
+  opacity: 1;
+}
 
 
 /*========== Course Description End ========*/
