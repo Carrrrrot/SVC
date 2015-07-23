@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="./stylesheets/gui.css">
 		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" media="all" href="./stylesheets/selectize.css">
+		<script src="jquery-1.11.3.min.js"></script>
 	</head>
 
 	<body>
@@ -62,6 +63,7 @@
 
 
 			 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			 		
 					<ol class="carousel-indicators">
 					   	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -69,18 +71,27 @@
 					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 					    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
 					</ol>
+				
 					<div class="carousel-inner" role="listbox">
-					    <div class="item active">
-					      	<img src="./images/illustration_image.png" width="1280" height="600" alt="Образовательные концепции">
+					    <div class="item active" style='background-image:url(./images/illustration_image.png)'>
+
+					      	<!-- <img src="./images/illustration_image.png" width="1280" height="600" alt="Образовательные концепции"> -->
 					      	<div class="carousel-caption">
 					      		<div class="info">
-						        	<h2>21 сентября//
-									<a href="">Набор на курс <span class='red_illustration'>&#171Иллюстрация&#187</span></a></h2>
+					      		 <div class='row'>
+					      			<div class='date_information'>
+						        	<h2>21 сентября//</h2>
+						        	</div>
+						        	<h2>
+						        	<div class='course_name_information'>
+						        		<a href="">Набор на курс <span class='red_illustration'>&#171Иллюстрация&#187</span></a></h2>
+						        	</div>
+
 								</div>
 					      	</div>
 					    </div>
-					    <div class="item">
-					      	<img src="./images/front-end_illustration.png" width="1280" height="600" alt="...">
+					    <div class="item" style='background-image:url(./images/front-end_illustration.png)'>
+					      	<!-- <img src="./images/front-end_illustration.png" width="1280" height="600" alt="..."> -->
 					      	<div class="carousel-caption">
 					      		<div class="info">
 						        	<h1></h1>
@@ -97,8 +108,8 @@
 					        	</div>
 					      	</div>
 					    </div>
-					    <div class="item">
-					      	<img src="./images/london.png" width="1280" height="600" alt="...">
+					    <div class="item" style='background-image:url(./images/london.png)'>
+					      	<!-- <img src="./images/london.png" width="1280" height="600" alt="..."> -->
 					      	<div class="carousel-caption">
 					      		<div class="info">
 						        	<h1></h1>
@@ -106,8 +117,8 @@
 						        </div>
 					      	</div>
 					    </div>
-					    <div class="item">
-					      	<img src="./images/kristina.png" width="1280" height="600" alt="...">
+					    <div class="item" style='background-image:url(./images/kristina.png)'>
+					      	<!-- <img src="./images/kristina.png" width="1280" height="600" alt="..."> -->
 					      	<div class="carousel-caption">
 					      		<div class="info">
 						        	<h1></h1>
@@ -130,9 +141,14 @@
 
 
 
-
+<script>
+$('.carousel-indicators').css({'width': '100%'});
+$('.carousel-indicators').css({marginLeft:'-50%'});
+$('.carousel-indicators').css({bottom:'-14px'});
+</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/selectize.js"></script>
+	<script src="jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap-transition.js"></script>
 	<script type="text/javascript" src="./js/bootstrap-collapse.js"></script>
     <script type="text/javascript" src="./js/bootstrap-tooltips.js"></script>

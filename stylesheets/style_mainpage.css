@@ -212,9 +212,9 @@ h1:after {
 .header-menu .dropdown:after {
     content: "";
     border-top: 3px solid #000;
-    border-bottom: 3px solid #fff;
-    border-right: 3px solid #fff;
-    border-left: 3px solid #fff;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
     top: 14px;
     left: 8px;
     position: relative;
@@ -410,6 +410,9 @@ li:after {
 .carousel-inner .item {
     text-align: center;
     height:100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 
 }
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
@@ -462,12 +465,19 @@ li:after {
     text-align: left;
     vertical-align: middle;
     text-transform: uppercase;
+    position: absolute;
+    width:100%;
+
 
 }
 
-.carousel-caption .info{
-
+.carousel-caption .date_information{
+    position: absolute;
+    position: absolute;
+    top: 538px;
+    left: -155px;
 }
+
 
 
 
@@ -500,10 +510,16 @@ li:after {
 .carousel-caption .info{
     display: absolute;
 }
+.carousel-indicators{
+  width: 100%;
+  background-color: black;
+  height: 16px;
+}
 .carousel-indicators li {
     margin: 1px 8px;
     width: 14px;
     height: 14px;
+    
 }
 .carousel-indicators .active {
     width: 14px;
