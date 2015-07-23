@@ -774,10 +774,11 @@ li:before {
 /* TEACHER INFO BEGIN */
 .teacher-info {
 	display: inline-block;
-	margin-right: 100px;
+	margin-right: 60px;
 	width: 250px;
 	height: auto;
 	vertical-align: top;
+    margin-bottom: 40px;
 }
 .teacher-info a {
 	display: block;
