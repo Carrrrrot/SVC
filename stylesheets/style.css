@@ -1622,3 +1622,24 @@ th{
   overflow: scroll;
 }
 /*========== VACANCIES END ==========*/
+
+/*========== Parntenrs Begin ========*/
+.logo_link{
+  display: inline-block;
+  display: inline-block;
+  width: 33%;
+  float: left;
+  text-align: center;
+  line-height: 8;
+  margin-bottom: 55px;
+}
+.logo_link img{
+	vertical-align: middle;
+}
+/*========== Parntenrs End ========*/
+
+
+
+
+
+
