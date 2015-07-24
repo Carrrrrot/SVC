@@ -1134,7 +1134,7 @@ th{
 }
 .afisha_element_hover{
 	width:276px;
-	height:452px;
+	height:464px;
 	padding-top:17px;
 	padding-bottom: 17px;
 }
@@ -1157,6 +1157,32 @@ td{
 th{
 	font-weight: normal;
 }
+
+#nav-toggle span { 
+  position: absolute;
+  top: 46px;
+  left: 250px;}
+
+#nav-toggle span, 
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 31px;
+  background: #777777;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px; 
+}
+
+
 /*Вакансии*/
 .rabota_date{
 	color:#d6d6d6;
