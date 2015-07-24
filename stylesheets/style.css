@@ -425,7 +425,8 @@ a.tooltips:hover{
 }
 .button-green {
 	display: inline-block;
-	min-width: 170px;
+	max-width: 170px;
+
 	height: 40px;
 	color: #fff;
 	background-color: #00bfa5;
@@ -1832,7 +1833,26 @@ th{
 }
 /*========== About Teacher ========*/
 
+/*==========RegistrationForm=======*/
+
+.next_item{
+	background: url(../images/school-next-slide.png) no-repeat center;
+}
+.cooperation{
+  position: absolute;
+  right: 463px;
+  top: 199px;
+}
+.space{
+	height:58px;
+}
 
 
 
-*/
+
+
+
+
+
+/*==========RegistrationForm End=======*/
+
