@@ -1718,10 +1718,121 @@ th{
 	margin-top: 44px;
 	margin-bottom: 52px;
 }
+.fade{
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition-property: opacity;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  transition-delay: initial;
+}
+
+.fade.in {
+  opacity: 1;
+}
 
 
 /*========== Course Description End ========*/
 
+/*========== About Teacher ========*/
+.teacher_background{
+	background: url(../images/mykola.png) no-repeat;
+	background-position: 50% 50%; 
+	height: 656px;
+}
+#teacher_description{
+	width:632px;
+	margin: 0 auto;
+}
+.teacher_description_courses{
+	width:632px;
+	margin: 0 auto;
+	height: 92px;
+	padding: 3em 0;
+}
+.grey_courses{
+	width:100%;
+	height:700px;
+	background-color:#edf0f0;
+}
+.grey_courses h3{
+	margin: 0 auto;
+}
+.teachers_course_link{
+	width: 236px;
+	/*display: inline-block;*/
+	height: 250px;
+	vertical-align: top;
+	float:left;
+	display: inline-block;
+  
+  
+  float: left;
+  margin-left: 60px;
+  margin-right: 16px;
+  margin-bottom: 55px;
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+
+.teachers_course img{
+	height:200px;
+	width:219px;
+	margin-bottom: 13px;
+}
+.teachers_coursename{
+
+}
+
+.shape{
+	 
+  
+  position: absolute;
+  right: 64px;
+  bottom: -243px;
+  
+}
+
+.scroll-btn {
+     position: absolute;
+    bottom: 0;
+    padding-bottom: 20px
+}
+.scroll-btn a {
+    display: block;
+    margin: 0 auto;
+    background: url(../images/scroll-down-btn.png) no-repeat center;
+    height: 44px;
+    width: 95px;
+    transition-property: background;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.scroll-btn a:hover,
+.scroll-btn a:focus {
+    background: url(../images/scroll-down-btn-hover.png) no-repeat center;
+    transition-property: background;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.scroll-btn a:active {
+    background: url(../images/scroll-down-btn-active.png) no-repeat center;
+}
+/*.top-section .scroll-btn a:hover,
+.top-section .scroll-btn a:focus {
+    background: url(../images/scroll-down-btn-hover.png) no-repeat center;
+    transition-property: background;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.top-section .scroll-btn a:active {
+    background: url(../images/scroll-down-btn-active.png) no-repeat center;
+}
+/*========== About Teacher ========*/
 
 
 
+
+*/
