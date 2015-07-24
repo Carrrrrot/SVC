@@ -775,7 +775,7 @@ li:before {
 .teacher-info {
 	display: inline-block;
 	margin-right: 60px;
-	width: 250px;
+	width: 220px;
 	height: auto;
 	vertical-align: top;
     margin-bottom: 40px;
@@ -1626,7 +1626,7 @@ th{
 /*========== Parntenrs Begin ========*/
 .logo_link{
   display: inline-block;
-  
+
   width: 33%;
   float: left;
   text-align: center;
@@ -1654,7 +1654,7 @@ th{
 }
 .course_background{
 	background: url(../images/master_course.png) no-repeat;
-	background-position: 50% 50%; 
+	background-position: 50% 50%;
 
 }
 .course_name{
