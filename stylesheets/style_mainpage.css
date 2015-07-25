@@ -241,7 +241,7 @@ h1:after {
     text-align: center;
     width: 100%;
     top: 100px;
-    z-index: 11;
+    z-index: 19;
 }
 .sub-menu {
     text-align: center;
@@ -572,6 +572,26 @@ li:after {
   top:0px;
 }
 
+/*.indicator-red:after{
+    content: "";
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-left: 40px solid green;
+    top: 14px;
+    left: 8px;
+    position: relative;
+
+}*/
+
+.carousel-caption .green_illustration{
+    color: #b1c201;
+    margin: 0;
+    position: absolute;
+    font-weight: bold;
+    right: -167px;
+}
+
 .indicator-green{
     background-color: #cbdb2a;
     width: 155px;
@@ -587,13 +607,15 @@ li:after {
   height: 20px;
   position: absolute;
   top:0px;
+
 }
+
 
 .black-stripe{
   background-color: black;
   width: 100%;
   height: 20px;
   position: absolute;
-  top: 629px
+  bottom:0;
 }
->>>>>>> b5d58f8d31d6f1cb33cc0a413d4ab4f47c492bd4
+
