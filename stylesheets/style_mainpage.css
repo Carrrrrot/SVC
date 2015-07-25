@@ -45,6 +45,7 @@
     box-sizing: inherit;
 }
 html {
+
     box-sizing: border-box;
     height: 100%;
 }
@@ -193,12 +194,6 @@ h1:after {
 }
 .header {
     padding-top: 22px;
-  position: fixed;
-  z-index: 15;
-  left: 0;
-  right: 0;
-
-
 }
 .header-menu {
     text-align: center;
@@ -207,7 +202,6 @@ h1:after {
     display: inline-block;
     font-size: 18px;
     margin: 0 17px;
-      padding-left: 0;
 }
 .header-menu .dropdown:after {
     content: "";
@@ -218,10 +212,6 @@ h1:after {
     top: 14px;
     left: 8px;
     position: relative;
-
-    /*background-image: url("../images/Arrow .png")
-    background-repeat: no-repeat;
-    display: block;*/
 }
 .header-menu li a {
     color: #000;
@@ -349,6 +339,7 @@ h1:after {
     background-position: -151px -5px;
 }
 /*HEADER END*/
+
 h2 {
     color: #000;
     font-size: 24px;
@@ -449,7 +440,7 @@ li:after {
     top: 45px;
 }
 .carousel-caption .red_illustration{
-    
+
     margin: 0;
     position: absolute;
 }
@@ -519,7 +510,7 @@ li:after {
     margin: 1px 8px;
     width: 14px;
     height: 14px;
-    
+
 }
 .carousel-indicators .active {
     width: 14px;

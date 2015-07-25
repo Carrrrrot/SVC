@@ -1640,13 +1640,18 @@ th{
 /*========== Parntenrs End ========*/
 
 /*========== Course Description ========*/
-.course_path{
-	margin-top: 48px;
-}
-.course_path a{
-	text-decoration: none;
-	color:#bbbbbb;
 
+.course_path,
+.course_path a:visited {
+    color: #bbb;
+    margin-top: 47px;
+}
+.course_path a:first-child {
+    font-weight: bold;
+}
+.course_path a:hover,
+.course_path a:focus {
+    text-decoration: none;
 }
 .go_to{
 	width: 15px;
@@ -1674,6 +1679,7 @@ th{
 }
 .tabs .info-block {
     margin-top: 48px;
+
 }
 .tabs .info-block li {
     list-style: none;
@@ -1739,7 +1745,7 @@ th{
 /*========== About Teacher ========*/
 .teacher_background{
 	background: url(../images/mykola.png) no-repeat;
-	background-position: 50% 50%; 
+	background-position: 50% 50%;
 	height: 656px;
 }
 #teacher_description{
@@ -1767,8 +1773,8 @@ th{
 	vertical-align: top;
 	float:left;
 	display: inline-block;
-  
-  
+
+
   float: left;
   margin-left: 60px;
   margin-right: 16px;
@@ -1788,12 +1794,12 @@ th{
 }
 
 .shape{
-	 
-  
+
+
   position: absolute;
   right: 64px;
   bottom: -243px;
-  
+
 }
 
 .scroll-btn {
