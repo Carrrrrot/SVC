@@ -309,6 +309,7 @@ a.tooltips:hover{
 
 }
 .tooltip {
+    background-color: #fff;
   position: absolute;
   z-index: 1070;
   display: block;
@@ -1158,12 +1159,12 @@ th{
 	font-weight: normal;
 }
 
-#nav-toggle span { 
+#nav-toggle span {
   position: absolute;
   top: 46px;
   left: 250px;}
 
-#nav-toggle span, 
+#nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
   cursor: pointer;
@@ -1179,7 +1180,7 @@ th{
   top: -10px;
 }
 #nav-toggle span:after {
-  bottom: -10px; 
+  bottom: -10px;
 }
 
 
@@ -1765,7 +1766,7 @@ th{
 /*========== About Teacher ========*/
 .teacher_background{
 	background: url(../images/mykola.png) no-repeat;
-	background-position: 50% 50%; 
+	background-position: 50% 50%;
 	height: 656px;
 }
 #teacher_description{
@@ -1793,8 +1794,8 @@ th{
 	vertical-align: top;
 	float:left;
 	display: inline-block;
-  
-  
+
+
   float: left;
   margin-left: 60px;
   margin-right: 16px;
@@ -1814,18 +1815,17 @@ th{
 }
 
 .shape{
-	 
-  
+
+
   position: absolute;
   right: 64px;
   bottom: -243px;
-  
+
 }
 
-.scroll-btn {
-     position: absolute;
-    bottom: 0;
-    padding-bottom: 20px
+.teacher_background .scroll-btn {
+    position: absolute;
+    top: 590px;
 }
 .scroll-btn a {
     display: block;
@@ -1881,4 +1881,170 @@ th{
 
 
 /*==========RegistrationForm End=======*/
-
+/*========== EVENT BEGIN ==========*/
+.event-top-section {
+    background: url(../images/event-background.jpg) repeat-x center top;
+    height: 704px;
+}
+.event-top-section .logotype {
+    background-position: -5px -35px;
+    width: 143px;
+    height: 54px;
+}
+.event-top-section .header-menu li a {
+    color: #fff;
+}
+.event-top-section .header-menu .dropdown:after {
+    border-top: 3px solid #fff;
+}
+.event-top-section .header-behance {
+    width: 26px;
+    height: 16px;
+    background-position: -169px -5px;
+}
+.event-top-section .header-vimeo {
+    width: 15px;
+    height: 12px;
+    background-position: -226px -5px;
+}
+.event-top-section .header-facebook {
+    width: 11px;
+    height: 20px;
+    background-position: -205px -5px;
+}
+.event-main-section .short-info {
+    background-color: #eee;
+    font-size: 18px;
+    color: #212121;
+    padding: 35px 0 20px 0;
+}
+.event-main-section .short-info .bold {
+    font-weight: bold;
+}
+.event-main-section .map {
+    padding-left: 32px;
+}
+.event-main-section .map:hover,
+.event-main-section .map:focus {
+    text-decoration: none;
+}
+.event-main-section .registration {
+    margin-left: -60px;
+}
+.event-main-section .event-info h2 {
+    margin-top: 25px;
+}
+.event-main-section .event-info .bold {
+    font-weight: bold;
+}
+.event-main-section .carousel {
+    width: 830px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.event-main-section .carousel-inner .item {
+    text-align: center;
+}
+.event-main-section .left.carousel-control {
+    width: 85px;
+    height: 450px;
+    background: url(../images/icons/portfolio-slider-prew-arrw.png) no-repeat center;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.event-main-section .right.carousel-control {
+    width: 85px;
+    height: 450px;
+    background: url(../images/icons/portfolio-slider-next-arrw.png) no-repeat center;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.event-main-section .left.carousel-control:hover,
+.event-main-section .left.carousel-control:focus,
+.event-main-section .right.carousel-control:hover,
+.event-main-section .right.carousel-control:focus {
+    opacity: 0.5;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.event-main-section .left.carousel-control:active {
+    background: url(../images/icons/portfolio-slider-prew-arrw-active.png) no-repeat center;
+}
+.event-main-section .right.carousel-control:active {
+    background: url(../images/icons/portfolio-slider-next-arrw-active.png) no-repeat center;
+}
+.event-main-section .carousel-caption h1 {
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 45px;
+}
+.event-main-section .carousel-caption h1:after {
+    background-repeat: inherit;
+    background-image: url(../images/h1-underline-white.png);
+}
+.event-main-section .carousel-caption .info {
+    font-family: "pf_beausans_pro", Arial,  sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    height: 600px;
+}
+.event-main-section .carousel-indicators {
+    bottom: -65px;
+}
+.event-main-section .carousel-caption span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.event-main-section .carousel-indicators li {
+    margin: 1px 8px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+}
+.event-main-section .carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    background: none;
+}
+.event-main-section .carousel-indicators .active:after {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 5px;
+    background-color: #00bfa5;
+    margin: 1px 0 0 1px;
+}
+.event-main-section li:before {
+    content: none;
+}
+.event-main-section .afisha_element_description {
+    padding-bottom: 15px;
+}
+.event-main-section table {
+    margin-top: 11px;
+}
+.event-main-section .afisha_element,
+.event-main-section .afisha_element_hover {
+    height: auto;
+}
+.event-main-section .afisha_element_hover a:hover,
+.event-main-section .afisha_element_hover a:focus {
+    text-decoration: none;
+}
+.event-main-section  .afisha_element th {
+    min-width: 100px;
+}
+.event-main-section {
+    margin-bottom: 40px;
+}
+/*========== EVENT END ==========*/
