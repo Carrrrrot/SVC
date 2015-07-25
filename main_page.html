@@ -61,16 +61,17 @@
 
 
 
-
 			 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			 		
-					<ol class="carousel-indicators">
+				<!-- 	<ol class="carousel-indicators">
+
 					   	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
 					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 					    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-					</ol>
+					</ol> -->
+				
 				
 					<div class="carousel-inner" role="listbox">
 					    <div class="item active" style='background-image:url(./images/illustration_image.png)'>
@@ -119,7 +120,18 @@
 					      	<img src="./images/Extreme_territoirs.png" width="1280" height="600" alt="...">
 					      	<div class="carousel-caption">
 					      		<div class="info">
-						        	<h1></h1>
+						        	<div class='row'>
+					      			<div class='date_information'>
+						        	<h2>21 сентября//</h2>
+						        	</div>
+						        	<h2>
+						        	<div class='course_name_information'>
+						        		<a href="">Набор на курс <span class='red_illustration'>&#171Иллюстрация&#187</span></a></h2>
+						        		<img src="./images/underline.png" style=' position: absolute;
+  bottom: -564px;
+  width: 411px;
+  right: -170px;'>
+						        	</div>
 						        	
 					        	</div>
 					      	</div>
@@ -128,7 +140,18 @@
 					      	<!-- <img src="./images/london.png" width="1280" height="600" alt="..."> -->
 					      	<div class="carousel-caption">
 					      		<div class="info">
-						        	<h1></h1>
+						        	<div class='row'>
+					      			<div class='date_information'>
+						        	<h2>21 сентября//</h2>
+						        	</div>
+						        	<h2>
+						        	<div class='course_name_information'>
+						        		<a href="">Набор на курс <span class='red_illustration'>&#171Иллюстрация&#187</span></a></h2>
+						        		<img src="./images/underline.png" style=' position: absolute;
+  bottom: -564px;
+  width: 411px;
+  right: -170px;'>
+						        	</div>
 						        	
 						        </div>
 					      	</div>
@@ -155,12 +178,24 @@
 
 
 
-
+				<div class='black-stripe'>
+					<ol>
+						<li class='indicator-red'></li>
+						<li class='indicator-green'></li>
+					   <!--  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="4"></li> -->
+					</ol>
+				</div>
 
 <script>
 $('.carousel-indicators').css({'width': '100%'});
 $('.carousel-indicators').css({marginLeft:'-50%'});
 $('.carousel-indicators').css({bottom:'-14px'});
+$('.carousel-indicators li').css(border:'');
+
+
 </script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/selectize.js"></script>

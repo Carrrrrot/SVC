@@ -564,3 +564,40 @@ li:after {
     background-position: -158px -35px;
     margin-top: 22px;
 };*/
+
+.carousel-indicators_background{
+    background-color: black;
+    width: 100%
+}
+.indicator-red{
+  background-color: #f50057;
+  width: 125px;
+  height: 20px;
+  position: absolute;
+  top:0px;
+}
+
+.indicator-green{
+    background-color: #cbdb2a;
+    width: 155px;
+  height: 20px;
+  position: absolute;
+  top:0px;
+  opacity: 0;
+}
+
+.indicator-green .active{
+  background-color: #cbdb2a;
+  width: 155px;
+  height: 20px;
+  position: absolute;
+  top:0px;
+}
+
+.black-stripe{
+  background-color: black;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: 629px
+}
